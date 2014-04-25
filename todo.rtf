@@ -2,8 +2,19 @@ Waiting on Clarity task assignment
 Submit time
 
 VSBACKLOG-6308: PINK 'Create an Account' overlay does not render correctly in IE8 only
+	https://groups.google.com/forum/#!topic/typekit-dev/y_L25FJKKnY
+	http://stackoverflow.com/questions/7768029/ie8-web-font-iframe-bug-workarounds
+	http://samiam.org/blog/20110619.html
+	IE8 bug: When an iframe is loaded, if the same font is used in the iframe it disables the font because multiple references exist on the page
+	Some workarounds exist, but none are bulletproof
+	
 VSBACKLOG-6295: IE8-Drop down on Shipping/Billing form shifts up and the text options are cut off
 
 (VSBACKLOG-6101 waiting on replacement image URLs)
 
 --Change font to variable on storelocator page
+
+_overlayFormFields.scss ln 203: Why is this here? Is it breaking elsewhere?
+
+On test, card label alignment is off by 1 px. Changed to top: 0 to fix.
+
