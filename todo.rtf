@@ -1,24 +1,12 @@
 Waiting on Clarity task assignment
 
 VSBACKLOG-6308: PINK 'Create an Account' overlay does not render correctly in IE8 only
-	https://groups.google.com/forum/#!topic/typekit-dev/y_L25FJKKnY
-	http://stackoverflow.com/questions/7768029/ie8-web-font-iframe-bug-workarounds
-	http://samiam.org/blog/20110619.html
 	IE8 bug: When an iframe is loaded, if the same font is used in the iframe it disables the font because multiple references exist on the page
-	Some workarounds exist, but none are bulletproof
-	
-	$('#nav-primary a, #text-header :header').each(function(){
-		var elem = $(this), font = elem.css('font-family');
-		if(font.indexOf('Pink') >= 0) {
-			elem.css({fontFamily: ''});
-			elem.css({fontFamily: font});
-		}
-	});
-	
---VSBACKLOG-6295: IE8-Drop down on Shipping/Billing form shifts up and the text options are cut off
 	
 VSBACKLOG-6101 waiting on replacement image URLs
-	Convert to PNGs for DIVA upload
+--	Convert to PNGs for DIVA upload
 
 VSBACKLOG-6284: Account: Shipping Address Overlay does not update with correct form
+
+VSBACKLOG-6331: Receiving 403 error when attempting to view item on Twitter sent from Love List
 
