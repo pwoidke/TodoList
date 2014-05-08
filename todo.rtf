@@ -4,6 +4,17 @@ Find out where prototypes are stored for meeting next week
 	Change "Zip Code" to "Zip"
 	Fix Cheetahmail mobile label alignment (wasn't getting styling on mobile because not on LB network)
 
-VSBACKLOG-6818: Html and Css changes to email template
+-VSBACKLOG-6818: Html and Css changes to email template
 	Made updates based on Love List emails, waiting on original template
+
+VSBACKLOG-3882: ACCOUNT LP- Shipping Address Overlay for US Form - Dropdown Fade
+	Add fade to dropdown arrow sprite, set position to absolute to prevent text cutoff?
+	Can't use altered sprite because it's the background of the select (under text)
+	Can't use an additional element because clicking won't open select (can't open select programmatically)
+
+Tomorrow: Talk to Vlad when done w/ Accounts tasks re: Bra Experience team
+
+I don’t think there’s any easy way to add a fade onto the Shipping Address dropdowns.
+You can’t add the fade to the sprite because it’s a background on the select element, so you can’t position it above the options
+and it can’t be a separate element because there’s no way to programmatically open a <select> element (there is a webkit way, but no FF/IE)
 
