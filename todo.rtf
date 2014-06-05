@@ -1,13 +1,10 @@
 VSBACKLOG-7042: Update Empty Boutique Messaging
-	Waiting on backend stuff, comps for link styling, final copy
 
-Add "Load More" functionality to mobile (see desktop implementation)
+--Add "Load More" functionality to mobile (see desktop implementation)
 
 Check out Boutique quiz nav buttons font weight and baseline
 
-Intro -
---	Make whole pink circle clickable
-	Prevent image repeating (y) w/ min-width or something
+--Intro -	Prevent image repeating (y) w/ min-width or something
 
 Padding ? -
 	Figure out check/image size and add padding 0 15px to options
@@ -19,28 +16,27 @@ Fix all question text line breaks
 On Mobile DEVICE
 	Size Page - Fix labels/options spacing
 
---Fix grid/list view selection on load and switch
-
 Boutique Results - 
 	Color & Appearance sprites should be >
 	Best match sprite should be v
 	
-.notificationsCounter {
-	background-color: #ff99cc;
-	border-radius: 100%;
-	width: 21px;
-	height: 21px;
-	display: inline-block;
-	color: white;
-	padding-top: 2px;
-}
+--.notificationsCounter {
+--	background-color: #ff99cc;
+--	border-radius: 100%;
+--	width: 21px;
+--	height: 21px;
+--	display: inline-block;
+--	color: white;
+--	padding-top: 2px;
+--}
 
 --js/view/braExperience/pink/vItemsGrid.js is not being used by site (using non-pink version)
 
 
-Note to self – Send ampersand style* 
+The font style we use for the & is:
+BentonSansExtraComp, Bold, 2 pt sizes smaller than Pink Slab  (i.e. Pink Slab is 20, BentonSansExtraComp 18) 
 
-Next Previous buttons – look into Pink Sans font 
+Next Previous buttons – look into Pink Sans font baseline position
 
 Select your size 
 Track out size numbers 0.02m
@@ -53,9 +49,16 @@ Stroke at bottom of Leopard print should be px and #e6e6e6
 Space between circles needs to be increased a bit
 
 Padding
-(unlined) (Lightly-Lined) (Push-Up) don't need parethesis and should be regular not italic and match headline color 
-None, Some, A Lot tracking should be 0.02m
+--(unlined) (Lightly-Lined) (Push-Up) don't need parethesis and should be regular not italic and match headline color 
+--None, Some, A Lot tracking should be 0.02m
 None, Some, A Lot should be 10px from check mark
 
 
+Should question titles be tracked to 0.05em or 0.02em?
+	.header, .subheader {
+        color: $pink-black-01;
+        letter-spacing: 0.02em;
+    }
+    
 
+border: none;
