@@ -1,6 +1,6 @@
-VSBACKLOG-7042: Update Empty Boutique Messaging
+VSBACKLOG-7042: Check Empty Boutique Messaging
 
---Add "Load More" functionality to mobile (see desktop implementation)
+Quiz size font rendering on load
 
 Check out Boutique quiz nav buttons font weight and baseline
 
@@ -13,52 +13,22 @@ Resolve all $vs-color variables
 
 Fix all question text line breaks
 
-On Mobile DEVICE
-	Size Page - Fix labels/options spacing
+On Mobile DEVICE - Size Page - Fix labels/options spacing
 
-Boutique Results - 
-	Color & Appearance sprites should be >
-	Best match sprite should be v
-	
---.notificationsCounter {
---	background-color: #ff99cc;
---	border-radius: 100%;
---	width: 21px;
---	height: 21px;
---	display: inline-block;
---	color: white;
---	padding-top: 2px;
---}
+--Boutique Results - 
+--	Color & Appearance sprites should be >
+--	Best match sprite should be v
 
---js/view/braExperience/pink/vItemsGrid.js is not being used by site (using non-pink version)
+The font style we use for the '&' is BentonSansExtraComp, Bold, 2 pt sizes smaller than Pink Slab  (i.e. Pink Slab is 20, BentonSansExtraComp 18) 
 
+--Select your size 
+--	Track out size numbers 0.02m
+--	Don't know your size? - Change color to #999999
+--	Band Size, Cup Size – Change color to #272727, Tracking 0.02m
+--	Match "What size bra do you wear?" Tracking 0.02m
+--	Supporting can be tracked out a bit .05
+--	Pink Arrows on "Measure Yourself" and "Convert it" can be 2 px closer
+--	Stroke at bottom of Leopard print should be px and #e6e6e6 
+--	Space between circles needs to be increased a bit
 
-The font style we use for the & is:
-BentonSansExtraComp, Bold, 2 pt sizes smaller than Pink Slab  (i.e. Pink Slab is 20, BentonSansExtraComp 18) 
-
-Next Previous buttons – look into Pink Sans font baseline position
-
-Select your size 
-Track out size numbers 0.02m
-Don't know your size? - Change color to #999999
-Band Size, Cup Size – Change color to #272727, Tracking 0.02m
-Match "What size bra do you wear?" Tracking 0.02m
-Supporting can be tracked out a bit .05
-Pink Arrows on "Measure Yourself" and "Convert it" can be 2 px closer
-Stroke at bottom of Leopard print should be px and #e6e6e6 
-Space between circles needs to be increased a bit
-
-Padding
---(unlined) (Lightly-Lined) (Push-Up) don't need parethesis and should be regular not italic and match headline color 
---None, Some, A Lot tracking should be 0.02m
-None, Some, A Lot should be 10px from check mark
-
-
-Should question titles be tracked to 0.05em or 0.02em?
-	.header, .subheader {
-        color: $pink-black-01;
-        letter-spacing: 0.02em;
-    }
-    
-
-border: none;
+Padding - None, Some, A Lot should be 10px from check mark
