@@ -8,12 +8,27 @@ Padding ? - Figure out check/image size and add padding 0 15px to options
 
 Fix all question text line breaks
 
-On Mobile DEVICE - Size Page - Fix labels/options spacing
+--On Mobile DEVICE - Size Page - Fix labels/options spacing
 
 The font style we use for the '&' is BentonSansExtraComp, Bold, 2 pt sizes smaller than Pink Slab  (i.e. Pink Slab is 20, BentonSansExtraComp 18) 
 
 Padding - None, Some, A Lot should be 10px from check mark
 
---Set explicit pixel widths for questions to control line breaks
+--refactor duplicate views (i.e. .items-empty-view) in SCSS
 
-refactor duplicate views (i.e. .items-empty-view) in SCSS
+
+
+{{#if sizeAvailableInVS}}
+<h2>Looks like...</h2>
+<h3>We don't have your size in PINK bras, but we do in Victoria's Secret and Victoria's Secret Sport bras â€“ check it out!</h3>
+{{else}}
+{{#if filteredResultsWithAllBrasRemovedEmptyView}}
+<h2>Oops!</h2>
+<h3>We don't have any bras that match your preferences.<br>Edit your picks, and we'll check again.</h3>
+{{/if}}
+{{#if unfilteredResultsWithAllBrasRemovedEmptyView}}
+<h2>Your boutique is empty!</h2>
+<h3>We're always adding new bras, so check back soon!<br>Or you can add bras you've removed back to your Boutique.</h3>
+<a href="#" class="bras-you-removed">Bras You've Removed<em></em></a>
+{{/if}}
+{{/if}}
