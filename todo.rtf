@@ -1,4 +1,4 @@
-VSBACKLOG-7042: Check Empty Boutique Messaging
+--VSBACKLOG-7042: Check Empty Boutique Messaging
 
 Quiz size font rendering on load
 
@@ -16,19 +16,14 @@ Padding - None, Some, A Lot should be 10px from check mark
 
 --refactor duplicate views (i.e. .items-empty-view) in SCSS
 
+Can't reproduce
+	VSBACKLOG-8531 - Add padding Under Buttons on love list overlay "Unloved?"
+    VSBACKLOG-8492 - MOBILE PINK BOUTIQUE / Tapping the back button from the Boutique renders the incorrect page
 
+Not important
+    VSBACKLOG-8535 - Ragging of supporting copy in Quiz
+    VSBACKLOG-8533 - Padding between model circles should be equal (left, middle, right) on Quiz
 
-{{#if sizeAvailableInVS}}
-<h2>Looks like...</h2>
-<h3>We don't have your size in PINK bras, but we do in Victoria's Secret and Victoria's Secret Sport bras â€“ check it out!</h3>
-{{else}}
-{{#if filteredResultsWithAllBrasRemovedEmptyView}}
-<h2>Oops!</h2>
-<h3>We don't have any bras that match your preferences.<br>Edit your picks, and we'll check again.</h3>
-{{/if}}
-{{#if unfilteredResultsWithAllBrasRemovedEmptyView}}
-<h2>Your boutique is empty!</h2>
-<h3>We're always adding new bras, so check back soon!<br>Or you can add bras you've removed back to your Boutique.</h3>
-<a href="#" class="bras-you-removed">Bras You've Removed<em></em></a>
-{{/if}}
-{{/if}}
+TODO
+	VSBACKLOG-8576 - MOBILE PINK BOUTIQUE LAYOUT/ The load more buttons are not center aligned (Android only)
+    VSBACKLOG-8590 - MOBILE PINK BOUTIQUE / The Get Started page appears after completing the boutique quiz, closing the browser and reopening the page 
