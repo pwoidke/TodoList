@@ -1,4 +1,43 @@
-Good morning! Today is Friday, July 11th, 2014:
+Good morning! Today is Monday, July 14th, 2014:
 
---VSBACKLOG-9793 VS BOUTIQUE / The spacing for the selection circles within the bra size overlay is incorrect
-VSBACKLOG-9803 ALL BOUTIQUES / Filtering and Sorting causes ATB overlay to load off screen (iPad ONLY)
+
+Handlebars.runtime.js ln. 314
+
+    instance.registerHelper('if_even', function(conditional, options) {
+      if((conditional % 2) == 0) {
+        return options.fn(this);
+      } else {
+        return options.inverse(this);
+      }
+    });
+
+    instance.registerHelper('if_odd', function(conditional, options) {
+      if((conditional % 2) == 1) {
+        return options.fn(this);
+      } else {
+        return options.inverse(this);
+      }
+    });
+
+
+	
+fitguideviewpink.html
+
+ln. 115
+        <div class="banner banner_alt">
+            <ul class="options options-pink">
+                {{#each currentPage.options}} {{! onclick attribute needed for known jquery mobile Safari bug}} {{! http://blog.alanszlosek.com/post/4369588562/jquerys-live-click-handler-on-mobile-safari}}
+                {{#if_even id}}
+                <div style="display: inline-block">
+                {{/if_even}}
+
+ln 123
+-                            <p class="extraText"{{#if textStyle}} style="{{textStyle}}"{{/if}}>{{{extraText}}}</p>
++                                <p class="extraText">{{{extraText}}}</p>
+                             </div>
+                         </div>
+                     </li>
++                {{#if_odd id}}
++                </div>
++                {{/if_odd}}
+                 {{/each}}
