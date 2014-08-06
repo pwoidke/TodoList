@@ -5,16 +5,33 @@ VSBACKLOG-10087 Extend Base Files
 VSBACKLOG-10084 Refactor Fit Quiz
 
 VSBACKLOG-9867 Update Empty Boutique Messaging
---VSBACKLOG-9869 Update Boutique Removal and Love List Alerts
---VSBACKLOG-9866 Update Boutique Removals overlay
---VSBACKLOG-9864 Update Smart Alerts for Boutique
---VSBACKLOG-9862 Update Boutique Filters 
 
---VSBACKLOG-10645 New Layering Size missing from results
---VSBACKLOG-10542 The "Retake The Quiz" link renders incorrectly
---VSBACKLOG-10539 The recommended sizes on the results page renders distorted.
 VSBACKLOG-10561 The Perfect Fit page is rendering incorrectly. 
+VSBACKLOG-10368 (PINK) The smart alerts render with a small grey "X" to close.
+VSBACKLOG-9815 (PINK) The SECOND line of text in the "Changed Your Mind" overlay, needs additional spacing.
+Story
 
---Fix all Bra Exp sprites in PINK & VS
---Fix checkbox sprites for Boutique quizzes
---Fix buttons in color filter overlay (Seems to work now ¯\_(ツ)_/¯)
+Send screenshot of Empty Boutique Messaging for creative review
+
+
+PINK Boutique Start Page:
+.boutique-start-page .hero_img .modelImg {
+width: 100%;
+ADD
+position: absolute;
+top: -42px;
+left: 0;
+
+Fix start link height
+
+Size page: fix footer sprites/arrows
+
+Question: fix checkbox sprites
+
+
+VSX Fit Quiz start page
+
+if Adding close icon:
+#content .sectionHeader .closeIcon {
+position: absolute;
+z-index: 1;
