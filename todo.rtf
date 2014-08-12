@@ -1,16 +1,39 @@
 Today is Tuesday, August 12th
 
-Done
-	VSBACKLOG-7731 Apply VS Sport styling to Mobile Bra Boutique
-	VSBACKLOG-7733 Apply VS Sport styling to Mobile Fit Quiz
-
 Waiting on creative
 	VSBACKLOG-10561 MOBILE SPORT FIT QUIZ/ The Perfect Fit page is rendering incorrectly.
 	VSBACKLOG-10777 Update Sport Mobile with new images
 	VSBACKLOG-10942 MOBILE SPORT BOUTIQUE/ List view/Grid view pink coloring is lighter than the Sport Boutique pink coloring.
 
---VSBACKLOG-10088 Extend Base Files
---VSBACKLOG-10087 Extend Base Files
 
---VSBACKLOG-9867 Update Empty Boutique Messaging
 
+
+
+
+
+
+
+@function get-sprite($brand, $sprite) {
+  @if $brand == "VSX" {
+    @if $sprite == "rightarrow" {
+      @return "0 -1052px";
+    }
+    // Then duplicate for other sprites...
+    @else if $sprite == "plusicon" {
+      @return "0 -777px";
+    }
+    @else {
+      @return "0 0"; // Default
+    }
+  }
+  // Then duplicate for other brands...
+  // @else if $brand == "PINK" {
+  // }
+  // @else { // for Default sprite, or...
+  // @else if $brand == "VS" {
+  // }
+}
+
+em.functionTest {
+  background-position: get-sprite("VSX", "rightarrow");
+}
