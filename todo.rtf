@@ -11,7 +11,38 @@ BUILD - Front End VSBACKLOG-13232 DESKTOP - Update facet name throughout codebas
 BUILD - Front End VSBACKLOG-14108 DESKTOP: Add logic to model to send and consume open/close state
 BUILD - Front End VSBACKLOG-14277 DESKTOP - implement open / close on drawers with saved states
 BUILD - Front End VSBACKLOG-14283 DESKTOP - consume model & create new template for cues
-Improvement VSBACKLOG-14281 Set initial drawer load sequence
+--Improvement VSBACKLOG-14281 Set initial drawer load sequence
 Improvement VSBACKLOG-14310 Dynamically display alpha size
 
 Refactor desktop SCSS
+
+Unit test meeting:
+	Agenda
+		[How to/should we] test modules
+		Identify gray areas
+		Scaffolding idea
+		Timeline
+	
+	unit testing
+		testing one small piece of code (if it fails, you should only have to look in one place)
+		only on services
+		things work
+	end-to-end testing (functional testing)
+		testing a big piece of functionality, multiple modules
+		only on site
+		things accomplish what they should
+	
+	Modules should only contain code that touches the DOM (requires fixture)
+	Services should have all non-DOM code
+	
+	spies: I don't care if you called something, I care what happened
+	
+	Move fixtures out of spec file and reuse them wherever possible
+	
+	Grab live site HTML and use as fixture
+	
+	See mCardTypeSpec.js for good module testing
+	
+	When to use JSON fixtures vs spies.return to mock data
+	
+Next meeting next Wednesday
