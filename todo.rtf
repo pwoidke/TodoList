@@ -1,16 +1,55 @@
-Today is Wednesday, March 18th:
+Today is Thursday, March 19th:
 
-BUILD - Front End VSBACKLOG-18458 Fragrance Finder Product Page javascript
-	Update JS to look for correct URL substring (done?)
-	Recompile and upload everything to DIVA
-	Update product page
-
-Technical Issue VSBACKLOG-18935 SWIM / MOBILE / Fit Quiz results are not carried over into Swim quiz
-Technical Issue VSBACKLOG-18965 MOBILE SWIM / Fit Quiz Perfect Size results are not pre-selected in Swim Quiz
-Technical Issue VSBACKLOG-19127 SWIM / Offer and PIN Disappear after navigating away from saved looks in same session
-
-Bug VSBACKLOG-16120 Add analytics tagging to Swim Stylist and Wardrobe
-LEAN - Task VSBACKLOG-18801 Tagging for Swim Stylist - remaining issues
-
-Regression VSBACKLOG-18715 DIVA Setup - replicate text and image change in PINT and ProdAuth
-
+16419	2	As a customer I want my size to be saved and auto-selected when I use the "How To Measure" feature.
+		.5	Add AJAX call to calculator button event
+			NEED BACKEND SUPPORT
+		1	Add function to select calculated options in quiz from How to Measure overlay
+		.5	Add autoselect to all quizzes if a saved size exists (VS, PINK, VSX)
+16420	3	As a customer, I want to see consistent size recommendations (from "Bra Fit Quiz" or "How to Measure") on all Bra and Swim pages. [GEFOC] Enable global currency conversion for all Fragrance Finder results display.
+			Update any instances of sizes in JS and templates to align with new size object
+6874	1	Present an option to accept Fit Quiz recommendation
+		.5	Add select option to end of fit quizzes (VS, PINK, VSX)
+		.5	Add AJAX call to update user size on select event
+			NEED BACKEND SUPPORT
+18726	5	Improve Swim Create a Look Phase 2
+			Microinteractions
+18910	2	As an anonymous user, I want to be able to use the Swim wardrobe and save and buy a look
+		.5	Move user login requirements to prompt to sign in on the SECOND saved look
+		.5	Add notification that the SWIMLOOK offer is available if she signs in
+		1	Allow user to choose to sign in and have any anonymously created looks saved and merged to her account
+14268	4	Enable a link to the VS Fit Quiz that then returns her to the Swim Finder (mobile)
+		1	Fix routing for mobile fit quiz
+		1	Update fit quiz template for Swim overlay
+		.5	Add cookie when launching quiz overlay to prevent skipping quiz (match desktop functionality)
+		1	Add function to select options in quiz from Fit Quiz overlay
+17204	1	Enhance the Curated Looks with additional features
+		.5	Reenable Buy All functionality in curated looks (Desktop)
+		1	Add curated looks Buy All functionality (Mobile)
+		1	Update curated looks styling and notifications
+		.25	VSBACKLOG-18713: Mobile - Curated Looks Menu - Copy Change
+18602	3	Update Swim Stylist tutorial overlays
+		1	Update Swim Results tutorial overlay to align with updated comps (desktop)
+		1	Update Swim Results tutorial overlay to align with updated comps (mobile)
+		1	Update Create Your Look tutorial overlay to align with updated comps (desktop)
+		1	Update Create Your Look tutorial overlay to align with updated comps (mobile)
+16785	1	Update selectable color filters in Boutiques to recognize size availability
+		.5	Add in AJAX call to get available filters
+		.5	Refresh and re-render filters based on AJAX call response
+18914	1	Update the LEARN MORE link on the Angel Bra Guide landing page to display the BRAFIT details pop up
+		.25	Remove anchor link
+		.75	Add popup display
+19032	1	Improve visibility and consistent messaging across site for BRAFIT Offer
+		.5	Update offer styling and positioning (desktop)
+		.5	Update offer styling and positioning (mobile)
+18486	8	Migrate the Fragrance Finder to the platform
+		1	Set up and create new files - Desktop
+		1	Set up and create new files - Mobile
+		1	Landing - Desktop
+		1	Landing - Mobile
+		1	Quiz - Desktop
+		1	Quiz - Mobile
+		1	Filter - Desktop
+		1	Filter - Mobile
+18675	1	Make all swim calls synchronous
+		.5	Desktop
+		.5	Mobile
