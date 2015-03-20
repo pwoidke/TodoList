@@ -30,6 +30,13 @@ Brian		1	Filter - Desktop
 Raj			1	Filter - Mobile
 CHECK BACKEND WORK FOR MODEL
 
+Brian	17204	1	Enhance the Curated Looks with additional features
+			.25	Reenable Buy All functionality in curated looks (Desktop)
+Raj			1	Add curated looks Buy All functionality (Mobile)
+			1	Update curated looks styling and notifications
+			.25	VSBACKLOG-18713: Mobile - Curated Looks Menu - Copy Change
+			NEED UX SUPPORT
+			
 Brian	19032	1	Improve visibility and consistent messaging across site for BRAFIT Offer
 			.5	Update offer styling and positioning (desktop)
 			.5	Update offer styling and positioning (mobile)
@@ -37,20 +44,23 @@ Brian	19032	1	Improve visibility and consistent messaging across site for BRAFIT
 Raj		18675	1	Make all swim calls synchronous
 			.5	Desktop
 			.5	Mobile
-			NEED BACKEND SUPPORT: Need list of calls that should be synchronous
+			NEED BACKEND SUPPORT: Update services to accept array of items
 			CHECK WITH SAM IF EXISTING
 			Check if possible to send single call instead of a call for each item
+Raj		16785	1	Update selectable color filters in Boutiques to recognize size availability (mobile only)
+			.5	Add in AJAX call to get available filters
+			.5	Refresh and re-render filters based on AJAX call response
+		
 Paul	16419	2	As a customer I want my size to be saved and auto-selected when I use the "How To Measure" feature.
 			.5	Add AJAX call to calculator button event
 				NEED BACKEND SUPPORT
 			1	Add function to select calculated options in quiz from How to Measure overlay
 			.5	Add autoselect to all quizzes if a saved size exists (VS, PINK, VSX)
+Paul	18914	1	Update the LEARN MORE link on the Angel Bra Guide landing page to display the BRAFIT details pop up
+			.25	Remove anchor link
+			.75	Add popup display
 
 Week 2
-Raj		16785	1	Update selectable color filters in Boutiques to recognize size availability (mobile only)
-			.5	Add in AJAX call to get available filters
-			.5	Refresh and re-render filters based on AJAX call response
-		
 Raj		14268	4	Enable a link to the VS Fit Quiz that then returns her to the Swim Finder (mobile)
 			1.5	Fix routing for mobile fit quiz
 			1	Update fit quiz template for Swim overlay
@@ -62,7 +72,7 @@ Brian	6874	1	Present an option to accept Fit Quiz recommendation
 			.5	Add AJAX call to update user size on select event
 			NEED BACKEND SUPPORT
 Brian	18602	4	Update Swim Stylist tutorial overlays
-			1	Update Swim R00esults tutorial overlay to align with updated comps (desktop)
+			1	Update Swim Results tutorial overlay to align with updated comps (desktop)
 			1	Update Swim Results tutorial overlay to align with updated comps (mobile)
 			1	Update Create Your Look tutorial overlay to align with updated comps (desktop)
 			1	Update Create Your Look tutorial overlay to align with updated comps (mobile)
@@ -72,18 +82,8 @@ Paul	16420	3	As a customer, I want to see consistent size recommendations (from 
 			Update any instances of sizes in JS and templates to align with new size object
 			Quiz, Preferences, etc.
 			NEED BACKEND SUPPORT: Align on new object structure
-Paul	18914	1	Update the LEARN MORE link on the Angel Bra Guide landing page to display the BRAFIT details pop up
-			.25	Remove anchor link
-			.75	Add popup display
 
 Week 3
-Brian	17204	1	Enhance the Curated Looks with additional features
-			.25	Reenable Buy All functionality in curated looks (Desktop)
-Raj			1	Add curated looks Buy All functionality (Mobile)
-			1	Update curated looks styling and notifications
-			.25	VSBACKLOG-18713: Mobile - Curated Looks Menu - Copy Change
-			NEED UX SUPPORT
-			
 Raj		18910	2	As an anonymous user, I want to be able to use the Swim wardrobe and save and buy a look
 			.5	Move user login requirements to prompt to sign in on the SECOND saved look
 			.5	Add notification that the SWIMLOOK offer is available if she signs in
@@ -95,6 +95,10 @@ All 	18726	5	Improve Swim Create a Look Phase 2
 				Microinteractions
 
 Tagging
-Generic modal
-Generic overlay
 Add check to disallow saving looks with same name
+Add limit to length of name of saved swim look
+
+Need to add filter to ensure unique items in tray
+
+https://confluence.victoriassecret.com/display/VSDP/Blue+Chip+Flex+-+C3
+https://confluence.victoriassecret.com/display/VSDP/Blue+Chip+Flex+API+Contracts+-+C3
