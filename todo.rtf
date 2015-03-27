@@ -25,15 +25,17 @@ VSBACKLOG-16419: As a customer I want my size to be saved and auto-selected when
 
 Group pricing tasks:
 	DESKTOP / MOBILE
-	set up new page
-	set up routing (based on fit quiz MVC implementation)
-	nav between product set pages
-	product set pages
-	add to bag - send updated selections
-	edit set after add to bag
-		should get selected products from backend
-		send updated selections
-	microinteractions
+	S - set up new page(s)
+	M - set up routing (based on fit quiz MVC implementation)
+	S - nav between product set pages
+	M - product set pages
+	M - add to bag - send updated selections
+	M - Updates to quickview (disable quantity) (use this for swim looks too maybe)
+	? - edit set after add to bag
+		M? - show edit interface
+		S - should get selected products from backend
+		S - send updated selections
+	? - microinteractions
 Needs:
 	backend
 		set up URL(s)
@@ -41,6 +43,9 @@ Needs:
 		Add to bag service endpoint
 	creative
 		comps & UX
+Questions:
+	how are products selected? Quickview or all at once?
+	how does edit work? show in overlay? remove all and re-do?
 
 JIRA API to pull build tasks into Confluence for technical overviews
 	https://developer.atlassian.com/jiradev/api-reference/jira-rest-apis
