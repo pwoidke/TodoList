@@ -1,23 +1,51 @@
 Today is Friday, March 27th:
 
 Technical Issue VSBACKLOG-19407 Fragrance Finder / Snap Points not adjusting on tablet to view entire page
---Visual Issue VSBACKLOG-19398 Fragrance Finder / Explore Our Fragrances header not aligned correctly 
 
 BUILD - Front End VSBACKLOG-18739 Fit Quiz / After signing in, user is not returned to the Fit Quiz results page to see the PIN for the BRAFIT offer
 
---Regression VSBACKLOG-18715 DIVA Setup - replicate text and image change in PINT and ProdAuth
-
 Add check to disallow saving looks with same name
 Add limit to length of name of saved swim look
+Improve removal of unavailable products: Delete look if all products removed
 
 Should we remove quantity from saved look buy all update quickview? Probably.
 
 MVC presentation?
 Pull out animations and implement separately
 
---Schedule mobile fit quiz overlay routing with Vlad (Monday)
-
 Upfront evaluation: start creating tasks
 	send questions to laurie and chris
 Also task out fragrance finder tasks after meeting
 	Set up confluence page
+
+--Add subtask to 18726 to display needed info on update info overlay launch
+--	VSBACKLOG-19972: Display missing info notifications automatically when launching product view from Saved Look Buy All
+VSBACKLOG-16419: As a customer I want my size to be saved and auto-selected when I use the "How To Measure" feature.
+	VSBACKLOG-19443: Add AJAX call to calculator button event
+	VSBACKLOG-19444: Add function to select calculated options in quiz from How to Measure overlay
+		Add cross-origin receiver in fit quizzes
+		Add cross-origin trigger in calc
+
+Group pricing tasks:
+	set up new page
+	set up routing (based on fit quiz MVC implementation)
+	nav between product set pages
+	product set pages
+	add to bag - send updated selections
+	edit set after add to bag
+		should get selected products from backend
+		send updated selections
+	microinteractions
+Needs:
+	backend
+		set up URL(s)
+		API endpoints to get/set items
+		Add to bag service endpoint
+	creative
+		comps & UX
+
+JIRA API to pull build tasks into Confluence for technical overviews
+	https://developer.atlassian.com/jiradev/api-reference/jira-rest-apis
+
+Update tech overviews to use dropdowns instead of impact/depend table
+1266907108851
