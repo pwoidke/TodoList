@@ -1,6 +1,6 @@
-Today is Monday, March 30th:
+Today is Tueday, March 31th:
 
-Technical Issue VSBACKLOG-19932 SWIM MOBILE / Swimlook Offer and PIN Disappear after navigating away from saved looks in same session
+--Technical Issue VSBACKLOG-19932 SWIM MOBILE / Swimlook Offer and PIN Disappear after navigating away from saved looks in same session
 
 BUILD - Front End VSBACKLOG-19443 Add AJAX call to calculator button event
 BUILD - Front End VSBACKLOG-19444 Add function to select calculated options in quiz from How to Measure overlay
@@ -43,55 +43,57 @@ VSBACKLOG-16419: As a customer I want my size to be saved and auto-selected when
 		Add cross-origin receiver in fit quizzes
 		Add cross-origin trigger in calc
 
-Group pricing tasks:
-	DESKTOP / MOBILE
-	S - set up new page(s)
-	M - set up routing (based on fit quiz MVC implementation)
-		default page = nav + first set
-	S - nav between product set pages
-		on set nav click, render clicked set (use hash paths?)
-	M - product set pages
-		get products from server
-		render in templates
-	SM - add to bag - send updated selections
-		AJAX call
-		Confirmation (flyout?)
-	M - Updates to quickview (use this for swim looks too maybe)
-		disable quantity
-		update Add button event to select for group
-	ML - edit set after add to bag
-		M? - show edit interface
-			individual item edit? overlay with tool? custom product page?
-		S - should get selected products from backend
-		S - send updated selections (AJAX + notification?)
-	? - microinteractions
-Needs:
-	backend
-		set up URL(s)
-		API endpoints to get/set items
-		Add to bag service endpoint
-		Item update/edit service endpoint
-	creative
-		comps & UX
-Questions:
-	how are products selected? Quickview or all at once?
-	how does edit work? update details quickview? show tool in overlay? remove all and re-do?
-	can she add the products outside of the MGP tool?
-
 JIRA API to pull build tasks into Confluence for technical overviews
 	https://developer.atlassian.com/jiradev/api-reference/jira-rest-apis
 
 Update tech overviews to use dropdowns instead of impact/depend table
 1266907108851
 
-On Friday I...
-	Finished: display needed info on update info overlay launch
-	Fixed catalog codes when saving looks
-	Updated how to measure overlay, but waiting on DIVA
-	Waited for DIVA for Fragrance Finder
-Today I will...
-	Meet with Vlad & Raj to figure out
+Fragrance Finder planning
+	Need to find out if hooked up to DIVA
+	Make tiles defs (3 parts, desktop/mobile)
+	Should landing page be in tiles or stay in DIVA? Probably DIVA so producers manage it
+	Move markup to templates or JSPs
+	Pull out images from DIVA to resource images
+	Quiz algorithm docs are maybe on confluence
+	Normalize model to align with boutiques
+
+Sizes to change:
+	Quiz:
+		Size/Top Size question (checks for rec size and auto-selects)
+		End of Fit/Boutique Quiz (updateBoutiquePrefs)
+	Prefs:
+		FormatBoutiquePrefs (before render)
+		Edit size
+
+How to Measure should update Entered Size
+
+On Monday I...
+	Meet with Vlad & Raj to figure out mobile fit quiz routing
 	Fix Swim offer tech issue
 	Check FF and H2M updates when DIVA refreshes
 	Work on getting H2M updates working
 	Work on updating all references to sizes to reference shopping size
+	Worked on identifying and updating instances of sizes with shopping size
+Today I will...
+	Check Add-2-Cups value (swim)
+	Finish How-2-Measure updates (working on Dev)
+	Continue working on C3 build tasks
+	Help Raj fix Sizzle error
+	
+TB w/ Vlad:
+	Update stories and close whatever possible
+	Any potential issues?
+	Update by 3pm
+	
+Quiz If recc size = entered size
+Quiz If recc size & unchecked
+Quiz If recc size & checked
+Quiz If entered size & calc
+Bout If update size pref
+
+Selvin - Confirm shopping size API
+Chris/Laurie - Confirm when to update shopping size vs entered size
+Fix templates for finish quiz vs returning user
+Figure out mobile crossOrigin issues/functionality
+Fix Sizzle error on overlay-close
