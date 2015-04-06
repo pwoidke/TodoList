@@ -1,5 +1,21 @@
 Today is Monday, April 6th:
 
+BUILD - Front End VSBACKLOG-19367 Mobile - add 4x grid view option to results
+
+Bug VSBACKLOG-18245 How to Measure page is incorrectly displaying an error finding size
+Regression VSBACKLOG-20221 PINK Boutique / Selecting Sport Option does NOT reorder drawers
+Bug VSBACKLOG-11890 PINK BOUTIQUE QUIZ / Pink Boutique Loops with Specific Recommended size (SAFARI ONLY)
+
+Bug VSBACKLOG-17561 TEALIUM / Issues # 130 - Conversion Events firing instead of Elements in Tealium
+Bug VSBACKLOG-17573 Show/Hide Boutiques in Bra Experience firing conversion events instead of elements
+Technical Issue VSBACKLOG-19707 Tagging on Swim Stylist Does Not Follow the Tagging Document
+
+Technical Issue VSBACKLOG-19407 Fragrance Finder / Snap Points not adjusting on tablet to view entire page
+
+Bug VSBACKLOG-18074 VS Angel Bra Guide / The carousel indicator dot does not update when swiping through carousel images
+Proofing VSBACKLOG-15635 MOBILE VS BRA GUIDE / The Current Carousel dot is not bolded for BRA 101
+
+
 Add check to disallow saving looks with same name (vSaveModal.js)
 Improve removal of unavailable products: Delete look if all products removed
 
@@ -22,6 +38,23 @@ Fragrance Finder planning
 	Quiz algorithm docs are maybe on confluence
 	Normalize model to align with boutiques
 
+Today I...
+	Updated all quiz and pref size updates to update shopping size
+	Fixed some regression defects & bugs
+		how to measure alert positioning
+		load more button rendering
+Tomorrow I will...
+	Update shopping size calls to send an object that matches the size objects
+	Update all templates to use shopping size
+		Fit Quiz size question (text and auto-selected value)
+		Boutique Quiz size question (text and auto-selected value)
+		Boutique prefs
+		Boutique size pref overlay selected value
+			Remove recommended size checks
+		Quiz results page?
+	Work on 2x2 grid view for mobile
+		controls:showListView
+
 Sizes to change:
 	Quiz:
 		Size/Top Size question (checks for rec size and auto-selects)
@@ -30,19 +63,6 @@ Sizes to change:
 		FormatBoutiquePrefs (before render)
 		Edit size
 
-How to Measure should update Entered Size
-
-Friday I...
-	Finally fix modal calls
-		fit quiz overlay for swim
-		how to measure for other boutiques
-	DIVA update http to https
-	Fixed regression defects and bugs (H2M header, look name length)
-Today I will...
-	Catch up on C3 tasks
-		Finish updating calls for shoppingSize
-		Made 2x2 mobile view
-
 --Finish quiz							>	Save entered size as shopping size
 --Quiz If recc size = entered size		>	Save entered size as shopping size
 --Quiz If recc size & unchecked			>	Save entered size as shopping size
@@ -50,7 +70,3 @@ Today I will...
 --Quiz If entered size & calc			>	Save calc size as entered size
 --Finish Boutique quiz					>	Save entered size as shopping size
 --Bout If update size pref				>	Save entered size as shopping size
-
-Selvin - Confirm shopping size API
-	Use boutiqueSave from How To Measure (sets entered size)
-	Use shoppingSize when sending single size (end of quiz, prefs)
