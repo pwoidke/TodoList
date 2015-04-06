@@ -1,10 +1,7 @@
-Today is Friday, April 3rd:
+Today is Monday, April 6th:
 
-Add check to disallow saving looks with same name
-Add limit to length of name of saved swim look
+Add check to disallow saving looks with same name (vSaveModal.js)
 Improve removal of unavailable products: Delete look if all products removed
-
-Should we remove quantity from saved look buy all update quickview? Probably.
 
 MVC presentation?
 
@@ -12,15 +9,6 @@ Pull out FF animations and implement separately
 
 Create tasks for fragrance finder migration
 	Set up confluence page
-
-VSBACKLOG-16419: As a customer I want my size to be saved and auto-selected when I use the "How To Measure" feature.
-	VSBACKLOG-19443: Add AJAX call to calculator button event
-	VSBACKLOG-19444: Add function to select calculated options in quiz from How to Measure overlay
-		Add cross-origin receiver in fit quizzes
-		Add cross-origin trigger in calc
-
-JIRA API to pull build tasks into Confluence for technical overviews
-	https://developer.atlassian.com/jiradev/api-reference/jira-rest-apis
 
 Update tech overviews to use dropdowns instead of impact/depend table
 1266907108851
@@ -44,33 +32,25 @@ Sizes to change:
 
 How to Measure should update Entered Size
 
-Yesterday I...
-	Worked on fixing modal function calls
-	Fixed prefs not saving in VS and PINK
-	Design Studio
-Today I Will...
-	Finally figure out modal calls
+Friday I...
+	Finally fix modal calls
+		fit quiz overlay for swim
+		how to measure for other boutiques
 	DIVA update http to https
+	Fixed regression defects and bugs (H2M header, look name length)
+Today I will...
 	Catch up on C3 tasks
-	
-Quiz If recc size = entered size
-Quiz If recc size & unchecked
-Quiz If recc size & checked
-Quiz If entered size & calc
-Bout If update size pref
+		Finish updating calls for shoppingSize
+		Made 2x2 mobile view
+
+--Finish quiz							>	Save entered size as shopping size
+--Quiz If recc size = entered size		>	Save entered size as shopping size
+--Quiz If recc size & unchecked			>	Save entered size as shopping size
+--Quiz If recc size & checked			>	Save rec size as shopping size
+--Quiz If entered size & calc			>	Save calc size as entered size
+--Finish Boutique quiz					>	Save entered size as shopping size
+--Bout If update size pref				>	Save entered size as shopping size
 
 Selvin - Confirm shopping size API
 	Use boutiqueSave from How To Measure (sets entered size)
 	Use shoppingSize when sending single size (end of quiz, prefs)
-
-In C2, the BCF team...
-	Fragrance Finder omnichannel
-	Added Swim offer
-	Microinteractions
-	Edit tray
-	Updates to how we handle filters and preferences from DIVA
-C3
-	sizing updates
-	anonymous user stuff
-	microinteractions
-	overlays
