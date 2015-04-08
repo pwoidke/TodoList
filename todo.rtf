@@ -1,4 +1,4 @@
-Today is Tuesday, April 7th:
+Today is Wednesday, April 8th:
 
 BUILD - Front End VSBACKLOG-19367 Mobile - add 4x grid view option to results
 
@@ -31,19 +31,17 @@ Fragrance Finder planning
 	Normalize model to align with boutiques
 Pull out FF animations and implement separately
 
-Today I will...
---	Fixed how to measure mapping defect
-	Update shopping size calls to send an object that matches the size objects
-	Update all templates to use shopping size
-		Fit Quiz size question (text and auto-selected value)
-		Boutique Quiz size question (text and auto-selected value)
-		Boutique prefs
-		Boutique size pref overlay selected value
+Today I...
+	Update all templates to use shopping size (desktop)
+--		Fit Quiz size question (text and auto-selected value)
+--		Boutique Quiz size question (text and auto-selected value)
+--		Boutique prefs
+??		Swim prefs
+--		Boutique size pref overlay selected value
 			Remove recommended size checks
-		Quiz results page?
-	Work on 2x2 grid view for mobile
-		controls:showListView
 	Add keepSize call from how to measure page (not overlay)
+		If shopping size exists, display as results on load
+		If not in overlay, save size
 
 
 Sizes to change:
@@ -54,10 +52,10 @@ Sizes to change:
 		FormatBoutiquePrefs (before render)
 		Edit size
 
---Finish quiz							>	Save entered size as shopping size
---Quiz If recc size = entered size		>	Save entered size as shopping size
---Quiz If recc size & unchecked			>	Save entered size as shopping size
---Quiz If recc size & checked			>	Save rec size as shopping size
---Quiz If entered size & calc			>	Save calc size as entered size
---Finish Boutique quiz					>	Save entered size as shopping size
---Bout If update size pref				>	Save entered size as shopping size
+Tech design story for C4
+Team code share!
+
+Selvin - can we get shop size via service?
+Chris - Are we doing anything in checkout for bundles?
+
+If dev is done, hit existing boutiques and check for defects
