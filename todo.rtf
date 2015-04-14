@@ -1,23 +1,22 @@
-Today is Wednesday, April 8th:
+Today is Monday, April 13th:
 
-BUILD - Front End VSBACKLOG-19367 Mobile - add 4x grid view option to results
+Technical Issue VSBACKLOG-20267 ALL FIT QUIZZES/ The Bra Fit offer and PIN is not appearing on the Return Page of the Fit Quiz.
+Technical Issue VSBACKLOG-20354 All Fit Quiz / How to Measure calculated size is not pre-selected when navigating to other Boutiques or Fit Quiz
 
---Bug VSBACKLOG-18245 How to Measure page is incorrectly displaying an error finding size
-Regression VSBACKLOG-20221 PINK Boutique / Selecting Sport Option does NOT reorder drawers
 Bug VSBACKLOG-11890 PINK BOUTIQUE QUIZ / Pink Boutique Loops with Specific Recommended size (SAFARI ONLY)
-
---Bug VSBACKLOG-17561 TEALIUM / Issues # 130 - Conversion Events firing instead of Elements in Tealium
 Bug VSBACKLOG-17573 Show/Hide Boutiques in Bra Experience firing conversion events instead of elements
-Technical Issue VSBACKLOG-19707 Tagging on Swim Stylist Does Not Follow the Tagging Document
+Bug VSBACKLOG-18074 VS Angel Bra Guide / The carousel indicator dot does not update when swiping through carousel images
 
 Technical Issue VSBACKLOG-19407 Fragrance Finder / Snap Points not adjusting on tablet to view entire page
+Technical Issue VSBACKLOG-19707 Tagging on Swim Stylist Does Not Follow the Tagging Document
+Technical Issue VSBACKLOG-20337 SWIM / MOBILE / After completing the Swim Fit Quiz and getting a recommended size, no size preference is preselected on the Swim Quiz Tops page
 
-Bug VSBACKLOG-18074 VS Angel Bra Guide / The carousel indicator dot does not update when swiping through carousel images
 Proofing VSBACKLOG-15635 MOBILE VS BRA GUIDE / The Current Carousel dot is not bolded for BRA 101
 
 
 Add check to disallow saving looks with same name (vSaveModal.js)
 Improve removal of unavailable products: Delete look/show message if all products removed
+Document VS Boutique and Fit Quiz
 
 Create tasks for fragrance finder migration
 	Set up confluence page
@@ -31,31 +30,45 @@ Fragrance Finder planning
 	Normalize model to align with boutiques
 Pull out FF animations and implement separately
 
-Today I...
-	Update all templates to use shopping size (desktop)
---		Fit Quiz size question (text and auto-selected value)
---		Boutique Quiz size question (text and auto-selected value)
---		Boutique prefs
-??		Swim prefs
---		Boutique size pref overlay selected value
-			Remove recommended size checks
+Friday I...
+--	Update all templates to use shopping size (mobile)
 	Add keepSize call from how to measure page (not overlay)
 		If shopping size exists, display as results on load
 		If not in overlay, save size
-
-
-Sizes to change:
-	Quiz:
-		Size/Top Size question (checks for rec size and auto-selects)
-		End of Fit/Boutique Quiz (updateBoutiquePrefs)
-	Prefs:
-		FormatBoutiquePrefs (before render)
-		Edit size
-
-Tech design story for C4
-Team code share!
+	Fragrance Finder tagging
+	Update How To Measure page to save entered size and show if existing
+	Check fragrance finder on int and fix anything that's broken
+Today I will...
+--	Fix 20388
+	Fix H2M entered size (call boutiqueSave/Update in addition to setting on model (is there a model?))
+	Tech design C4 story
+	Fix regression defects
+	Fix tagging stuff
+--		Desktop Swim
+--			When she clicks through to her wardrobe - NOT FIRING - "click bridge": function () {
+--			Adds/Removes Prefs - Element ID is wrong - "hero:selectPreference": function (data) {
+--			Adds/Removes Color - Element ID is wrong - type: this.boutiqueModel.cmBrand + "controls:filterUpdate",
+--			Curated Look Carousel Scroll - Wrong Element ID - 'carousel:prevArrow': function (obj) {
+		Mobile Swim
+			Quick View - Attribute not included - 'click .js-accordionTarget .quickview-overlay': function (e, target) {
+--			Carousel left/right remove conv tag
+	Tech design story for C4 (ex: https://confluence.victoriassecret.com/pages/viewpage.action?pageId=22282657)
+--	Team code share!
 
 Selvin - can we get shop size via service?
 Chris - Are we doing anything in checkout for bundles?
+	Maybe passing messaging
+	Maybe link to go back and edit
 
-If dev is done, hit existing boutiques and check for defects
+MGP notes:
+	Progress bar pinned to the top, if scrolls up, still see header image
+	No swiping, Top nav only
+	Always go as far as possible
+	On congrats page:
+		Also show prices? Item properties?
+		Quickview to update attributes
+	She can't edit after adding (only delete and remake)
+	Incentivise sharing? Add more than one in-session?
+	Usability on Wednesday (need questions and assumptions and maybe prototype by Monday)
+	
+Check conv event calls on dev/test/int and compare calls to prod (might be missing tealium update)
