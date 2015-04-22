@@ -1,74 +1,32 @@
-Today is Monday, April 13th:
+Today is Tuesday, April 21st:
 
-Technical Issue VSBACKLOG-20267 ALL FIT QUIZZES/ The Bra Fit offer and PIN is not appearing on the Return Page of the Fit Quiz.
-Technical Issue VSBACKLOG-20354 All Fit Quiz / How to Measure calculated size is not pre-selected when navigating to other Boutiques or Fit Quiz
+Send Nat templates for all things BCF has built (templates + components)
 
-Bug VSBACKLOG-11890 PINK BOUTIQUE QUIZ / Pink Boutique Loops with Specific Recommended size (SAFARI ONLY)
-Bug VSBACKLOG-17573 Show/Hide Boutiques in Bra Experience firing conversion events instead of elements
-Bug VSBACKLOG-18074 VS Angel Bra Guide / The carousel indicator dot does not update when swiping through carousel images
+Things to do for C4 (desktop/mobile):
+1 - Set up new page and tiles
+2 - Hero space (DIVA)
+1 - Progress bar
+2 - Products set template
+2 - Navigation between pages
+1 - Quickview updates
+1 - Auto change page after Quickview update
+1 - Completion page
+1 - Add to Bag
+1 - Add to Bag confirmation page
+1 - Checkout alert if she wants to edit a bundle
+1 - Checkout messages
+1 - Social sharing
+2 - Microinteractions
+1 - Analytics
 
-Technical Issue VSBACKLOG-19407 Fragrance Finder / Snap Points not adjusting on tablet to view entire page
-Technical Issue VSBACKLOG-19707 Tagging on Swim Stylist Does Not Follow the Tagging Document
-Technical Issue VSBACKLOG-20337 SWIM / MOBILE / After completing the Swim Fit Quiz and getting a recommended size, no size preference is preselected on the Swim Quiz Tops page
+Selvin:
+products in sets
+add to bag service
 
-Proofing VSBACKLOG-15635 MOBILE VS BRA GUIDE / The Current Carousel dot is not bolded for BRA 101
-
-
-Add check to disallow saving looks with same name (vSaveModal.js)
-Improve removal of unavailable products: Delete look/show message if all products removed
-Document VS Boutique and Fit Quiz
-
-Create tasks for fragrance finder migration
-	Set up confluence page
-Fragrance Finder planning
-	Need to find out if hooked up to DIVA
-	Make tiles defs (3 parts, desktop/mobile)
-	Should landing page be in tiles or stay in DIVA? Probably DIVA so producers manage it
-	Move markup to templates or JSPs
-	Pull out images from DIVA to resource images
-	Quiz algorithm docs are maybe on confluence
-	Normalize model to align with boutiques
-Pull out FF animations and implement separately
-
-Friday I...
---	Update all templates to use shopping size (mobile)
-	Add keepSize call from how to measure page (not overlay)
-		If shopping size exists, display as results on load
-		If not in overlay, save size
-	Fragrance Finder tagging
-	Update How To Measure page to save entered size and show if existing
-	Check fragrance finder on int and fix anything that's broken
-Today I will...
---	Fix 20388
-	Fix H2M entered size (call boutiqueSave/Update in addition to setting on model (is there a model?))
-	Tech design C4 story
-	Fix regression defects
-	Fix tagging stuff
---		Desktop Swim
---			When she clicks through to her wardrobe - NOT FIRING - "click bridge": function () {
---			Adds/Removes Prefs - Element ID is wrong - "hero:selectPreference": function (data) {
---			Adds/Removes Color - Element ID is wrong - type: this.boutiqueModel.cmBrand + "controls:filterUpdate",
---			Curated Look Carousel Scroll - Wrong Element ID - 'carousel:prevArrow': function (obj) {
-		Mobile Swim
-			Quick View - Attribute not included - 'click .js-accordionTarget .quickview-overlay': function (e, target) {
---			Carousel left/right remove conv tag
-	Tech design story for C4 (ex: https://confluence.victoriassecret.com/pages/viewpage.action?pageId=22282657)
---	Team code share!
-
-Selvin - can we get shop size via service?
-Chris - Are we doing anything in checkout for bundles?
-	Maybe passing messaging
-	Maybe link to go back and edit
-
-MGP notes:
-	Progress bar pinned to the top, if scrolls up, still see header image
-	No swiping, Top nav only
-	Always go as far as possible
-	On congrats page:
-		Also show prices? Item properties?
-		Quickview to update attributes
-	She can't edit after adding (only delete and remake)
-	Incentivise sharing? Add more than one in-session?
-	Usability on Wednesday (need questions and assumptions and maybe prototype by Monday)
-	
-Check conv event calls on dev/test/int and compare calls to prod (might be missing tealium update)
+Questions:
+1 - Desktop comps?
+1 - How do we handle a set that's out of stock?
+1 - What messaging will we need to show on product page and cart?
+2 - How do we handle edits?
+2 - Will we have a landing page?
+1 - How to handle once-per-session?
