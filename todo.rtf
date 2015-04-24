@@ -1,4 +1,13 @@
-Today is Tuesday, April 21st:
+Today is Friday, April 24th:
+
+Planning:
+--API Contracts (Add to Bag)
+Figure out DIVA feature stuff
+--Finish tech design doc (https://confluence.victoriassecret.com/display/VSDP/Multi-Group+Deal+Pricing)
+Create tasks in JIRA
+--Create meeting to estimate and assign tasks
+
+Set up new tiles and files
 
 Send Nat templates for all things BCF has built (templates + components)
 
@@ -15,7 +24,6 @@ Things to do for C4 (desktop/mobile):
 1 - Add to Bag confirmation page
 1 - Checkout alert if she wants to edit a bundle
 1 - Checkout messages
-1 - Social sharing
 2 - Microinteractions
 1 - Analytics
 
@@ -30,3 +38,70 @@ Questions:
 2 - How do we handle edits?
 2 - Will we have a landing page?
 1 - How to handle once-per-session?
+
+
+
+<put-attribute name="class" type="string" value="boutique" />
+<put-attribute name="js" type="string" value="/script/page/boutique.swim.js" />
+<put-attribute name="css" type="string" value="/style/boutique.swim.css" />
+<put-attribute name="pageData" value="/WEB-INF/views/desktop/pageData/boutique.jsp" />
+<put-attribute name="content" value="/WEB-INF/views/desktop/braExperience/boutiqueView.jsp" />
+<put-attribute name="changePasswordrequiredPageData" value="/WEB-INF/views/desktop/pageData/changePasswordRequired.jsp"/>
+
+
+module: pieces of functionality
+service: functions
+broadcast: passive (metrics, "this is where I'm at")
+events: UI/custom
+
+save: js
+UU.save('mgp', {
+	products: UU.getPageData(),
+	selected: []
+})
+
+watch: handlebars
+{{#watch mgp.selected}}
+any markup here will update when any property/subproperty changes
+{{/watch}}
+
+watch: js
+UU.addModule('name', function(UU){
+	events: {
+		'click a.button': function
+	},
+	watch: {
+		'mgp.selected': function
+	},
+	scope: thing
+	
+	return name;
+})
+
+load: js
+load selected, pop, THEN for callback, save
+UU.load('mgp.selected')
+.then(fn{})
+.then(UU.save(ret))
+
+router: controller (via uri)
+	broadcasts messages on hash change in URL
+	
+Strongwater - not great buns, burger was okay
+The Crest - Best buns (homemade bread), good burger
+Ethyl & Tank - 
+Bareburger - Great flavor in burger, decent buns
+Gallerie - Italian Village, yummy sausage, good bun
+Street thyme - bread was ruben-y, good burger
+The Pearl - really good cheese and meat
+Star Lanes - good for a bowling alley
+Chintz room - 
+Harvest - 
+Pint Room - PBBB & J was yummy, liked the PB&J more than actual burger
+Luna burger - yummy veggie burger served on a nacho chip
+Firebirds - 
+Hubbard - Gouda burger was really yummy
+Max & Erma's - Standard, good burger for a chain
+Cray - 
+Paddy wagon - my heart hurts, cucumber wasn't my favorite, but it was alright
+Oliver's/DeNovo - Big thick patty, really good french onion flavors
