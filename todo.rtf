@@ -1,4 +1,4 @@
-Today is Tuesday, August 4th:
+Today is Tuesday, August 5th:
 
 Angel Bra Guide Landing Page (Update Bra101 font to Lato)
 Back up VSX DIVA updates from Test DIVA
@@ -12,37 +12,57 @@ VSX Updates:
 	CC: Updates images (desktop)
 		Update links (all)
 		Add nav on top (like fit quiz and stuff) (desktop)
-	
 
-2 Technical Issue VSDP-11492 The Videos are missing on Fragrance Finder page
-2 Technical Issue VSDP-11681 PINK Boutique / Incorrect sizing is displayed after editing size from header in PINK Boutique **MOBILE ONLY**
-2 Technical Issue VSDP-11682 MOBILE / Accept-Reject options are appearing on all return pages
-2 Technical Issue VSDP-11691 Swim & Fit Quiz / Top size, in Swim Quiz, is NOT pre-selected to the recommended size 38C after taking Fit Quiz
-3 Analytics - Tagging VSDP-8683 New Sport Explore Our Styles Page - Tagging
-3 Bug VSDP-9997 Swim Stylist Quiz Has Incorrect CCID Values in Conversion Tags
-3 Bug VSDP-11014 Tagging is Missing for Bra Fit Quiz Results Page
-3 Technical Issue VSDP-11207 Mobile All Boutiques / The remove bra CTA is not appearing after deleting a bra from ANY boutique
-3 Technical Issue VSDP-11270 BOUTIQUE MOBILE / Boutique Unavailable message does not appear on Mobile
-3 Technical Issue VSDP-11332 MOBILE All Boutiques / When tapping the hide button for the 2nd and 3rd drawers then navigating away from boutique then back, the drawers does NOT appear.
-3 Technical Issue VSDP-11508 ALL BOUTIQUES / Drawer count is higher when bras are loaded into 2nd or 3rd drawer versus the primary drawer
-3 Regression VSDP-11566 ALL BOUTIQUES / Size is displayed with equal sign causing empty boutique after using Fit Calculator
-3 Technical Issue VSDP-11567 MOBILE SPORT BOUTIQUE / 38DDD showing an alpha sizing when it should not
-3 Technical Issue VSDP-11582 ALL BOUTIQUES MOBILE / 2nd & 3rd drawers display both Hide and Show as 2 separate links
-3 Technical Issue VSDP-11601 SPORT FIT QUIZ / Results Page unable to render due to error message - iPhone only
-3 Technical Issue VSDP-11607 SPORT FIT QUIZ MOBILE / Shopping selectors are appearing on the RETURN page
-3 Regression VSDP-11661 SWIM FIT QUIZ MOBILE / Swim Style selection is not retained when taking the swim quiz after completing a VS or PINK Boutique
-3 Technical Issue VSDP-11688 PINK FIT QUIZ & BOUTIQUE / New PINK Alpha-Size display is incorrect for size 36DD
-3 Technical Issue VSDP-11713 Save after taking the boutique quiz is not making the personalization call
+Technical Issue VSDP-11492 The Videos are missing on Fragrance Finder page
+Technical Issue VSDP-11682 MOBILE / Accept-Reject options are appearing on all return pages
+Technical Issue VSDP-11691 Swim & Fit Quiz / Top size, in Swim Quiz, is NOT pre-selected to the recommended size 38C after taking Fit Quiz
+Technical Issue VSDP-11753 ALL BOUTIQUES / Certona turn on renders zero bras in all boutiques
+Technical Issue VSDP-11795 ALL FIT QUIZZES / Shop size set to out of range recommended size instead of out of range entered size
+Analytics - Tagging VSDP-8683 New Sport Explore Our Styles Page - Tagging
+Bug VSDP-9997 Swim Stylist Quiz Has Incorrect CCID Values in Conversion Tags
+Bug VSDP-11014 Tagging is Missing for Bra Fit Quiz Results Page
+Technical Issue VSDP-11207 Mobile All Boutiques / The remove bra CTA is not appearing after deleting a bra from ANY boutique
+Technical Issue VSDP-11270 BOUTIQUE MOBILE / Boutique Unavailable message does not appear on Mobile
+Technical Issue VSDP-11332 MOBILE All Boutiques / When tapping the hide button for the 2nd and 3rd drawers then navigating away from boutique then back, the drawers does NOT appear.
+Regression VSDP-11566 ALL BOUTIQUES / Size is displayed with equal sign causing empty boutique after using Fit Calculator
+Technical Issue VSDP-11582 ALL BOUTIQUES MOBILE / 2nd & 3rd drawers display both Hide and Show as 2 separate links
+Technical Issue VSDP-11601 SPORT FIT QUIZ / Results Page unable to render due to error message - iPhone only
+Technical Issue VSDP-11607 SPORT FIT QUIZ MOBILE / Shopping selectors are appearing on the RETURN page
+Technical Issue VSDP-11713 Save after taking the boutique quiz is not making the personalization call
 
-C7 planning:
-	11641	5	Update articles in SSO to be WCAG compliant
-	10152	2	Add DIVA feature (offer) to VSX Fit Quiz Results Page
-	1268	9	Mobile SSO Redesign/Rechrome/WCAG
-	1409	2	Show shipping address on order status page (2 BE)
+901		FE 0	BE 3.5	[GEFOC] Display orders in history in the currency that customer paid.
+	No FE work required
+10152	FE 2	BE 0	As a marketer, I want to enable an offer in a DIVA feature on the Sports Bra Fit Quiz Results page
+	0.5		Create DIVA image feature (test diva)
+	0.25	Add feature to fit quiz page JSP/pagedata (may need backend support)
+	0.25	Recreate DIVA image feature in prod diva
+	1		Update fit quiz template? Hide DIVA feature until results page (CSS/template)?
+11641	FE 6	BE 0	WCAG| Update all customer service articles to support WCAG compliance
+>>	https://confluence.victoriassecret.com/display/VSDP/VSDP-10191+--+Re-Chrome+of+Oracle+Customer+Service+Pages
+6218	FE 3	BE 0	TEALIUM / Issues # 170 ‐ Live Chat tagging for C1 is not as requested (on the VS side alone).
+	0.5		Live Chat (Header)
+	0.5		Live Chat (Footer)
+	0.5		Live Chat (Bra Fit Quiz)
+	0.5		Live Chat (How To Measure)
+	0.5		View Bag / Checkout Pages
+	0.5		Product Pages
+1409	FE 2	BE 2	Show Shipping Address on Order Status Page
+	Assume get shipping address in page data from backend
+	0.5		Add shipping address to Order Status Overlay template (Desktop)
+	0.5		Add shipping address to Order Status Page template (Desktop)
+	0.5		Add shipping address to Order Status Page template (Mobile)
+1268	FE 5	BE 0	Create a more branded user experience for Mobile Customer Service
+	1.5		Customer Service Landing page
+	1.5		Customer Service Topics
+	2		Customer Service Topic page (accordion of questions and answers)
+7130	FE 0	BE 3	Rewrite of Order Status Code to allow for easier modification and to fix outstanding bugs
+	No FE work required
 
-BCF Regression
-	Fragrance Finder
-	VSX DIVA
-	Branded Experiences
-Tech design docs
-Subtasks
+Next Up:
+11736	FE 2	BE ?	Update Email Us selector and forms in Customer Service section to be WCAG compliant
+	0.5		Remove modal
+	0.5		Add <select> with options from modal
+	1		Add select.change event and hook up to existing form fields update method
+	1		Remove redirect options from selector, move request a catalogue to link on page
+10952	FE 5	BE 0	Live Chat Rechrome
+>>	Waiting on comps
