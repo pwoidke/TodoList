@@ -1,25 +1,15 @@
-Today is Thursday, August 6th:
+Today is Friday, August 7th:
 
 Angel Bra Guide Landing Page (Update Bra101 font to Lato)
 Back up VSX DIVA updates from Test DIVA
-Pull, build, redeploy Fragrance Finder
-
-Update Fragrance copy (Monday before 8/20)
-Publish VSX DIVA updates (Monday before 8/20)
 
 VSX Updates:
 	LP: Update myths carousel (mobile), Update myths carousel pagination (mobile/desktop?)
-	CC: Updates images (desktop)
-		Update links (all)
-		Add nav on top (like fit quiz and stuff) (desktop)
+	CC: Update links (all)
 
-Technical Issue VSDP-11492 The Videos are missing on Fragrance Finder page
+Technical Issue VSDP-11681 PINK Boutique / Incorrect sizing is displayed after editing size from header in PINK Boutique **MOBILE ONLY**
 Technical Issue VSDP-11682 MOBILE / Accept-Reject options are appearing on all return pages
-Technical Issue VSDP-11795 ALL FIT QUIZZES / Shop size set to out of range recommended size instead of out of range entered size
-Technical Issue VSDP-11207 Mobile All Boutiques / The remove bra CTA is not appearing after deleting a bra from ANY boutique
-Technical Issue VSDP-11227 ALL BOUTIQUE MOBILE / Invalid Recommended size is carried over in the Boutique when except/reject size checkmarks are not present
 Technical Issue VSDP-11270 BOUTIQUE MOBILE / Boutique Unavailable message does not appear on Mobile
-Technical Issue VSDP-11332 MOBILE All Boutiques / When tapping the hide button for the 2nd and 3rd drawers then navigating away from boutique then back, the drawers does NOT appear.
 Regression VSDP-11566 ALL BOUTIQUES / Size is displayed with equal sign causing empty boutique after using Fit Calculator
 Technical Issue VSDP-11601 SPORT FIT QUIZ / Results Page unable to render due to error message - iPhone only
 
@@ -28,47 +18,3 @@ Analytics - Defect VSDP-9997 Swim Stylist Quiz Has Incorrect CCID Values in Conv
 Analytics - Defect VSDP-11014 Tagging is Missing for Bra Fit Quiz Results Page
 Analytics - Tagging VSDP-11815 Tagging for views
 Analytics - Tagging VSDP-11816 Tagging for size selectors
-
->11641	FE 6	BE 0	WCAG| Update all customer service articles to support WCAG compliance
-	Do updates affect desktop and mobile, or are they handled individually?
->>	https://confluence.victoriassecret.com/display/VSDP/VSDP-10191+--+Re-Chrome+of+Oracle+Customer+Service+Pages
-C	4
-R	2
-11736	FE 2	BE 0	Update Email Us selector and forms in Customer Service section to be WCAG compliant
-R	0.25	Remove modal
-R	0.25	Add <select> with options from modal
-R	1		Add select.change event and hook up to existing form fields update method
-R	0.5		Remove redirect options from selector, move request a catalogue to link on page
-
-
-1268	FE 5	BE 0	Create a more branded user experience for Mobile Customer Service
-R	1		Customer Service Landing page
-R	1		Customer Service Topics
-C	1		Update Header & Search Field
-C	1		Update Order of Help Topics
-Moved to C8
-C	1		Customer Service Topic page styles
-C	2		Customer Service Topic page (add accordion of questions and answers)
-
-
-1409	FE 2	BE 2	Show Shipping Address on Order Status Page
-	Assume get shipping address in page data from backend
-C	0.5		Add shipping address to Order Status Overlay template (Desktop)
-C	0.5		Add shipping address to Order Status Page template (Desktop)
-R	1		Add shipping address to Order Status Page template (Mobile)
-Check that different address formats (intl, etc.) display correctly
-
-
-10152	FE 2	BE 0	As a marketer, I want to enable an offer in a DIVA feature on the Sports Bra Fit Quiz Results page
-P	0.5		Create DIVA image feature (test diva)
-P	0.25	Add feature to fit quiz page JSP/pagedata (may need backend support)
-P	0.25	Recreate DIVA image feature in prod diva
-P	1		Update fit quiz template? Hide DIVA feature until results page (CSS/template)?
-6218	FE 3	BE 0	TEALIUM / Issues # 170 ‐ Live Chat tagging for C1 is not as requested (on the VS side alone).
-C	0.5		Live Chat (Header)
-C	0.5		Live Chat (Footer)
-P	0.5		Live Chat (Bra Fit Quiz)
-P	0.5		Live Chat (How To Measure)
-R	0.5		View Bag / Checkout Pages
-R	0.5		Product Pages
-
