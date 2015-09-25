@@ -1,9 +1,7 @@
-Today is Thursday, September 24th:
+Today is Friday, September 25th:
 
-Thu 9/24: Speed
-Fri 9/25: 10 miles
 Sat 9/26: 22 miles (long)
-Sun 9/27: 5 miles (easy)
+Sun 9/27: Speed
 Mon 9/28: 5 miles
 Tue 9/29: TNT
 Wed 9/30: 4 miles
@@ -55,3 +53,255 @@ From extensions tab, select Options > Pack, select files (.crx) and certificate 
 Commit that stuff to kick off Jenkins process to copy to server (about 4 seconds)
 Tricky bug: Deque blocking works, unblocking causes problems
 
+
+Rustbelt Refresh (9/25/15)
+
+Suggestions:
+Tea at breakfast
+Upsidedown schedule on badge
+Better wifi
+
+**Extreme Design (Derek Featherstone)
+Group closely related items (UK tap and instructions)
+TSA form w/ "straw" - Low-vision person may zoom screen and cut off content
+Layout: Consider proximity, pattern of use for low-vision
+Use layout to create the right chunks. Use pattern of use to lead the eye to action.
+Use "straw test" to simulate low-vision
+Across any group of people, there are outliers in levels of ability (IDEO: The Deep Dive - M66Zu2PClcM)
+If you design for the extremes, most people in the middle will be covered
+Accessible design is better design
+Extremes:
+	Cannot see a critical visual (map of Ottawa)
+		Proposed fixes: Text describing current and proposed boundary, text describing difference, lat/long coords
+		Why use a map? Because you can
+		People want to know if change impacts them (taxes), Add a postal code lookup
+	Limited view of the screen (solar system planet data table)
+		Users need to know row/column headers in any cell, Add hover state that brings in col/row headers, or whole row of headers
+		examples.simplyaccessible.com/cell-headers
+	Design for Dory (short-term memory loss)
+		In form validation, add global error messaging at the top and local messaging on each field
+		*Fix the next error link for keyboard
+		Placeholder text disappears, so move it to the label on focus
+	Design for moving in one direction (Drag & drop quiz question)
+		Drag & drop is a complex action
+		Dragon Naturally Speaking allows for dictation and command/control
+		Dragon can move up or left, but not both at once (drops), so make the entire row a drop target
+	Design for Andre the Giant (Huge hands)
+		Touch targets should be min. 44x44px
+		Andre the Giant probably couldn't use the Apple watch interface, maybe increase icon sizes and allow swipe?
+	Design for hands-free operation (driving)
+		Focus on problem, not the solution
+		Voice recognition is great, unless you have to touch the screen
+		Solution: read back routes and enable voice selection
+Project an extreme onto a design problem. Solve that problem. Improve the interface for everyone.
+
+**Design on the Z-Axis (Wren Lanier)
+Web designer > UX designer > Mobile designer > Product designer
+The demand of websites has exceeded the capacity of people to build them (now it's getting eaten by SquareSpace, etc.)
+Now they build products that build websites, later products that build products
+It's all very complex (simple gets replaced by a template)
+"We're not designing pages, we're designing systems of components." -Stephen Hay
+Have to design for all conditions for what can be on the page, plus error states, etc., for all screen sizes, etc.
+So we start stacking components (on the z-axis)
+Layers:
+	Not a page, a location. A place on the interface where a component sits
+	Be organized and consistent
+	Should be simple and organize information.
+	Ex: Primary nav sits in own layer (shown via hamburger menu)
+	Layers show priority (Gmail: inbox menu on own layer under mail view, but mail view still visible) (But now inboxes go over because actions menu is under individual messages)
+	Think about all layers and states they can be in
+	Create view lives outside of flow (accessible from anywhere): Tumblr slides button layer over content when creating a new post, and then create view
+	Sliding in a new layer can also make things worse (Adobe Typekit: on account hover, page is overlayed with stuff)
+	If you're going to cover the whole interface, make sure it's important (not marketing)
+	Layers don't have to be whole view (ex: Twitter header photo on scroll)
+	Background blur signifies layered components in interface, but should move independently to show depth
+	Floating action button: Always accessible, keeps actions front & center without taking up a lot of space (risk: Feedly overlays buttons sometimes)
+	In a browser, you can bump into other products
+	Layers should simplify the user experience, reflect information hierarchy- most important on top, and can move independently in space or time
+Transitions:
+	Connect layers together
+	Soften moments of change, describe where you are now and where you came from, provide cues about how information relates to everything else
+	Sliding (easy) is used all over on the web
+	Carousel by Dropbox combines images and slide animations to show demo (show passage of time)
+	Zooming (like iOS 9 app switcher)
+	Instead of layering on top, pull back and see new layer (while leaving the last view visible)
+	Transitions should always add to user's understanding of how your app works
+	If possible, give user control over animated transitions (like FB Paper zoom)
+	Transitions can be used to draw attention to features, don't need to be huge to make an impact, should include an option to be disabled
+Kinetic Pattern Gallery - capptivate.co (Alli Dryer)
+Prototyping tools:
+	Don't assume that other peoples' brains can turn 2D into 3D
+	Invision, Keynote, Origami & Avocado
+We're simulating 3D space in a 2D environment
+Overcoming the limitations of screens
+The smaller the screen, the more you'll have to move on the z-axis
+The future: We have to think about design beyond screens and boxes, Need to create new patterns
+
+**Emotional Intelligence in Design (Beth Dean)
+This girl makes, in addition to grave dirt and junk, posters at Facebook, and an old Veruca Salt fan site
+In 20 years we're going to think everything we're making now is terrible
+Started out making icons and junk
+Moved to an agency and made restaurant websites and junk in IE6
+Clients always wanted Flash
+Clients didn't care if stuff worked, they knew what they wanted and would pay us to make it
+Went to American Greetings, discovered connection between good design and revenue (note: JackieLawson.com - If you have to call something classy, it probably isn't)
+Went to Progressive, did UX stuff and used usability lab (everyone brings their new stuff and everyone tries to break it)
+--I'm really glad that I'm working in a retail company instead of insurance. It sounds awful to be working in a shitty company/environment.
+Went to Hotwire, made specs in Vizio
+Went to startups and did... burnout.
+Went to Tahiti, lived there for a bit and figured out what is important to her
+Went to Facebook
+"Feelings" - Mother's day emails, Progressive credit scores, Hotwire upsells (funerals)
+CA foodstamps application form requires an address
+When we prioritize someting, we are deprioritizing something else
+Sometimes we don't think about potential negative consequences of design decisions
+What do all designers have in common? Privilege
+Empathy =/= Sympathy (sympathy is feeling bad for someone, empathy is feeling what someone else feels)
+Try to work with people not like you (diverse teams solve more diverse problems)
+Observe people in the wild to see how your products are used
+Biggest mistake: Nobody's ever going to let you do your job. Figure out what you want to do, and make space for that in your job.
+"When you say edge case, you're really just defining the limits of what you care about" - Eric Meyer
+Building things so they work and look good is only half your job, the other half is convincing people to care.
+
+**Letting Go of Workflow Baggage (Ben Callahan)
+Baggage: Ex: RFP for 3 designs x 3 pages x 3 widths
+Your process should be as responsive as the products you are designing
+Process theory:
+	Process from a client's perspective:
+		Research vendors (Messaging)
+		Request estimates (Money)
+		Negotiate contract (Agreements)
+		Execute project
+	Expectations are set (first 3): Reset customer expectations for the project
+	Expectations are managed when executing project
+Stop telling people what you do, start telling them why you do it
+"I'm not sure about the best way to approach your project, but I'm confident we can figure it out together"
+We're better when we work with you rather than for you
+Adjust your estimating process to reflect your workflow (use google spreadsheet, work with client)
+Start small - Initial engagement: $10K (discovery, etc.) and then a $2K credit if continue project
+Every project has a start and finish
+Biggest risk: Not understanding the finish
+Start with stakeholder interviews and prioritization
+Measure project drag:
+	Team size
+	Organizational variance
+Talk to team and client and find out their ideal process for doing something
+Shape the project: Chart out every individual in the project on an axis (saboteur > advocate, no influence > high influence)
+Move high-influence individuals from saboteurs to advocates
+Determine what the influencers value, shape the project to show value there
+Identify non-critical variances, close the gap
+Align with the client and bring them to a more-efficient way of working
+4 steps:
+	Agree on the goals
+	Measure the drag
+	Shape the project
+	Repeat
+Most projects don't fail for technical reasons, they fail for people reasons.
+To be happy, we need work where the challenge matches the skill (flow channel)
+	Too much challenge = anxiety
+	Too much skill = boredom
+--Look up Build Right Maker Series (Dayton, OH) (buildright.io)
+
+**The Path to Performance (Katie Kovalcin)
+Cincinnati Mall: Looks great, functioned terrible
+The demise of beauty that doesn't perform
+People think performance happens in development, but it needs to happen from the beginning
+Performance is often a cultural challenge, rather than a technical one -Lara Hogan
+Change begins with you
+Hurdles: Leadership, designers, developers, etc.
+Other priorities often take precedent (accessibility, responsiveness, design, clients, etc.)
+What good are those other efforts if the site never reaches the user
+Discuss performance in sales process, not development (for clients)
+webpagetest.org for testing, whatdoesmysitecost.com to show cost
+--thestlbrowns.com
+Amazon sales increased by 1% per 100 milliseconds shaved off load times
+What do stakeholders really care about, and how does performance impact that?
+Leadership: politics play a large role in what gets done (lead by example and show leadership why it's important: lunch & learn, own it for a trial)
+PM Education: Understand the importance, advocate with clients, help maintain performance budget
+The web is more fragile than we admit -Ethan Marcotte (Responsible Responsive Design by Scott Jehl)
+Have developers involved in design (design reviews) to call out red flags and offer solutions
+Mock up designs in code
+Performance budgets:
+	Establish before design, maintain through development
+	"Performance as a feature"
+	Important metrics:
+		Page weight (kb/ms)
+			Ex: 400Kb total = 100kb fonts, 50kb css, 200kb images, 50kb javascript
+		Start render (s)
+		Fully loaded (s)
+Work with client team:
+	Definite performance budget
+	This project's budget
+	Why are we using this
+	How we add new features
+	Every template's weight
+	Image optimization guide
+Curveballs:
+	Optimize existing feature
+	Remove existing feature
+	Just don't do it
+Collaborate with designers, work together to determine the budget
+20% faster is the minimum for a user to notice, Compare with competitors and aim to be faster than them
+Weight the font kit
+How this helps development:
+	Client understands the benefits
+	PM advocates performance as a priority
+	Design is done within a performance budget
+	Development is prepared to successfully integrate performance within budget
+--Grunt Performance Test (https://github.com/tkadlec/grunt-perfbudget)
+
+**Content-First Design (Stephanie Hay)
+2012: Downton Abbey, Top Golf, adult-size beanbag, video games, burnout
+Animal Crossing: Gender assumption, designed for the "wrong", got name and date from interaction
+Designing conversations
+2 key design approaches from video games:
+	Nail the story first (design feels like a conversation)
+		Lowest risk, lowest cost way to design
+		What the hero needs to "win" (why are people using your product)
+		Ex: Ben & Jerry's: Google Doc w/ execs to determine values, location in header of site (assume zipcode, allow user to change)
+	Design for discovery
+		Do your heroes feel like they're winning (give people something to overcome)
+		Teach over time to improve retention
+		Provide answers in the moment when people are most likely to have questions
+		Ex: Fast Customer app: Make a test call, Add onboarding for search, carrier, show how FastCall list works
+Lowest risk/lowest cost
+More collaborative design
+Faster approvals + launches (senior management involved from the start)
+Higher engagement
+Contend defines structure: Write the story, figure out how someone gets there
+Be brave enough to change how you work
+Solutions that meet people's problems = something we need
+How people talk about their problems + how we talk about our solutions = a solution we understand
+Content prototype: Ex: Capital One "guardianship" vs "second look": "Thanks for looking out for me" instead of educating the customer
+Iterate on centent in a word doc when stuck
+Find the "voice" of the app
+Real content from the start > designing real experience from the start
+--That Game Company: Flower, Flow, Journey
+
+**Compassionate Design (Eric Meyer)
+Photography > Cancer > Facebook year in review: How did we get here?
+Who is this for? Users who had an amazing year and want to share it
+When testing, testers exist in a vacuum. No context to their actions
+Whatever user you imagine is not all of your users
+We're designing for the majority
+Edge cases define the boundaries of what/who you care about -@futuraprime
+"that's an edge case" is preventing us from doing our best work
+"Stress case" instead of "edge case"
+Stress cases find the fractures (wrong assumptions)
+Ask who this is for, then imagine the opposite
+Tenth man principle: If 9 people agree, the tenth has to disagree and try to prove that the others' assumptions are wrong
+Bad Ex: Shane Creepingbear Facebook name approval: Instead of "you're not acceptable", "we think this might be wrong, here is how to fix it"
+"Be conservative in what you send; be liberal in what you accept" -Job Postel
+Good Ex: Facebook gender selection (male/female/custom)
+Good Ex: PatientsLikeMe (social network for people based on medical conditions): Settings for gender and for sex assigned at birth
+Consider the context
+--VoiceAndTone.com
+Voice doesn't change, but tone adapts to users' feelings
+Mailchimp voice: "X but not Y"
+Simple (bank): Lost card screen has no personality - When something serious happens, we surpress our personality
+Be intentional
+The Question Protocol (Forms That Work -Caroline Jarret & Gerry Gaffney)
+Quantify the value of decisions and weigh them against the cost of collecting that data
+People get frustrated if they feel they have to lie
+Compassion = having genuine emotional feeling for the struggles that someone is going through
+Compassion isn't coddling, it's allowing users to tell the truth comfortably
