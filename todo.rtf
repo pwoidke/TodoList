@@ -1,6 +1,57 @@
-Today is Wednesday, August 26th:
+Today is Thursday, September 24th:
 
-Build - Frontend VSDP-11938 Add feature to fit quiz page JSP/pagedata
-Build - Frontend VSDP-11939 Recreate DIVA image feature in prod diva
-Bug VSDP-12319 ALL FIT QUIZZES / Shopping Size Selectors missing if Boutique Quiz is completed first
-Bug VSDP-12356 Other Boutiques cannot be created after timing out
+Thu 9/24: Speed
+Fri 9/25: 10 miles
+Sat 9/26: 22 miles (long)
+Sun 9/27: 5 miles (easy)
+Mon 9/28: 5 miles
+Tue 9/29: TNT
+Wed 9/30: 4 miles
+Thu 10/1: 30 min. (tempo)
+Fri 10/2: 4 miles
+Sat 10/3: 2 miles (shakeout)
+Sun 10/4: HM race
+
+Everything else matches calendar
+
+Mon 10/5: 4 miles
+Tue 10/6: TNT
+Wed 10/7: Crosstraining
+Thu 10/8: 4 miles (pace)
+Fri 10/9: 4 miles
+Sat 10/10: 8 miles
+Sun 10/11: 3 miles
+Mon 10/12: Gym (upper body)
+Tue 10/13: TNT
+Wed 10/14: 3 miles
+Thu 10/15: off
+Fri 10/16: off
+Sat 10/17: 2 miles
+Sun 10/18: Marathon
+
+
+Chrome extension:
+https://stash.lbidts.com/projects/FEWDW/repos/vsd-chrome-ext/browse
+Need Xcode for post-compilers and stuff
+grunt desktop:init to initialize
+Unpacked = raw files the browser needs, packed = certificates and junk
+webapp/Gruntfile: compiles and docroot pushes, chrome-cli to interact w/ Chrome, build (compile, move to webapp folder)
+Gruntfile: updateFile: broadcasts update for extension
+Extension is a wrapper for a webpage
+src folder has html for popup & options
+JS uses Underwire
+content_script.js loads VS stack & content script for extension, can access and manipulate DOM
+background.js talks to browser, listeners block deque, set useragent, etc.
+Modules: popupContent/mPopupContent.js (draws handlebars content in window, handles click events)
+mPopupContent init should be optimized using promises
+mChromeEventListener: content_script uses to handle manipulation of the DOM when told by the popup script
+Need to delimitate where scripts are loaded (only ever in one place, handled by page.js)
+manifest.json holds extension info; need to add permissions for Chrome APIs
+Deploying: grunt desktop:build, Chrome Extensions tab > "Load unpacked extension" (folder/webapp/vsd-chrome-ext)
+updates.xml: points to where packed extension lives and current version
+**Need to update version in manifest.json before deploy
+After build, you'll get packed extension, xml, help.html
+From extensions tab, select Options > Pack, select files (.crx) and certificate (in root)
+Commit that stuff to kick off Jenkins process to copy to server (about 4 seconds)
+Tricky bug: Deque blocking works, unblocking causes problems
+
