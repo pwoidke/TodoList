@@ -4,11 +4,9 @@ Build - Frontend VSDP-14350 move changes to assetID: 1266472576437 to prod auth
 
 Regression VSDP-13696 Item count does not update in Swim Stylist when filters are selected
 
-Regression VSDP-14339 Final Question in Sport Bra Guide Has Incorrect Values in the Conversion Event
 Bug VSDP-6245 TEALIUM / Issues #164 - No conversion events firing in mobile compare collections
 
-Thu 10/8: 4 miles (hills or...)
-Fri 10/9: 4 miles (...hills)
+Fri 10/9: 4 miles (hills)
 Sat 10/10: 8 miles
 Sun 10/11: 3 miles
 Mon 10/12: off
@@ -25,3 +23,18 @@ Assign/sequence C9 tasks
 Asset approval for H2M
 Create SRF for Raj VPN access
 
+BCF Product/Collection refactor:
+instead of 5 APIs, we'll request attributes from "super model" (backend)
+Follow up w/ Julie: Do we want to align UI of boutiques and collections (remove, match percentage, star rating)
+Identify style differences between boutiques and collections
+Outline BCF product templates (desktop/mobile, all brands)
+product component in fabric
+adapter layer between MGT and FEWD
+--"Stagefright" (pushing the super model forward)
+--"blue steel" (one supermodel look)
+meet w/ checkout to see how their adapter works (anthony)
+C9: pick 1 brand, estimate time to build adapter and build 1 boutique, do we want to do in C9
+Facet/color menus also have model (will add to supermodel)
+C9: If we don't want to do it, maybe we could refactor filters and sort
+See how different facets/sort is from collection page
+https://confluence.victoriassecret.com/display/fewd/Super+Model
