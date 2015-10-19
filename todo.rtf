@@ -1,12 +1,42 @@
-Today is Wednesday, October 14th:
+Today is Friday, October 16th:
 
 C9: https://jira.victoriassecret.com/browse/VSDP-13681
 
 Asset approval for H2M
 
-Log swim prev button defect
+Swim prev button defect
 Check careers page rechrome in Prod
 Schedule meeting with Nat/Scott re: adapter
 Estimate product model alignment tasks
 Meet w/ infrastructure re: iframe > modals for logins
 Figure out excess points and pick some holiday tech debt
+
+
+Merrick is updating backend endpoints
+Align w/ backend on
+	https://confluence.victoriassecret.com/pages/viewpage.action?pageId=22282660
+	https://confluence.victoriassecret.com/display/VSDP/VSDP-7059:+Login+Security+API+Contract
+Third party logins:
+	Endpoint loads blank page, FE adds login code?
+
+Account Sign In GET request could be static page?
+Recognized state? BE has to tell us. That would be a GET as well
+GET request to blank JSP and inject login markup with HBS, update endpoints
+
+Forwarding:
+If going to account landing page directly, presented with login page, forward to page at login
+Add forwarding URL to response
+
+Flow chart of every condition we're considering for Naveen/MGT
+Header, static page, redirect, success, failure
+
+
+Adapter stuff:
+fixture_styleguide_fab-checkout/checkout-content-object.json
+adapters/service_fab-checkout-adapters.js
+adapters/adapter_fab-checkout-payment.js
+service_fab-data-adapter.js
+Object.defineProperty to define function that set property
+
+Integrate w/ Sam's spec (super model)
+remove tight coupling from bra exp controller, use transformer to align with collection server data
