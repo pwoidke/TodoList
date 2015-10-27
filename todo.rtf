@@ -1,32 +1,6 @@
-Today is Monday, October 19th:
+Today is Tuesday, October 27th:
 
-C9: https://jira.victoriassecret.com/browse/VSDP-13681
-
-Asset approval for H2M
-
-Swim prev button defect
-Estimate product model alignment tasks
-Figure out excess points and pick some holiday tech debt
-
-
-Merrick is updating backend endpoints
-Align w/ backend on
-	https://confluence.victoriassecret.com/pages/viewpage.action?pageId=22282660
-	https://confluence.victoriassecret.com/display/VSDP/VSDP-7059:+Login+Security+API+Contract
-Third party logins:
-	Endpoint loads blank page, FE adds login code?
-
-Account Sign In GET request could be static page?
-Recognized state? BE has to tell us. That would be a GET as well
-GET request to blank JSP and inject login markup with HBS, update endpoints
-
-Forwarding:
-If going to account landing page directly, presented with login page, forward to page at login
-Add forwarding URL to response
-
-Flow chart of every condition we're considering for Naveen/MGT
-Header, static page, redirect, success, failure
-
+validate tagging stuff on compare collections page
 
 Adapter stuff:
 fixture_styleguide_fab-checkout/checkout-content-object.json
@@ -39,6 +13,25 @@ Integrate w/ Sam's spec (super model)
 remove tight coupling from bra exp controller, use transformer to align with collection server data
 
 
-Today:
-Worked on removing hard-coded field labels on Order History, submitted PR needed backend input/approval
-Looked at security risk stuff
+Tech Tuesday:
+There is 1 super model per entity
+We are using a subset of the super model in our code via the API
+
+Where will the model live? Fabric? Confluence?
+path to JSON file
+#!/where you want to be in that model
+
+
+I'm presenting where to find the model adapters
+Show existing BraExp 1:1 adapter
+Create new adapter on Collection page
+	Adapter BraExp>Collection
+	Drop in BraExp pagedata and have it work
+
+I have 1:1 adapter, wtf should I do with it?
+Have supermodel, select attributes for entity (subset) (runway model) somewhere
+Where are existing API contracts (high level)?
+Let's try to get API/schema construction into Fabric
+Take existing APIs, identify duplicate properties, normalize them
+
+--Schedule meeting w/ FE team to align on modal model
