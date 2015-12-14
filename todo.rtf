@@ -28,3 +28,71 @@ Technical Issue VSDP-16447 FOPC - Saved credit Card image is missing in the comm
 Tech Debt VSDP-16725 Create the ability for Comm Ops to control which facets are open and which are closed
 Bug VSDP-16171 Store Locator - Issue with Store Hours Display
 Build - Frontend VSDP-14478 Update X-Frame-Options in response header
+
+
+Collection/Search onboarding:
+2015:
+	Jupy/sticky filter on collection pages
+	Mobile 3-grid test
+	0-attribute (atb from collection if only qty, mainly beauty), shared with product team (JSP tag)
+	Don't own overlays, atb, quickview
+	Own add-to-lovelist, KWS, collection, catalog quick-order (display, click order)
+	GEFOC, lovelist stuff, response product image grid/fluid grid
+	Facet data converted from obj to arrays
+	Rechrome, certona on collection, WCAG
+	Currently get markup back on filter (will eventually be JSON like BCF)
+	KWS
+Upcoming
+	KWS, enhancements
+	Product display (stuff below images on coll page)
+	3-grid enhancements
+	Redo lovelist someday (collection as "rack")
+Search
+	Search should look/feel like collection (data is completely different)
+	Slightly different filtering on search/collection (We'd need to own improvement, REI has code to maintain state)
+	Search functionality is all in fabric
+Desktop filter A/B test (moving filters from top to side)
+Start on visual KWS issues
+Check in w/ Devs if taking long time to make progress
+Clovis has school Tue/Thurs
+Cycle checkins - Every week, 30 min. / dev
+Jeremy owns Metrics tagging, product grid, save scroll position, search: desktop facet menu styling, layout, no results page
+Nick owns autocomplete, search form
+Clovis owns T65 (moving filters to side)
+Third party stuff - KWS (Adobe), search input (jsnav)
+Adobe > templates > designs (mobile/html/adobe-search/*.tmpl)
+KWS Code:
+	search form component
+	search bar is same on header and search page, container owns search overrides
+	facet menu, sort, and search page are components
+	fab-facet-menu_desktop.js ln 31 (update state)
+	facets are headers, facet options are options (onClickFacet ln 42)
+	form-search: submitSearch ln 65 sets hash, but should be a broadcast to search to set the hash (update route function), open/close panel ln 132 can be updated to use UU.watch
+	search component (fab-search_mobile.js): 
+	search.jsp holds the components
+	product = 240px wide
+	module_fab-fixed-menu_desktop.js: controls positioning of side facet menu
+	fab-search_desktop.scss loads stylesheets for search page
+Collection code:
+	fabric/components/collection has full-row-adjustment, product-view, etc. (dumping ground)
+Backend/remote/third party resources - Parveen, rikesh, molet (50%)/Sachin & Tony WCAG/Wall-E Adobe, Sachi Adobe dev
+Question of who owns features on collections /bras/shop-all-bras
+	Vlad/Nat say not us
+	Shanshan says us
+	H&L owns all features (check w/ Aaron)
+Sam is out Jan 5
+Team code review every week
+
+Questions:
+	Planning
+	Estimation
+	Subtasks
+	Assignment
+
+ACS onboarding:
+	Account landing page
+	Store locator
+	Order history
+	SSO
+	Live chat
+	Certona
