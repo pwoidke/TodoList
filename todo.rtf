@@ -1,4 +1,4 @@
-Today is Thursday, December 17th:
+Today is Monday, December 21st:
 
 Supermodel = Making a SQL select statement
 get api contract from collection team
@@ -14,15 +14,6 @@ teamplate = API's
 Can supermodel viewer support multiple schemas on the left?
 Drag & drop
 Tagging - Assigns a property to a runway model
-
-
-Technical Issue VSDP-16706 FOPC - On the step 2 OLPS overlay, the electronic signature checkbox does not function.
-Technical Issue VSDP-16551 KWS / Desktop / Images disappear from results page when performing select searches and using the browser's find function (CTRL + F) on Firefox.
-Technical Issue VSDP-16741 FOPC - In Eshop flow, offers should open before getting to Payment.
-Technical Issue VSDP-16828 Second search does not execute
-Technical Issue VSDP-16797 FOPC - After selecting Gift Wrap, the Gift Box text does NOT display next to the line items in the Shopping Bag
-Technical Issue VSDP-16820 FOPC - Previously selected items display in the next group of "Select items to wrap together" after tapping "Make another Gift Box"
-Technical Issue VSDP-16926 Gift Kits not being maintained within Gift Options
 
 
 Collection/Search onboarding:
@@ -102,3 +93,121 @@ CollSearch C1:
 improvements, tech debts
 frontend work based on usability
 A/B tests
+
+
+Any time a single facet is selected, we shouldn't display it (Adobe will fix)
+
+
+CollSearch continued:
+fabric/components/collection
+	fab-collection: styles for mobile
+	fab-product: styles for mobile
+		Certona containers use styles
+		product page x-sells
+		recommendations containers
+		List view is default, add class for grid view
+		Grid width media queries
+		Jeremy added formulas in comments
+	fab-full-row-adjustment: drops partial row to new page (jasmine_fab-full-row-adjustment_desktop.js)
+	fab-infinite-scroll: mobile load more
+	fab-load-more: desktop load more
+	fab-lazy-load: has search loaded function to load products (works like on collection)
+	fab-product-view: list/grid toggle button (mobile), shared b/w search & collection
+fabric/components/search-form
+	fab-search-form_mobile.js: may need rewrite in future
+	partial_fab-search-form_desktop.hbs: third party vendors
+		uses config to get action data-attribute
+		has autocomplete form
+			keyup event/onInput: show/hide panel
+			openPanel: throttle, getResults()
+			getResults: (look at refactoring this)
+				load: sends, trimmed search value
+					results are shown if response matches query that is in input
+				panel opens, add click event listener
+**"clickListener": global module, fires HTML clicked, handle w/ onHtmlClick funtion
+fabric/elements/input/search
+	desktop.js file: scoped to search inputs
+	has own styles
+fabric/elements/input/fab-input_mobile.js: note: input-dynamically-changed event carried to desktop search input
+	Checkout owns this because Jon rewrote it, but it should probably be H&L or CS
+fabric/templates/standard/fab-standard_desktop
+	add to this, it will be added to global
+fabric/templates/standardsearch
+	Used on search page (search page file)
+**check out page/search.js
+Jeremy - Better at CSS than JS
+Nick - Sometimes hacky, watch for native functionality/rewrites, not big JS background, too many comments (code should be readable)
+fabric/templates/standard/config_fab-standard.js: moving configs from objects to UU.save
+frontend-mobile
+	T66EF: 3-grid (AB=old list/grid (will be removed), CD=jupy filter, EF=3-grid, GH=3-grid + jupy filter
+		CD vs GH right now (jupy/responsive vs fixed 2/3 images w/ carousel w/ info panel)
+		GH failed, but don't know why
+		GH styles in fabric/comp/coll/fab-rpoduct/fab-product--T66GH_mobile.scss
+	On change grid, fires setgridview, passes view (grid type) and grid number (analytics)
+	Captured in API contracts (Product View Request)
+	js/service/collection
+		sCarousel: Calculates widths and stuff
+		sGrid: sets grid type and stuff
+		sProduct: switches to high-res (data-large-asset attribute)
+	modules:
+		back to top: button, scroll event listener
+		filter modules
+			filter products: does everything (load more, facet, filter, etc)
+				callbacks update content
+				facet request: stores in cache, returns updated facets
+				filter request: happens after facet, reads facets from cache, responds w/ markup of products (from products.jsp)
+**				first product contains item count and increment attributes
+				facet callback repopulates w/ data, makes into columns, updates markup
+				populate facets: determines state, updates facet markup
+				filter menu toggle: handles overlay clicks, done button, filter by button
+				filter clear all: updates state of every facet option and calls filter-products w/ empty facet request
+				exposed facet items: handles display of selected facets and events
+				filter menu facet item: handles click of facet options in facet menu, listens for click event and toggles facet
+				facet menu: handles open/close of facet options accordions
+				facet menu sort: handles sort by menu and events
+				filter menu sort options: on click, sets active class, broadcasts for request
+				T66 versions
+					filter menu toggle: additional listener, broadcasts more data
+					sticky filter: 
+			eventually, get rid of all of these and move it to facet-menu component (waiting on backend work)
+				would need collection component to bring everything together and broadcast new data
+		html click event listener
+		infinite scroll (ugly): does pagination and auto load
+		carousel
+		collection: pinch-zoom stuff (hammer), not used anymore
+		Product: info button (anything product-related can go in here)
+		product view option: 3 buttons to toggle grid
+		smart alert: not used anymore, was used for pinch zoom instructions
+		love list: has config stuff
+There is also a love list page
+	add to bag button is product page's
+	options button opens share/clear options
+frontend-desktop
+	collection page
+		testing filter like on search
+		normal filters come from page data, rerenders menus on hover (weird)
+		There's a model and dom queries for state
+		Jeremey did clear all button (mFacetClearAll.js)
+		filters get added under menu on desktop, in a row on tablet
+		selected facet items are all rendered hidden and show class is added/removed
+	mFacetList.js: master module for whole filter/sort bar
+	mNavFilterCollection: broadcasts and handles messages for facet and sort updates, requests are all in the service (sDataRequest.js)
+		maintains state in a facet model (service/collection/selectedValues.js)
+		toggleList is used to show/hide menus on hover
+	window/msavedscrollposition: saves scroll position
+	mProductQuantity: zero-attribute stuff
+	mProductQuickview
+	mSelectedFacet
+	mZeroAttrForm: more zero-attribute stuff
+	T65: make search facet menu work on collection
+	mAltImage: alt-image carousels on collection (Sport only?)
+		uses Hammer, execultes regardless of whether there is a carousel on the page (performance issues)
+	load more module has full row adjustment and requests for load more built in
+	products.jsp for desktop collection (very similar to mobile) (moved to partial-fab-product-desktop template, but zero-attr, carousels, features, etc. not supported yet)
+Features
+	rendered in feature.jsp, but moving to templates (special projects team)
+	Nat feels H&L should own all features
+C&S uses standard.jsp and collection.content (header, features, filter bar, sort, ProductList_Desktop.jsp, load more button)
+	Mobile has its own wrapper (not standard), nav filter panel, loader for personalization and load more, back to top button, sticky filter button
+Collection prototype: prototype.lbidts.com/frewdproto/collection
+**Sam will add me to Adobe admin and send notes
