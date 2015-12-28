@@ -1,23 +1,101 @@
-Today is Monday, December 21st:
+Today is Monday, December 28th:
 
-Supermodel:
-	Supermodel = Making a SQL select statement
-	get api contract from collection team
-		step 1: product set (tons of properties)
-	Can supermodel viewer support multiple schemas on the left?
-	Drag & drop
-	Tagging - Assigns a property to a runway model
+--Technical Issue VSDP-17213 KWS - Mobile - Searching from PINK Nation directs to VS themed search results
+--Technical Issue VSDP-17183 KWS - Placeholder texts is displayed in search box when other text is present on product page
+--Technical Issue VSDP-17115 KWS - Love list CTA does not fade on No Results page until page is interacted with
+Technical Issue VSDP-16229 KWS - Mobile - Lazy load is slow to load more items on results pages
+Technical Issue VSDP-16107 Mobile / KWS / Item that was added to the love list does not remain hearted when navigating back to the results page
+Tech Debt VSDP-16725 Create the ability for Comm Ops to control which facets are open and which are closed
+Add shirt sizing to tickets
 
+Planning notes:
+13776 Move New Savings flag to the right in list view
+	LL button > aside has after pseudo-class that floats to fix text-wrapping
+	Fix: float: right; clear: both;
+	Need UX for new icon
+	SM w/ UX dependency
+12606 Test for product info on collection view
+	List/Grid (mobile only)
+	ensemble desc. not in mobile currently (BE dependency) (partial_fab-product_mobile.hbs)
+	All other fields are already there, but hidden for grid (visible for list)
+	Need clarification on "swatch"
+	Jeremy is good option
+	MD, depending on no. of variations
+14845
+	BE only?
+14928 Adjust product price to PSO price
+	PSO = product set override
+	PSM = product set ???
+	BE only, we just display the price
+16824 New Saving flag not showing
+	BE only
+15857 Create chache for KWS search
+	BE only
+15847 KWS results relevant to history
+	Personalization
+	BE only, we just display the products
+	Any certona test bucket/metrics tagging updates?
+16024 add data elements to enhance KWS feed
+	When filter by color (ex. red & blue), we show product twice (once per color)
+	On search, we show 1 product with multiple swatches
+	We'll need to remove code that combines swatches
+	We're supposed to get swatch image back (path), currently coming as array, need to change it back to single
+	decorator_fab-search_mobile (if _.isArray, get unique value)
+	Look for anything involving Swatch Names
+	Remove partial_fab-product_desktop.hbs ln 19 (swatch names/swatch list), and assoc. styles
+	SM if perfect, MD is not. Need time to consult w/ Adobe for API changes
+874 Allow offer/item level callouts to be set up and selected on coll page
+	All BE/CMS/Setup
+17017 Display autocomplete and type ahead results the provide best context
+	redo-ing autocomplete panel
+	Are we actually implementing this? Need comps
+	Display products in search results, full-width panel
+	All product styles will need to be included globally
+	LG if just adding products to panel, XL if carousels, resolving style conflicts, reworking LL, etc.
+17119 Improved KWS filter/sort
+	Themes: Sounds like Adobe/CMS changes
+	Price: Set range, slider, etc. Special case for facets
+		LG; UX dependency for comps
+	Single column filters w/ expand option: If more than 20 facet options, only show first 10 w/ View All to show the rest
+		MD
+	Size/length attr not rendering correctly: combine L.'s and M.'s
+		BE only
+	Move selected filter options to top of filter bar: Exposed facets push down, so push back
+		UX dependency
+		SM if have to do it
+	Create ability for comm ops to control which facets are open/closed
+		CMS > Feed > Adobe > Us: Data issue, we display on page based on data
+		What happens if she closes it and opens a new one? Get initial state and then ignore it
+		MD based on state questions
+17120 Inprove KWS results/no-results templates
+	Show results for alternate path scope: List alternate suggestions on no-results page
+		Need data from BE
+		MD
+	Show category suggestions on NR page, same as previous
+	Alternate query suggestions on NR page, same as first
+	Promote sales/offers on NR page: Add DIVA feature? Banner (search "forbidden")?
+		Need more info
+	Add related search on search pages
+		Need more info
+	Search against all areas of site map
+		Need comps, need data
+		L-XL depending on data and what we're doing
+	Items w/ carousel not displaying when searching by item number
+		On desktop, products w/ carousels are shown as regular products
+		Need to add support in search (pull in modules and markup, get data)
+		MD
+	Pagination not displayed on prod page from search page
+		BE cache product ID's and use for pagination?
+		FE can't pass anything to product page and search results are abstract collection
+	Assess need for range pricing on multi-select
+		Research only
+		Would need min/max from adobe, Or have price w/ dynamic value based on if dynamic pricing
+		SMD
+	Display marketing collateral to drive awareness/conversion
+		Add support for features
+		Current API: /featuredefinitions?? Special projects did work, Nat/Shanshan will know more
+		How does Adobe know what to display w/ results?
+		Where do we show the feature? Array of features w/ position property, add as product, etc?
+		Start w/ text/image features first and go from there
 
-ACS onboarding:
-	Account landing page
-	Sign in
-	Order history
-	Store locator
-	SSO
-	Live chat
-	To Martin:
-		Chrome ext
-		Links to repos (and access credentials)
-			SSO, live chat
-	
+Note: Should we show filters if only 1 result?
