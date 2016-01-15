@@ -8,19 +8,78 @@ Animate view change POC
 Add team code-share to calendar (invite leads)
 
 Mine:
-    Tech Debt VSDP-16377 KWS - Items with carousel is not displaying even when searching by item number.
-    Tech Debt VSDP-16725 Create the ability for Comm Ops to control which facets are open and which are closed
---    Resource VSDP-17404 C1 C/S
-    Development VSDP-17693 Recover the swatchName template code and update the API template
-    Development VSDP-17694 Move selected filters from bottom to top
+    Tech Debt VSDP-17762 Fix @extend for loading spinner
+    Development VSDP-17757 Update Adobe feed to incude alt images
+    Development VSDP-17742 Move selected filters from bottom to top - search
+    Development VSDP-17741 Update the API template for single images on products
     Development VSDP-17697 Add test dimension to Adobe feed
+    Development VSDP-17694 Move selected filters from bottom to top - collection
+    Development VSDP-17693 Recover swatchName template code
+    Resource VSDP-17404 C1 C/S
     Analytics - A/B Tagging VSDP-17374 Tagging product level information on collection page
-    Bug VSDP-8561 [FE] - Blank spaces are displayed when floating hybrid cues are present
->    WCAG - Issue VSDP-10694 WCAG / Functional - Lovelist page: On share list, the copy link is not getting focus using keyboard.
->    Bug VSDP-12146 The Sort By drop down moves position when selecting options in all filter facets on a Stacked Collection page.
->    Bug VSDP-14730 Mobile - Sticky filter does not appear until user is no longer touching the screen (iOS specific)
-    Tech Debt VSDP-15226 Move Collection&Search modules and services to Fabric
-    Tech Debt VSDP-16156 Clicks are slow on the filter.
--    Technical Issue VSDP-16229 KWS - Mobile - Lazy load is slow to load more items on results pages
+    Tech Debt VSDP-16725 Create the ability for Comm Ops to control which facets are open and which are closed
     Technical Issue VSDP-16454 KWS - Length Attributes do not appear within the Size Facet on results page where multiple lengths are available
+    Tech Debt VSDP-16377 KWS - Items with carousel is not displaying even when searching by item number.
+    Technical Issue VSDP-16229 KWS - Mobile - Lazy load is slow to load more items on results pages
+    Tech Debt VSDP-16156 Clicks are slow on the filter.
+    Tech Debt VSDP-15226 Move Collection&Search modules and services to Fabric
+    Bug VSDP-14730 Mobile - Sticky filter does not appear until user is no longer touching the screen (iOS specific)
+    Bug VSDP-12146 The Sort By drop down moves position when selecting options in all filter facets on a Stacked Collection page.
+    WCAG - Issue VSDP-10694 WCAG / Functional - Lovelist page: On share list, the copy link is not getting focus using keyboard.
+    Bug VSDP-8561 [FE] - Blank spaces are displayed when floating hybrid cues are present
 
+API contracts?
+
+JIRA:
+<protocol>://<hostname>/rest/<api-name>/<api-version>/<resource-name>/<route-data>
+Ex: https://jira.victoriassecret.com/rest/api/2/issue/VSDP-17017
+
+Today:
+	Get tire fixed
+	Work
+		Update filter menu for collection (different template)
+		Update Adobe feed for carousels
+		meetings
+		subtasks
+		Tagging Meeting 1pm
+		Adobe meeting 2pm
+	Home
+		Run 4 miles
+		Cut nails
+
+C1 C&S Reflections
+It seems like the work for C1 is very fragmented, and lacking many requirements. There are some overall tasks like autocomplete enhancements and updates to the search/NR pages, but it's a lot of work that depends on the backend or Adobe, which is tough for me because I don't have a great understanding of C&S code to know exactly what the scope is of these tasks on the FE.
+A lot of the tasks I have assigned to me are weird little pieces of functionality related to other stuff, and bugs/tech debts that I'm not supposed to work on until the end of the cycle.
+I would like to get a better understanding of exactly what parts of tasks the FE team needs to do, and what those are dependent on.
+Todo:
+cycle check-ins w/ devs
+
+My front tires are at 3/32"
+Legal limit is 2/32"
+Won't patch for tires that are that close to limit (too thin)
+Replace w/ 60k tires for $117/tire + $33 installation
+Rear tires are at 5/32
+Alignment is $97
+Will switch Rears to Front and replace 2
+Will do alignment when I replace the other 2
+Tires are being sent up and should be here this afternoon
+
+reach out to backend team and find out if there's a way to preserve state throughout product flow (forward and back)
+plan:
+she starts a search and gets the top 3 products back from adobe
+she clicks one of those products without executing her search
+she navigates to pdp, the unexecuted search term is preserved in the search bar, breadcrumbs are created to nvigate to a search page with her search term (as entered)
+	-she adds to bag and the search term is preserved through checkout (until when?)
+	-she navigates back with the breadcrumbs to a search results page with her search term
+	-she clicks the back button and returns to the previous page with the unexecuted search term preserved in the search bar
+	-if she clicks out of the search flow (header links, etc.), the search term is not persisted
+is there a way to save the search term and get a url of results for breadcrumbs, and reinitialize the search bar with that term?
+
+17119: add taggin sub-tasks
+16262: 
+16725: commops open by default, tagfor if expanded by default?
+
+
+
+History
+API contracts
