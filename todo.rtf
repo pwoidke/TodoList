@@ -1,13 +1,6 @@
-Today is Monday, January 18th:
+Today is Monday, January 25th:
 
---VSDP-17742: Filters to top search
---VSDP-17694: Filters to top collection (BE: VSDP-17867)
---API contracts
---Update Adobe feed?
---Add team code-share to calendar (invite leads)
 Cycle check-ins w/ devs
---VSDP-17697 Add test dimension to Adobe request
---Price prototype
 
 
 Animate view change POC
@@ -16,49 +9,23 @@ Animate view change POC
 	}
 
 
-Mine:
-.    Tech Debt VSDP-17762 Fix @extend for loading spinner
-    Tech Debt VSDP-16377 KWS - Items with carousel is not displaying even when searching by item number.
-.    Tech Debt VSDP-16725 Create the ability for Comm Ops to control which facets are open and which are closed
-    Resource VSDP-17404 C1 C/S
--    Development VSDP-17697 Add test dimension to Adobe request
->    Development VSDP-17741 Update the API template for single images on products
->    Development VSDP-17757 Update Adobe feed to incude alt images
-.    WCAG - Review VSDP-14639 Review Results/No Results pages (WCAG compliance)
--    Analytics - A/B Tagging VSDP-17374 Tagging product level information on collection page
-    Bug VSDP-8561 [FE] - Blank spaces are displayed when floating hybrid cues are present
-    WCAG - Issue VSDP-10694 WCAG / Functional - Lovelist page: On share list, the copy link is not getting focus using keyboard.
-    Bug VSDP-14730 Mobile - Sticky filter does not appear until user is no longer touching the screen (iOS specific)
-    Tech Debt VSDP-15226 Move Collection&Search modules and services to Fabric
--    Tech Debt VSDP-16156 Clicks are slow on the filter.
-    Technical Issue VSDP-16229 KWS - Mobile - Lazy load is slow to load more items on results pages
-    Technical Issue VSDP-16454 KWS - Length Attributes do not appear within the Size Facet on results page where multiple lengths are available
+Mine (C1):
+--Tech Debt VSDP-17762 Fix @extend for loading spinner
+Development VSDP-18000 Tagging for filters open or closed
+Development VSDP-17992 State management
 
-reach out to backend team and find out if there's a way to preserve state throughout product flow (forward and back)
-plan:
-she starts a search and gets the top 3 products back from adobe
-she clicks one of those products without executing her search
-she navigates to pdp, the unexecuted search term is preserved in the search bar, breadcrumbs are created to nvigate to a search page with her search term (as entered)
-	-she adds to bag and the search term is preserved through checkout (until when?)
-	-she navigates back with the breadcrumbs to a search results page with her search term
-	-she clicks the back button and returns to the previous page with the unexecuted search term preserved in the search bar
-	-if she clicks out of the search flow (header links, etc.), the search term is not persisted
-is there a way to save the search term and get a url of results for breadcrumbs, and reinitialize the search bar with that term?
+Mine (Other):
+Development VSDP-17757 Update Adobe feed to incude alt images
+WCAG - Review VSDP-14639 Review Results/No Results pages (WCAG compliance)
+Analytics - A/B Tagging VSDP-17374 Tagging product level information on collection page
+Bug VSDP-8561 [FE] - Blank spaces are displayed when floating hybrid cues are present
+WCAG - Issue VSDP-10694 WCAG / Functional - Lovelist page: On share list, the copy link is not getting focus using keyboard.
+Bug VSDP-14730 Mobile - Sticky filter does not appear until user is no longer touching the screen (iOS specific)
+Tech Debt VSDP-15226 Move Collection&Search modules and services to Fabric
+Tech Debt VSDP-16156 Clicks are slow on the filter.
+Technical Issue VSDP-16229 KWS - Mobile - Lazy load is slow to load more items on results pages
+Technical Issue VSDP-16454 KWS - Length Attributes do not appear within the Size Facet on results page where multiple lengths are available
 
-17119: add taggin sub-tasks
-16262: 
-16725: commops open by default, tagfor if expanded by default?
-
-
-
-Adobe updates for 17810 (Wally needs different data from BE)
-	On https://test-005.lbidts.com/bras/push-up, filter Red & Green, see screenshot
-	BE will update data and Wally will work on for Phase 2
 
 --Send wally updated search API contract for product results
-Reach out to Rachel re: comopps setting default open facet menus
-
-
-Hi Rachel,
-
-Collection & Search is working on an improvement for C1 that will enable the CommOps team to set which filter menus are open by default on a search or collection page (VSDP-16725). Before Sam left I think he mentioned that there is something in DIVA that can be set to indicate that a filter menu should be open, and we need to make updates to process this data on our end. I'm wondering if you know of an example of 
+--Reach out to Rachel re: comopps setting default open facet menus
