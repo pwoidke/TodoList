@@ -1,4 +1,35 @@
-Today is Wednesday, February 17th:
+Today is Friday, February 26th:
 
-Double check tech overviews (complete, dependencies, etc.)
-Check subtasks
+Stacked Collection:
+
+{
+	"collections": [{
+		"stackedCollection": true,							//Flag for stacked collection
+		"title": "Collection Name",							//Stacked collection name
+		"searchValue": "x1=collection&q1=Dream+Angels",		//Search/filter value (?)
+
+        "productCount": 3,
+    	"productModels": [
+			{product},
+			{product},
+			{product}        
+        ]
+		
+	}]
+}
+
+{{#each stackedCollections}}
+	<div class="stackedCollectionHeader">
+		<div class="stackedCollectionName">{{collectionName}}</div>
+		<a href="{{collectionSearchValue}}">View All</a>
+	</div>
+	<div class="stackedCollectionProducts">
+		<ul class="products">
+        {{#each products}}
+            <li itemscope itemtype="http://schema.org/Product">
+                {{>components/search/partial_fab-product_mobile}}
+            </li>
+        {{/each}}
+	    </ul>
+	</div>
+{{/each}}
