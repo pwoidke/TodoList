@@ -1,69 +1,63 @@
-Today is Friday, April 1st:
-
-Job things to consider:
-Vacation, sick, and holiday time off
-Distance to work and traffic considerations
-Relative cost of living
-Health insurance cost and coverage amount
-Retirement benefits (401k, pension, etc)
-Expected work hours per week
+Today is Monday, April 18th:
 
 Update "fabric" field in JIRA
 
-check if we need another page for VSX search (controller/BE or FE URL)
-
-Facet menu save state
-	check Swim boutique accordion state
-	create service (set/get localstorage?)
-	unit test tech debt should capture these updates
-	can we use query string?
-	consider default
-
 Port sublime fabric relocate tool to Atom
 
---re-estimate sport
-pull in FE tech debt/bugs/unit test improvements
+Let Nat know when I want to have C&S/FEWD planning meeting
 
-C3 Requirements
-15441 - FE support - hide sort if all options excluded (category level, not search)
-20210/14845 - No FE
-16946 - (Carousels)
-18205 - Save filter state - https://confluence.victoriassecret.com/pages/viewpage.action?pageId=41458862
-18362, 18365, 18373, 18374 - Sport stuff - html.vs-sport
-17646 - Scope select - Confirm correct subtasks, etc. - Figure out specific implementation details - Tech design w/ BE/Adobe
+Create spreadsheet with unit tests for facet improvement
+Schedule meeting w/ QA to review
 
-Scope select: (https://confluence.victoriassecret.com/display/VSDP/17646+-+Develop+scope+select+option+on+results+page)
-Need to set number of results/categories to trigger scope select
-	categories could be style, collection, color, etc. - How do we decide what scopes to use (style, collection, etc.)?
-On click "view all scope results", go to new page with scope results, back, sort, filter - How to define this?
-	Back button goes back to scope select w/ saved scroll position
-On "Pink" search, 2 tabs with stacked scopes
-Do we tab results on just "pink" search, or "pink" + any search term?
-	What if she searches (ex:) "Pink body by victoria"? - We can check brand name and apply threshold rules
-Implement for mobile, but design for both (desktop in C5)
+Get outline PINK logo (pink/gray) from UX
 
-if:
-{
-	products: [
-		{id: , img: , category: bra, etc.}
-	]
-}
-then:
-filter products[] by category
-else if:
-{
-	scopes: ["bra", "panties", "etc"],
-}
+Move #/search to the end of the search URL
 
+Move scope select code to test dimension (T29)
 
-FEWD/C&S-
-let Nat know when I want to have this meeting
+Prioritize and estimate tech debt
 
-
-M	Rest
-T	S
-W	R
-R	B
-F	Rest
-S	B/BR
-S	RS/BS
+Bugs:
+J	VSDP-14796 Mobile / The back to top button is not appearing in Love List.
+	VSDP-14776 Mobile - WCAG - Filter slides out with Today's Offers
+J	VSDP-19662 WCAG / Functional - MOBILE - When Filter By is selected from Filter bar, intermittently, the slide out pushes out along with the sort by menu
+	VSDP-12331 Love List CTAs do not receive focus on PDP
+	VSDP-12328 Unlove CTA does not receive focus on Collection page
+P	VSDP-14993 Product Row Set: Switching between landscape and portrait causes product cues to split into two rows. It will go back to one row after user refreshes.
+P	VSDP-22069 KWS - Expanding the More link when Filter column is pinned causes the Filter to push up
+P	VSDP-22071 KWS - Mobile - User is returned to the top of the Filter slide out when expanding a facet
+J	VSDP-20418 Arrows displayed for alternate images do not fade when user is viewing the first or last image
+F&B	VSDP-12518 [FE / BE] Heartache message continues to appear on love list after dismissing and navigating back to love list
+Tech debt:
+	VSDP-13870 [FE] [Desktop, Tablet] Refactor carousels.
+	VSDP-10923 MOBILE: Update collection to use the facet and sort components.
+	VSDP-9375 As a Product Owner, I would like to create the components for Fabric for VS and PINK on the desktop for Collection/Search
+	VSDP-9293 As a merchant, I want the ability to display marketing collateral (banners, floating cues) to drive awareness and conversion. 4.38
+	VSDP-9167 As a Product Owner, I would like to create the components for Fabric for Chrome for VS and PINK on the desktop Love List
+	VSDP-9188 As a Product Owner, I would like to create the components for Fabric for VS and PINK on the Mobile Love List
+	VSDP-9376 As a Product Owner, I would like to create the components for Fabric for VS and PINK on the Mobile for Collection/Search
+??	VSDP-9203 As a Product Owner, I would like to create the components for Fabric for VS and PINK on the desktop Catalog Quick Order
+And VSDP-9203 is another catalog quick order thing. We might be able to get rid of that
+	VSDP-9365 As a Product Owner, I would like to create the components for Fabric for VS and PINK on the Mobile Key Word Search
+	VSDP-9363 As a Product Owner, I would like to create the components for Fabric for VS and PINK on Desktop Key Word Search
+	VSDP-7263 [FE / BE] Refactor - Build product markup on the frontend
+	VSDP-7112 [BE / FE] Move all filtering logic to the FE.
+	VSDP-7114 Desktop/Tablet: Remove !important from styles in _swatches.scss.
+	VSDP-7113 [FE] Desktop/Tablet: Align facet building implementation with mobile.
+	VSDP-7115 Desktop/Tablet: Clean up facet module and service naming.
+	VSDP-7085 Build Filters Using UU-watch
+	VSDP-7552 [FE] [Desktop] Remove hgroup element from the product name/description.
+	VSDP-7129 Rewrite mInfiniteScroll to meet our module standards - include unit tests
+	VSDP-18948 Switch "product lists" (for lack of a specific term) to use flexbox
+	VSDP-18863 Refactor Decorator triggering for fab-facet-menu
+	VSDP-17272 [FE] [Mobile] Add transition to collection carousels slides.
+	VSDP-17258 [MOBILE] Maintain product image height on load before the image is loaded.
+	VSDP-17128 Create "Search Not Available" page when Adobe switch is turned off or when search times out
+	VSDP-17262 [FE] [Desktop, Tablet] Use the full row adjustment and load more button components on collection.
+	VSDP-17263 [KWS] Update autocomplete to use UU watch.
+?	VSDP-16946 Add Carousels to KWS
+	VSDP-15226 Move Collection&Search modules and services to Fabric 
+	VSDP-9167 As a Product Owner, I would like to create the components for Fabric for Chrome for VS and PINK on the desktop Love List
+	VSDP-17259 [KWS] Update autocomplete to feel more responsive.
+Other:
+Move collection page markup to HBS
