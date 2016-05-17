@@ -1,47 +1,24 @@
-Fabric team meeting:
-Check out tasks, pick something you want to do, schedule meeting w/ Nat to subtask
-Update some readmes?
-Port relocate plugin to Atom
-Update "fabric" fields in JIRA tickets
+Todo Today (5/15):
 
-Today
-Continue working on 21290 (JSON response bug)
-Continue working on 22334 (move #/search)
-Watch for any other issues
+Scope updates Ryan sends (21272) - Meeting this afternoon
+Test search on device (scroll)
 
-Assume search in side nav & footer won't change
-Auto-complete?
-	How to dismiss? Scroll, tap outside, "X" only?
+Find 3 points of tech debt to pick up
 
-Wedding to-do's:
-Invites
-Desserts
-Update venue time
-table decorations
-layout
+VDP-23005: Jeremy estimated
 
-Open: 1 (make work on all pages, auto focus, Fancy animation, update analytics, etc., populate with search result if on results page?)
-Update styles: 1 (hide header, move/remove X, scrollable, w/ fixed header?, ensure no scroll)
-Remove old code: 0.5 (search input, update nav, update events to match new nav, footer search?)
-Close: X clears and closes .5
-Search updates: Change to "more results for"? 0.5
-Accessibility: 1
-(Update unit tests: 0.5)
+Things to follow up on:
+--UX: Need reqs for VSDP-12606
+BE/Adobe: Dev autocomplete not returning anything
+H&L: Need button attrs added to header, need updated to-top attr added
 
+Find out how collection text feature headers are set up
+	featureText1 = h1
+	featureText2 = h3
+	featureText3 = copy
+if feature/no feature, ensure correct classes on header group
+ensure item count is in group to preserve alignment
+Remove overlay hack if possible
+Remove styles that are specific to fixes for this stuff
 
-clear vs close on X click? Probably just close, UX
-drawer? Probably, check out FOPC
-updates to autocomplete results? No, improvement
-restore search on results page? Yes, BE
-add exposed search input to results page? UX
-
-should we still update autocomplete to use UU.watch on mobile? Yes, Desktop first
-
-
-((360 sec * 1 mi) + (433 sec * 6.22 mi) + (408 sec * 3.11 mi) + (508 sec * 26.2 mi)) / 36.53 miles / 60 sec/min = 8:02.66 min/mi
-
-BE update to: vsdweb/src/main/webapp/WEB-INF/views/desktop/pageData/global.jsp & mobile
-
-Scope out FE work for filter refactor (20411): Added support task for 1pt, will refine when we know what we're doing
-Scope updates Ryan sends (21272) - Waiting on Ryan
-Add/prioritize/scope tech debt for C5
+<a name="HEADER: SEARCH" id="search-icon" href="https://dev-005.lbidts.com/search" title="search" role="button" data-drawer="search-overlay" data-open-to-top="true" data-drawer-focus="#search-overlay [data-search-input]"><em class="fab-ico--search-black"></em><span class="screen-reader-only">Search</span></a>
