@@ -1,2 +1,74 @@
 Todo Today (7/21):
 
+Beauty Mixer:
+prepackaged colls of scents, allow to buy 1
+12 primary scents, 2-3 matches for each (pre-determined combinations)
+Secondary: Form (mist, lotion, perfume, etc.)
+Scent leads
+
+Adobe:
+Filter name/value for results URL
+Parent tab on collection
+
+On color/brand, showing pink colors on color tab?
+Add color filter to view all button on tabbed results?
+Do we need to save tab when going to PDP/results?
+
+for tabs, both brand and color must have at least 500 results
+
+
+ffmpeg -ss 0:00:00 -i Foundation\ Audiobook\ \|\ Isaac\ Asimov\ 1951\ 128\ kbps\ \(Audio\ Only\).m4a -vn -c copy -t 1:30:00 Foundation1.m4a && 
+
+Adobe returns all scope data, we only show results that are in stylelist
+
+
+--SS > view all > PDP > back button: reinits SS
+SS > view scoped > PDP > back button > clear facet: reinits SS
+SS single result displays at 100% width
+Lazyload puts view back to top
+
+
+Wedding todo's:
+barn decorations
+	lights
+table design
+try on tie
+hor dourves
+dessert table
+	cupcake holders
+ice cream? (36/$80x4)
+vows?
+finalize WL food/drinks
+seating chart
+seating chart display (window)
+table numbers (race bibs)
+follow up w/ missing rsvp's
+get music, finalize playlist
+size belt
+lawn games
+	jarts, bocce, cornhole, ladderball
+	layout outside
+
+Weekend of:
+pre-wedding haircut
+prep banana pudding
+
+
+
+top level: render list of scent facets
+primary scent: filtered beauty results from top level (scent family && product)
+secondary scent: list cross-sells
+products: ???
+
+top level: render list of scent families
+primary: associated in DIVA
+secondary: cross-sells
+products: combine 2 filter calls
+
+
+Use KWS to replace curated lower collections
+Hide facet used to select products
+Allow further collection filtering
+Override search results styles to match collection pages
+
+
