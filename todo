@@ -1,32 +1,4 @@
-Todo Today (7/21):
-
-Beauty Mixer:
-prepackaged colls of scents, allow to buy 1
-12 primary scents, 2-3 matches for each (pre-determined combinations)
-Secondary: Form (mist, lotion, perfume, etc.)
-Scent leads
-
-Adobe:
-Filter name/value for results URL
-Parent tab on collection
-
-On color/brand, showing pink colors on color tab?
-Add color filter to view all button on tabbed results?
-Do we need to save tab when going to PDP/results?
-
-for tabs, both brand and color must have at least 500 results
-
-
-ffmpeg -ss 0:00:00 -i Foundation\ Audiobook\ \|\ Isaac\ Asimov\ 1951\ 128\ kbps\ \(Audio\ Only\).m4a -vn -c copy -t 1:30:00 Foundation1.m4a && 
-
-Adobe returns all scope data, we only show results that are in stylelist
-
-
---SS > view all > PDP > back button: reinits SS
-SS > view scoped > PDP > back button > clear facet: reinits SS
-SS single result displays at 100% width
-Lazyload puts view back to top
-
+Todo Today (8/9):
 
 Wedding todo's:
 barn decorations
@@ -54,12 +26,11 @@ pre-wedding haircut
 prep banana pudding
 
 
-
-top level: render list of scent facets
-primary scent: filtered beauty results from top level (scent family && product)
-secondary scent: list cross-sells
-products: ???
-
+Beauty Mixer:
+prepackaged colls of scents, allow to buy 1
+12 primary scents, 2-3 matches for each (pre-determined combinations)
+Secondary: Form (mist, lotion, perfume, etc.)
+Scent leads
 top level: render list of scent families
 primary: associated in DIVA
 secondary: cross-sells
@@ -72,3 +43,46 @@ Allow further collection filtering
 Override search results styles to match collection pages
 
 
+VSDP-12222 [BE] Improve facet logic so that it provides customer friendly interactions
+VSDP-25934	0.5		Paul	FE support
+
+VSDP-12606 As a UX designer I would like to test the value of ratings on the Collection page in order to determine if they should be exposed at this point in the funnel.
+VSDP-25936	0.25	Alex	Ensure mobile ratings display correctly
+
+VSDP-15973 As a producer, I want the ability to time box facet values to support driving user response.
+No FE work (BE/CMS only)
+
+VSDP-17128 Create a "Search Not Available" page when Adobe switch is turned off or when search times out
+No FE work (everything is done except testing)
+
+VSDP-20411 Refactor Collection page to gain performance improvements, cleaner code and customer experience improvements
+			7		FEWD	Replace JSPs w/ HBSs
+
+VSDP-21606 As a search product owner, I want the "search term" passed to Certona on the No Results page.
+VSDP-23294	0.5		Jeremy	Append no search URL with SearchTerm context
+
+VSDP-21990 Display Short Description 2 on collection page
+VSDP-23299	0.25	Paul	Update template styles for short description 2 (if needed)
+
+VSDP-22942 As a personalization owner, I would like to update the schema for the Certona personalization container on Sport Search-No Results Page for Mobile, Desktop & Tablet
+No FE work (BE/Certona only)
+
+VSDP-23668 As a merchant, I want the ability to change size of images via different grid types
+VSDP-25931	1		Alex	Tablet - Update grid views
+VSDP-25932	0.75	Alex	Mobile - Update grid views
+VSDP-25933	0.75	Alex	Verify grid views on mobile and tablet
+VSDP-25562			Alex	iPad - Column View does not displaying 3 or 4 columns
+
+24744 As a technologist, I would like refactor the existing Collection grid to improve performance and technical flexibility.
+VSDP-25928	1		Alex	Re-enable grids code
+
+VSDP-24912 Base Brand and size code rule on Class Code (or some solid association) and not Collection 
+No FE work (BE/CMS only)
+
+VSDP-25745 Alt image carousel does not display for an item with set view with available images in the container
+
+
+P	0.75
+J	0.5
+A	3.75
+F	7:Collection Page Refactor + 3:Alt images (if FE)
