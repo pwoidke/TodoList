@@ -1,17 +1,14 @@
-Todo Today (8/9):
+Todo Today (8/17):
 
 Wedding todo's:
 barn decorations
 	lights
 table design
 try on tie
-hor dourves
+hor dourves, drinks
 dessert table
-	cupcake holders
 ice cream? (36/$80x4)
 vows?
-finalize WL food/drinks
-seating chart
 seating chart display (window)
 table numbers (race bibs)
 follow up w/ missing rsvp's
@@ -21,21 +18,10 @@ lawn games
 	jarts, bocce, cornhole, ladderball
 	layout outside
 
-Weekend of:
+Friday:
 pre-wedding haircut
 prep banana pudding
-
-
-Beauty Mixer:
-prepackaged colls of scents, allow to buy 1
-12 primary scents, 2-3 matches for each (pre-determined combinations)
-Secondary: Form (mist, lotion, perfume, etc.)
-Scent leads
-top level: render list of scent families
-primary: associated in DIVA
-secondary: cross-sells
-products: combine 2 filter calls
-
+prep hor dourves
 
 Use KWS to replace curated lower collections
 Hide facet used to select products
@@ -43,46 +29,46 @@ Allow further collection filtering
 Override search results styles to match collection pages
 
 
-VSDP-12222 [BE] Improve facet logic so that it provides customer friendly interactions
-VSDP-25934	0.5		Paul	FE support
-
-VSDP-12606 As a UX designer I would like to test the value of ratings on the Collection page in order to determine if they should be exposed at this point in the funnel.
-VSDP-25936	0.25	Alex	Ensure mobile ratings display correctly
-
-VSDP-15973 As a producer, I want the ability to time box facet values to support driving user response.
-No FE work (BE/CMS only)
-
-VSDP-17128 Create a "Search Not Available" page when Adobe switch is turned off or when search times out
-No FE work (everything is done except testing)
-
-VSDP-20411 Refactor Collection page to gain performance improvements, cleaner code and customer experience improvements
-			7		FEWD	Replace JSPs w/ HBSs
-
-VSDP-21606 As a search product owner, I want the "search term" passed to Certona on the No Results page.
-VSDP-23294	0.5		Jeremy	Append no search URL with SearchTerm context
-
-VSDP-21990 Display Short Description 2 on collection page
-VSDP-23299	0.25	Paul	Update template styles for short description 2 (if needed)
-
-VSDP-22942 As a personalization owner, I would like to update the schema for the Certona personalization container on Sport Search-No Results Page for Mobile, Desktop & Tablet
-No FE work (BE/Certona only)
-
-VSDP-23668 As a merchant, I want the ability to change size of images via different grid types
-VSDP-25931	1		Alex	Tablet - Update grid views
-VSDP-25932	0.75	Alex	Mobile - Update grid views
-VSDP-25933	0.75	Alex	Verify grid views on mobile and tablet
-VSDP-25562			Alex	iPad - Column View does not displaying 3 or 4 columns
-
-24744 As a technologist, I would like refactor the existing Collection grid to improve performance and technical flexibility.
-VSDP-25928	1		Alex	Re-enable grids code
-
-VSDP-24912 Base Brand and size code rule on Class Code (or some solid association) and not Collection 
-No FE work (BE/CMS only)
-
-VSDP-25745 Alt image carousel does not display for an item with set view with available images in the container
+grids: change to max-width: 480px for landscape
+Get component from H&L, create subcomponent with C&S overrides
+C&S rationalize CSS for dynamic text for group/row/column/headers/etc.?
 
 
-P	0.75
-J	0.5
-A	3.75
-F	7:Collection Page Refactor + 3:Alt images (if FE)
+consider complete rewrite of desktop facet menu styles
+
+
+Create bug for double request to Certona
+
+
+TODO:
+Review all C7 tickets
+-Tech review
+-Subtasks
+-Estimates
+Check w/ Anthony about covering for vacation
+Review C7 ticket assignments and fix based on capacity
+
+
+VSDP-25992
+FE: media query for max-width that sets text size/position using mixin from H&L
+Update mixin to use percentage/pixel values instead of viewport units
+Mobile only (desktop is done)
+Use case: Collection headers, floating cues (span 100%)
+Max-width 480px
+We get the base dynamic text component from H&L?
+
+
+Alt images:
+What is the ask?
+Why can't it be done in the JSP?
+How will FE get the data?
+
+If show ai when switch is on,
+if filter by color or when code has primary image code in DIVA,
+C6: can set image type in DIVA and we show images based on specified type
+C7: If collection image is set, we should show the alt images in the carousel
+For coll w/ view type, we should override rules to show AI carousels
+Image logic is all in the JSP, BE moving to controller to send to FE
+
+
+Anthony: Find out where we make call to tell Certona what products were displayed to the user
