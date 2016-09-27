@@ -1,27 +1,19 @@
-Todo Today (8/17):
+Todo Today (9/13):
 
-Wedding todo's:
-barn decorations
-	lights
-table design
-try on tie
-hor dourves, drinks
-dessert table
-ice cream? (36/$80x4)
-vows?
-seating chart display (window)
-table numbers (race bibs)
-follow up w/ missing rsvp's
-get music, finalize playlist
-size belt
-lawn games
-	jarts, bocce, cornhole, ladderball
-	layout outside
+Review C8 tickets
+Nicole feedback
 
-Friday:
-pre-wedding haircut
-prep banana pudding
-prep hor dourves
+
+If done w/ C8:
+Move stuff to Fabric
+Reorganize search stuff in Fabric
+
+
+Next week:
+Dev 1, Regression
+Dev 2, Regression
+C9 Planning
+
 
 Use KWS to replace curated lower collections
 Hide facet used to select products
@@ -72,3 +64,18 @@ Image logic is all in the JSP, BE moving to controller to send to FE
 
 
 Anthony: Find out where we make call to tell Certona what products were displayed to the user
+
+12222 - facets
+
+
+POC:
+use KWS to drive presentation of collection
+Pick/define parameters of collection, use KWS to deliver results
+Determine template and data impact
+Ex: take existing collection, build w/ KWS
+
+C7
+Dynamic text
+Out next week
+POC
+
