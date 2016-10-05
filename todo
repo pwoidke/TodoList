@@ -1,81 +1,30 @@
-Todo Today (9/13):
+Todo Today (10/5):
 
-Review C8 tickets
-Nicole feedback
+Heartache tickets (C8)
+Review C9 tickets & shirt-size
 
-
-If done w/ C8:
-Move stuff to Fabric
-Reorganize search stuff in Fabric
-
-
-Next week:
-Dev 1, Regression
-Dev 2, Regression
-C9 Planning
-
-
-Use KWS to replace curated lower collections
-Hide facet used to select products
-Allow further collection filtering
-Override search results styles to match collection pages
+Home
+Get mail
+Dogs out
+Feed animals
+Make dinner (kebabs?)
+Dishes
+Change
+Run 10Km
+Shower
+Start packing for Steamtown
+Play E:D
 
 
-grids: change to max-width: 480px for landscape
-Get component from H&L, create subcomponent with C&S overrides
-C&S rationalize CSS for dynamic text for group/row/column/headers/etc.?
+Send Sam/Vlad highest priority tech debt for C9
 
 
-consider complete rewrite of desktop facet menu styles
-
-
-Create bug for double request to Certona
-
-
-TODO:
-Review all C7 tickets
--Tech review
--Subtasks
--Estimates
-Check w/ Anthony about covering for vacation
-Review C7 ticket assignments and fix based on capacity
-
-
-VSDP-25992
-FE: media query for max-width that sets text size/position using mixin from H&L
-Update mixin to use percentage/pixel values instead of viewport units
-Mobile only (desktop is done)
-Use case: Collection headers, floating cues (span 100%)
-Max-width 480px
-We get the base dynamic text component from H&L?
-
-
-Alt images:
-What is the ask?
-Why can't it be done in the JSP?
-How will FE get the data?
-
-If show ai when switch is on,
-if filter by color or when code has primary image code in DIVA,
-C6: can set image type in DIVA and we show images based on specified type
-C7: If collection image is set, we should show the alt images in the carousel
-For coll w/ view type, we should override rules to show AI carousels
-Image logic is all in the JSP, BE moving to controller to send to FE
-
-
-Anthony: Find out where we make call to tell Certona what products were displayed to the user
-
-12222 - facets
-
-
-POC:
-use KWS to drive presentation of collection
-Pick/define parameters of collection, use KWS to deliver results
-Determine template and data impact
-Ex: take existing collection, build w/ KWS
-
-C7
-Dynamic text
-Out next week
-POC
-
+Do we have different sort/filters on different tabs, or do they carry over? -Probably not
+Do the preference selectors stay the same as they are now?
+Lazy Load vs. Load More button
+No pinned filter bar
+Save scroll position -No
+Brand filter (tabs) pin to the top on scroll
+Zero results?
+Show tab based on where she's coming from
+How do we get Preference selections to update results?
