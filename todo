@@ -1,24 +1,7 @@
-Todo Today (10/5):
-
-Heartache tickets (C8)
-Review C9 tickets & shirt-size
-
-Home
-Get mail
-Dogs out
-Feed animals
-Make dinner (kebabs?)
-Dishes
-Change
-Run 10Km
-Shower
-Start packing for Steamtown
-Play E:D
+Todo Today (10/6):
 
 
-Send Sam/Vlad highest priority tech debt for C9
-
-
+Boutique questions:
 Do we have different sort/filters on different tabs, or do they carry over? -Probably not
 Do the preference selectors stay the same as they are now?
 Lazy Load vs. Load More button
@@ -28,3 +11,30 @@ Brand filter (tabs) pin to the top on scroll
 Zero results?
 Show tab based on where she's coming from
 How do we get Preference selections to update results?
+
+
+C9
+CI/CD FEWD Initiatives!
+
+70% FEWD
+25% Biz initiatives
+5% Other
+
+MGT:
+App loyalty
+VS/PINK Account merge
+Valentine's Day asks
+Other
+
+FEWD:
+Remove Amaze (80% estimated, going to JIRA next week)
+Move non-Fabric UI into Fabric (be aware of other teams' work, stub out data and document contracts)
+Increase unit test coverage
+SVG system
+Refactor FE MVC (Boutiques, Lovelist) (part of non-fabric UI)
+Mind time (brainstorming)
+
+No product teams
+Functional teams (focused on initiatives) instead
+WCAG Team, Fabric team, testing/coverage team
+Teams will be figured out next week(?)
