@@ -1,4 +1,10 @@
-Todo Today (10/6):
+Todo Today (10/7):
+
+FE C9 review meeting @ 3pm
+
+
+Moving layouts/girds into Fabric
+What can't be moved into components? Features? Anything used in multiple places?
 
 
 Boutique questions:
@@ -13,7 +19,7 @@ Show tab based on where she's coming from
 How do we get Preference selections to update results?
 
 
-C9
+C9:
 CI/CD FEWD Initiatives!
 
 70% FEWD
@@ -38,3 +44,28 @@ No product teams
 Functional teams (focused on initiatives) instead
 WCAG Team, Fabric team, testing/coverage team
 Teams will be figured out next week(?)
+
+Teams:
+Alex - Framework w/ Anthony/Nicole - Virtual DOM, linkable state, SPA improvements, routing
+Jeremy - Fabric SVG w/ Joey, Brian/Sundar - Make sure SVG system is ready to be implemented
+Paul - Store Locator w/ Sheel, Brian, Raj, Chris D. - Aiming for 100% coverage on Store Locator page
+
+Store Locator Team
+XL - Sheel - Paul - Brian, Raj, Chris D.
+Metrics Integration Testing, JS Unit Testing, WCAG Unit Testing, UI Integration Testing, Performance Testing, (CI Pipeline)
+
+Maybe switch w/ Scott to Fabric v2 team
+XXL - George - Paul/Aaron - Cory, Rachel, Chris S.
+layout, features, masthead, footer, lazy loading, scroll listener, misc improvements, browser sync(?)
+We will need to make decisions about data w/ BE so that everything is done done
+What is a component? When is it static vs dynamic? How do we go about building them from non-fabric?
+Explore web components & shadow DOM
+See Styleguide > Creating Fabric, About
+Explore BEM, Twitter Bootstrap, Polymer (see Peter's FB post)
+
+
+ForeSee POC
+<a> tag
+click event
+update window.location
+import ForeSee code
