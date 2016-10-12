@@ -1,14 +1,18 @@
 Todo Today (10/12):
 
-Code quality is key in C9
+Code quality is key
+
+Set up subtasking meeting w/ Jeremy
 
 
-Meet w/ Aaron re: Fabric team stuff
-ForeSee prototype for review
-Love List/Valentine's Day reqs meeting
+ForeSee POC
+<a> tag
+click event
+update window.location
+import ForeSee code
 
 
-Moving layouts/girds into Fabric
+Moving layouts/grids into Fabric
 What can't be moved into components? Features? Anything used in multiple places?
 
 
@@ -24,74 +28,20 @@ Show tab based on where she's coming from
 How do we get Preference selections to update results?
 
 
-C9:
-CI/CD FEWD Initiatives!
-
-70% FEWD
-25% Biz initiatives
-5% Other
-
-MGT:
-App loyalty
-VS/PINK Account merge
-Valentine's Day asks
-Other
-
-FEWD:
-Remove Amaze (80% estimated, going to JIRA next week)
-Move non-Fabric UI into Fabric (be aware of other teams' work, stub out data and document contracts)
-Increase unit test coverage
-SVG system
-Refactor FE MVC (Boutiques, Lovelist) (part of non-fabric UI)
-Mind time (brainstorming)
-
-No product teams
-Functional teams (focused on initiatives) instead
-WCAG Team, Fabric team, testing/coverage team
-Teams will be figured out next week(?)
-
-Teams:
-Alex - Framework w/ Anthony/Nicole - Virtual DOM, linkable state, SPA improvements, routing
-Jeremy - Fabric SVG w/ Joey, Brian/Sundar - Make sure SVG system is ready to be implemented
-Paul - Store Locator w/ Sheel, Brian, Raj, Chris D. - Aiming for 100% coverage on Store Locator page
-
-Store Locator Team
-XL - Sheel - Paul - Brian, Raj, Chris D.
-Metrics Integration Testing, JS Unit Testing, WCAG Unit Testing, UI Integration Testing, Performance Testing, (CI Pipeline)
-
-Maybe switch w/ Scott to Fabric v2 team
-XXL - George - Paul/Aaron - Cory, Rachel, Chris S.
-layout, features, masthead, footer, lazy loading, scroll listener, misc improvements, browser sync(?)
-We will need to make decisions about data w/ BE so that everything is done done
-What is a component? When is it static vs dynamic? How do we go about building them from non-fabric?
-Explore web components & shadow DOM
-See Styleguide > Creating Fabric, About
-Explore BEM, Twitter Bootstrap, Polymer (see Peter's FB post)
-
-
-ForeSee POC
-<a> tag
-click event
-update window.location
-import ForeSee code
-
-
 Love List
 Add feature to Love List header (maybe expose share dialogue, maybe something else) (VSDP-28042)
 Update email
 Update social post data
 Add reminder to select attributes when sharing (VSDP-28176)
+Only content is updating (not the controls)
 
-Todo:
-Define requirements & subtask
-Find out about how email and social code works (Sam?)
 Questions:
 	Are the ftl files the correct templates for the LL emails? (yes)
 	Do we need to do anything special to update them? (VSDWEB process)
 	Can we show Love List items in the email? (availability, restrictions, etc.)
-	Do we need to do anything special to update social stuff?
-	What does a recipient see if items are no longer available on a shared LL?
-	Where does the shared LL page code live?
+	Do we need to do anything special to update social stuff? (no)
+	What does a recipient see if items are no longer available on a shared LL? (normal LL)
+	Where does the shared LL page code live? (see ticket)
 Compare w/ product share on PDP
 
 
@@ -104,15 +54,6 @@ Variations: Duplication, inconsistency
 Configure: heavy, complex
 Is there a time where the context in which a feature exists should influence it?
 
-
-Today:
-ForeSee POC
-Touchbase
-Fabric Subtasking
-Set up subtasking meeting w/ Jeremy
-
-
-Fv2:
 Decommission #wrapper
 Layouts: full-width, group row, grids
 Fabric masthead/footer
