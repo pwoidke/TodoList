@@ -1,6 +1,11 @@
-Todo Today (10/7):
+Todo Today (10/12):
 
-FE C9 review meeting @ 3pm
+Code quality is key in C9
+
+
+Meet w/ Aaron re: Fabric team stuff
+ForeSee prototype for review
+Love List/Valentine's Day reqs meeting
 
 
 Moving layouts/girds into Fabric
@@ -69,3 +74,51 @@ ForeSee POC
 click event
 update window.location
 import ForeSee code
+
+
+Love List
+Add feature to Love List header (maybe expose share dialogue, maybe something else) (VSDP-28042)
+Update email
+Update social post data
+Add reminder to select attributes when sharing (VSDP-28176)
+
+Todo:
+Define requirements & subtask
+Find out about how email and social code works (Sam?)
+Questions:
+	Are the ftl files the correct templates for the LL emails? (yes)
+	Do we need to do anything special to update them? (VSDWEB process)
+	Can we show Love List items in the email? (availability, restrictions, etc.)
+	Do we need to do anything special to update social stuff?
+	What does a recipient see if items are no longer available on a shared LL?
+	Where does the shared LL page code live?
+Compare w/ product share on PDP
+
+
+Standardize the "page" template (decommission #wrapper, replace with layouts)
+elements > components > patterns (variations with regular culling)
+how to have different versions/variations/extensions
+where do features belong
+Extend: multiples break it
+Variations: Duplication, inconsistency
+Configure: heavy, complex
+Is there a time where the context in which a feature exists should influence it?
+
+
+Today:
+ForeSee POC
+Touchbase
+Fabric Subtasking
+Set up subtasking meeting w/ Jeremy
+
+
+Fv2:
+Decommission #wrapper
+Layouts: full-width, group row, grids
+Fabric masthead/footer
+Subtasks by EOD Friday
+I am doing VSDP-28465 - Rich media components
+
+
+Touchbase
+Can we check time on the FE to control functionality?
