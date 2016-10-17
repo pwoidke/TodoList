@@ -1,0 +1,10 @@
+Boutique questions:
+Do we have different sort/filters on different tabs, or do they carry over? -Probably not
+Do the preference selectors stay the same as they are now?
+Lazy Load vs. Load More button
+No pinned filter bar
+Save scroll position -No
+Brand filter (tabs) pin to the top on scroll
+Zero results?
+Show tab based on where she's coming from
+How do we get Preference selections to update results?

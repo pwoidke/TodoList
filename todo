@@ -1,107 +1,11 @@
-Todo Today (10/12):
+Todo Today (10/17):
 
 Code quality is key
 
-Set up subtasking meeting w/ Jeremy
+Review subtasking w/ Jeremy
 
+Fabric Feature subtasks/tech review updates
 
-ForeSee POC
-<a> tag
-click event
-update window.location
-import ForeSee code
--Can't reproduce
+At some point we will need to decouple the drawer and mobile facet menu so that it doesn't require a click in the styleguide
 
-
-Moving layouts/grids into Fabric
-What can't be moved into components? Features? Anything used in multiple places?
-
-
-Boutique questions:
-Do we have different sort/filters on different tabs, or do they carry over? -Probably not
-Do the preference selectors stay the same as they are now?
-Lazy Load vs. Load More button
-No pinned filter bar
-Save scroll position -No
-Brand filter (tabs) pin to the top on scroll
-Zero results?
-Show tab based on where she's coming from
-How do we get Preference selections to update results?
-
-
-Love List
-Add feature to Love List header (maybe expose share dialogue, maybe something else) (VSDP-28042)
-Update email
-Update social post data
-Add reminder to select attributes when sharing (VSDP-28176)
-Only content is updating (not the controls)
-
-Questions:
-	Are the ftl files the correct templates for the LL emails? (yes)
-	Do we need to do anything special to update them? (VSDWEB process)
-	Can we show Love List items in the email? (availability, restrictions, etc.)
-	Do we need to do anything special to update social stuff? (no)
-	What does a recipient see if items are no longer available on a shared LL? (normal LL)
-	Where does the shared LL page code live? (see ticket)
-Compare w/ product share on PDP
-
-
-Standardize the "page" template (decommission #wrapper, replace with layouts)
-elements > components > patterns (variations with regular culling)
-how to have different versions/variations/extensions
-where do features belong
-Extend: multiples break it
-Variations: Duplication, inconsistency
-Configure: heavy, complex
-Is there a time where the context in which a feature exists should influence it?
-
-Decommission #wrapper
-Layouts: full-width, group row, grids
-Fabric masthead/footer
-Subtasks by EOD Friday
-I am doing VSDP-28465 - Rich media/content/feature components
-
-Moving things around, filling in gaps (inconsistent documentation)
-We should know what can be configured in CMS and code/test to it
-Ex: Dynamic text/video/product selection all represent CMS, but have different configuration options view
-
-
-Set up breakout session w/ Nat
-document what feature overrides exist in Collection/Search
-type, name, responsive, configurable
-
-Make a static thing first (no JSON)
-
-Ex subtasks:VSDP-28464
-
-
-Touchbase
-Can we check time on the FE to control functionality? (Test dimension?, check w/ Nat)
-
-
-Fabric
-Techniques
-	extending/embedding partials (markup embedded on page)
-	classing (class specifies layout)
-Attributes (brand, device, template)
-	adaptive (new files for each version)
-	responsive (same markup for different attributes)
-	variation/subcomponents (conditionally change behavior based on attributes)
-Configuration
-	CMS sets feature data (video: controls, loop, etc.; dynamic text: copy location, font, etc.)
-API
-	What you need to use the piece of fabric (JS require/HBS embed)
-
-Each component is a Node package
-The abstract is the Masthead
-The variation is none/checkout/third-party/etc.
-
-
-VDay priority
-Email 2.5
-Social 1.5
-Add Feature 3
-Dependencies: MGT (feature), UX (comps/copy)
-
-
-Fill in destinations for non-fabric components
+Determine all combos of text/images for social sharing

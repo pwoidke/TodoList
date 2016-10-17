@@ -1,0 +1,39 @@
+Love List
+Add feature to Love List header (maybe expose share dialogue, maybe something else) (VSDP-28042)
+Update email
+Update social post data
+Add reminder to select attributes when sharing (VSDP-28176)
+Only content is updating (not the controls)
+
+Questions:
+	Are the ftl files the correct templates for the LL emails? (yes)
+	Do we need to do anything special to update them? (VSDWEB process)
+	Can we show Love List items in the email? (availability, restrictions, etc.)
+	Do we need to do anything special to update social stuff? (no)
+	What does a recipient see if items are no longer available on a shared LL? (normal LL)
+	Where does the shared LL page code live? (see ticket)
+Compare w/ product share on PDP
+
+
+VDay priority
+Email 2.5
+Social 1.5
+Add Feature 3
+Dependencies: MGT (feature), UX (comps/copy)
+
+
+VDay TB w/ Ryan
+Empty lovelist (no share buttons), should we hide feature or show a different state?
+On desktop, header/share buttons pin to top on scroll
+On click feature, open share (or share replaces feature)
+Unpin header bar
+Mobile: tap feature, show options overlay
+
+Refactor:
+remove pinned header
+remove border update on share open
+
+
+TODO Love List:
+Confirm no custom feature functionality
+Router state set on image link click

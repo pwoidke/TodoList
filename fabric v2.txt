@@ -1,0 +1,44 @@
+Standardize the "page" template (decommission #wrapper, replace with layouts)
+elements > components > patterns (variations with regular culling)
+how to have different versions/variations/extensions
+where do features belong
+Extend: multiples break it
+Variations: Duplication, inconsistency
+Configure: heavy, complex
+Is there a time where the context in which a feature exists should influence it?
+
+Decommission #wrapper
+Layouts: full-width, group row, grids
+Fabric masthead/footer
+Subtasks by EOD Friday
+I am doing VSDP-28465 - Rich media/content/feature components
+
+Moving things around, filling in gaps (inconsistent documentation)
+We should know what can be configured in CMS and code/test to it
+Ex: Dynamic text/video/product selection all represent CMS, but have different configuration options view
+
+document what feature overrides exist in Collection/Search
+type, name, responsive, configurable
+
+Make a static thing first (no JSON)
+
+Ex subtasks:VSDP-28464
+
+Fabric
+Techniques
+	extending/embedding partials (markup embedded on page)
+	classing (class specifies layout)
+Attributes (brand, device, template)
+	adaptive (new files for each version)
+	responsive (same markup for different attributes)
+	variation/subcomponents (conditionally change behavior based on attributes)
+Configuration
+	CMS sets feature data (video: controls, loop, etc.; dynamic text: copy location, font, etc.)
+API
+	What you need to use the piece of fabric (JS require/HBS embed)
+
+Each component is a Node package
+The abstract is the Masthead
+The variation is none/checkout/third-party/etc.
+
+Fill in destinations for non-fabric components
