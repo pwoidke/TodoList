@@ -37,3 +37,27 @@ remove border update on share open
 TODO Love List:
 Confirm no custom feature functionality
 Router state set on image link click
+
+
+Requirements, Specs, Comps:
+MVP:
+Feature on LL (DIVA-managed)
+Email content
+Social content
+Content should be removed on specific date
+BE:
+Add header feature to page
+Update JSPs (email/social data) to integrate w/ DIVA
+FE:
+Update email template
+Remove pinned nav (done)
+(add feature to page via feature data in JSON?)
+Show different feature for empty list, list w/ items, shared list
+	- Render all 3, hide them, FE shows applicable feature based on data
+	- (CMS could set up conditional feature to handle this functionality)
+DIVA>Social: CMS>Thursday
+Social content comes from BE in pagedata
+Email content comes from BE via ftl templates
+On recipient view, hide feature if list is empty
+Ryan: Getting alignment on MVP for displaying features
+On feature, hide hr line (done)

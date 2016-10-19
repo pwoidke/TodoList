@@ -42,3 +42,18 @@ The abstract is the Masthead
 The variation is none/checkout/third-party/etc.
 
 Fill in destinations for non-fabric components
+
+
+Template: The Page
+Layout: Relation to the window
+Grid: Relation of content to layout
+
+
+Feature Breakout Session Questions:
+	What are all the different types of "rich media components"? Products, features, anything else?
+	Single feature component that works for anything or different components for each type of feature?
+	Single configurable product component or many variations?
+	Are there examples on the site where features are rendered on the FE?
+	How do we link features to markup? Feature IDs?
+	How do we control/account for feature sizing set in DIVA?
+	How do we dictate what product to show?
