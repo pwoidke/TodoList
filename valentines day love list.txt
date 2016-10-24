@@ -61,3 +61,32 @@ Email content comes from BE via ftl templates
 On recipient view, hide feature if list is empty
 Ryan: Getting alignment on MVP for displaying features
 On feature, hide hr line (done)
+
+
+
+
+If she clears all, show empty feature (need both)
+
+
+LBIFeature (LoveListShare): EmailLoggedIn/Anonymous/Social, etc.
+FeatureTitle1/2, Copy to set email content
+
+Email image:
+LBIFeature (LBIImage): Love List Email Images R2 (1266674460071)
+http://em.victoriassecret.com/imagefeatures/0x0/1266674460071/model-image.jpg
+
+Can we set/overwrite facebook share stuff?
+FB pulls opengraph tags from the Love List page
+
+CMS (Rachel) needs a list of everything that should be configurable in DIVA
+Email
+	header image
+	main image
+	footer image
+	text 1/2/3
+Social
+	image
+	text
+		FB
+		Twitter
+		Pinterest

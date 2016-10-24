@@ -1,82 +1,19 @@
-Todo Today (10/19):
+Todo Today (10/24):
 
 Code quality is key
-
-Fabric Feature subtasks/tech review updates
-
-At some point we will need to decouple the drawer and mobile facet menu so that it doesn't require a click in the styleguide
-
 Make deletable code
 
-C8:
-Embedded color swatch
-Saving and restoring scroll position on Scope Select
-Visual fixes
-Facet menu accordions and filter menu positioning
-Love List CTA formatting
-Weird ForeSee bug (location.replace)
-Product styling on lazy load
-WCAG fixes
-Fixed search results page formatting
-
-C9:
-WCAG fix for QV button focus
-fix for Stacked collections without text headers
-fix for feature scaling on collection
+Fabric++
+	Landing page
+		Scrolling to section
+		Active class on current section
+	Features
+		Check existing features in Fabric
+			Dynamic Text
+			Image
+			Animated Image
+Love List
+	Add feature to page based on example code from Sandeep
 
 
-	
-
-$('.feature-model).each(function (feature) {
-	// .f400x224
-	var sizeClass = feature.class;
-
-	// get height/width:
-	// f{height}x{width}
-	var regex = /f\d+x\d+/;
-	var height = sizeClass.match(regex)[1];
-	var width = sizeClass.match(regex)[3];
-
-	// set aspect ratio
-	feature.css();
-});
-
-function setAspectRatio ($elem, $width, $height) {
-
-	$elem.css('position', 'relative');
-	$elem.children().css('position', 'absolute');
-	$elem.children().css('top', '0');
-	$elem.children().css('left', '0');
-	$elem.children().css('right', '0');
-	$elem.children().css('bottom', '0');
-
-  &:before {
-    display: block;
-    content: "";
-    width: 100%;
-    padding-top: ($height / $width) * 100%;
-  }
-}
-
-For JS aspect ratio:
-http://stackoverflow.com/a/14731922/778329
-
-
-
-@mixin aspect-ratio($width, $height) {
-  position: relative;
-  &:before {
-    display: block;
-    content: "";
-    width: 100%;
-    padding-top: ($height / $width) * 100%;
-  }
-  > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-}
-
+At some point we will need to decouple the drawer and mobile facet menu so that it doesn't require a click in the styleguide

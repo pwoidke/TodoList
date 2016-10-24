@@ -50,10 +50,68 @@ Grid: Relation of content to layout
 
 
 Feature Breakout Session Questions:
-	What are all the different types of "rich media components"? Products, features, anything else?
-	Single feature component that works for anything or different components for each type of feature?
-	Single configurable product component or many variations?
 	Are there examples on the site where features are rendered on the FE?
-	How do we link features to markup? Feature IDs?
-	How do we control/account for feature sizing set in DIVA?
-	How do we dictate what product to show?
+		Carousels are FE using JSON
+		DynaText are JSPs except for offers (FE/JSON)
+		JSON comes through in pagedata
+	Offers in dynamic text
+		Should they be separate things?
+
+
+We are building a landing page that explains the toolkit to the people who use our tools (see framerjs site)
+images, dynamic text, video, animated images, etc. (features)
+on click, goes to it's fabric
+designer must know entire tool set (impossible to tell them in one screen, so we break it into 2)
+Prototype:
+	ul.grouprow is running the show
+	uses em's
+	container is owner of relative size
+left nav is list of types, right panel is explanation with link to Fabric
+Use existing "features" component for page
+"Tell UX how to do their job" / "You make products for designers"
+material.google.com
+Talk to Bridget & Regina to tell them they will provide content
+Work
+	Phase 1: Landing page to teach UX how to talk to audience
+		Nat will send branch w/ parallax work for left nav
+			Tell something to be "magnetic" (fix at a certain pixel)
+			Make it a component (if it's not already)
+	Phase 2: Put configuration into styleguide w/ example
+	Phase 3: Look at how the feature works and (refactor?)
+	Phase n: Composition of these things, Testing
+subtasks
+	build features landing page
+	build products landing page
+ket-dive-005.lbidts.com/cs
+Feature types:
+	Carousel
+	Dynamic Text
+	Hybrid
+	Image
+	Animated Image
+	Text?
+	Video
+See DIVA for config
+	Layer Feature Assoc lives above feature
+	Go through DIVA and understand setup (meeting w/ CMS team)
+	Determine what goes in control panel
+	See how things are done in JSPs
+
+Products
+	Is PDP a product card?
+	Should product selection exist as a state of a product card (see Love List)?
+	Set up meeting w/ Parker & Ryan to share our thoughts on Product Cards and attributes that control them
+	JSPs
+		collection
+		love list
+		PDP? (and cross sells, and product mixer, etc.)
+	FE
+		(all certona containers)
+		search
+		desktop autocomplete
+		bra boutique
+		bra boutique removals
+		multi group pricing bundle
+
+
+What are all the different variations of PDP?
