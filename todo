@@ -1,19 +1,46 @@
-Todo Today (10/24):
+Todo Today (10/31🎃):
 
 Code quality is key
 Make deletable code
 
 Fabric++
-	Landing page
-		Scrolling to section
-		Active class on current section
-	Features
-		Check existing features in Fabric
-			Dynamic Text
-			Image
-			Animated Image
-Love List
-	Add feature to page based on example code from Sandeep
+	Finish Hybrid feature
+	Video
+	Carousel
+	Review animated image
 
+Love List
+	Add click/show functionality to feature
 
 At some point we will need to decouple the drawer and mobile facet menu so that it doesn't require a click in the styleguide
+
+Update Love List to use UU.watch()
+
+
+Collection:
+M	XL	collection.jsp (Header, filters (desktop), product grid)
+M	L	Update products to use product model
+M	M	remove collection pagedata (love list response, user status)
+H	M	Move desktop header filters into fabric
+H	XL	Move features into fabric (floating cues, page headers, collection headers)
+H	S	Assuming similar data, we should be able to use search implementation
+
+Love List:
+M	M	viewLovelist.jsp + pagedata
+M	M	shareLovelist.jsp + pagedata
+H	XS	Lovelist ajax status update (should be okay, JSON)
+M	M	Update Love List to use UU.watch()
+L	L	Remove references to pagedata (initial is pagedata, updates are AJAX?)
+M	L	Update Fabric grids for Love List
+
+Search:
+H	XS	All FE (I think)
+H	XS	no changes to ajax (all JSON)
+L	S	JS Nav search? (just a link to search page)
+M	L	Update products to use product model
+
+Boutique Results:
+L	XL	Product grid: Update to use standard coll/search markup/styles/data
+
+Next Up: Meet w/ team, start estimating JSPs (not APIs)
+Document APIs as you go through the JSP

@@ -1,0 +1,82 @@
+
+
+<!--if link && map, use map, otherwise use link-->
+
+<!--hybrid-banner-top-mapped (full width)-->
+<div id="f{{featureId}}" class="ftr hybrid">
+    <h3 itemscope="" itemtype="http://schema.org/Offer" class="{{#if banner}}bnr{{/if}}" role="presentation">
+        <div id="f{{featureId}}" itemscope="" itemtype="http://schema.org/Thing">
+            <div class="{{class}}{{#if map}} map{{/if}}">
+                <img class="ftr " src="https://{{@root.media}}/imagefeatures/{{#if width}}{{width}}{{else}}0{{/if}}x{{#if height}}{{height}}{{else}}0{{/if}}/{{featureId}}/{{image}}" alt="{{altText}}" itemprop="image">
+                <meta itemprop="name" content="{{altText}}">
+                {{#each featureMap}}
+                    <a href="{{href}}"
+                        class="featureMap {{class}}{{#if shape}} {{shape}}{{/if}}{{#if overlaySize}} overlay{{#if showQuickview}} qv{{/if}}{{/if}}"  
+                        itemprop="url" 
+                        {{#if overlaySize}} data-modal="{{overlaySize}}"{{/if}} 
+                        data-coordinates="{{coordinates}}" 
+                        target="_{{#if target}}{{target}}{{else}}self{{/if}}"  
+                        name="{{title}}" title="{{title}}"></a>
+                {{/each}}
+            </div>
+        </div>
+    </h3>
+    <h2 itemscope="" itemtype="http://schema.org/Offer" role="presentation">
+        <img itemprop="image" src="https://{{@root.media}}/imagefeatures/{{#if width}}{{width}}{{else}}0{{/if}}x{{#if height}}{{height}}{{else}}0{{/if}}/{{featureId}}/{{image}}" alt="{{altText}}">
+        <meta itemprop="name" content="{{altText}}">
+    </h2>
+</div>
+
+<!--banner top linked-->
+<h3 itemscope="" itemtype="http://schema.org/Offer" class="f400x224 bnr" role="presentation">
+    <a name="COLLECTION PAGE: FEATURE1" class="bannertop f400x224 " data-modal="small" href="/popups/1267719046355" itemprop="url" title="Last Day! Free Shipping &amp; Returns with Any Bra Purchase. Exclusions apply. Code TRYBRAS. Click for details.">
+        <img src="//dm-dev-005.lbidts.com/imagefeatures/0x0/1266916975656/022516-FC-FSR-bra.jpg" alt="Last Day! Free Shipping &amp; Returns with Any Bra Purchase. Exclusions apply. Code TRYBRAS. Click for details." title="Last Day! Free Shipping &amp; Returns with Any Bra Purchase. Exclusions apply. Code TRYBRAS. Click for details." itemprop="image" class="ftr ">
+    </a>
+</h3>
+<h2 itemscope="" itemtype="http://schema.org/Offer" role="presentation">
+    <a href="/popups/1267719046355" class="">
+        <img itemprop="image" src="//dm-dev-005.lbidts.com/imagefeatures/1266916975656/022516-FC-FSR-bra.jpg" alt="Last Day! Free Shipping &amp; Returns with Any Bra Purchase. Exclusions apply. Code TRYBRAS. Click for details.">
+        <meta itemprop="name" content="Last Day! Free Shipping &amp; Returns with Any Bra Purchase. Exclusions apply. Code TRYBRAS. Click for details.">
+    </a>
+</h2>
+
+<!--sub standard map-->
+
+<div id="f1266916975656" itemscope="" itemtype="http://schema.org/Thing">
+    <div id="tkwkgmm" itemscope="" itemtype="http://schema.org/Thing">
+        <div class="ssf f400x224 map">
+            <img class="ftr " src="//dm-dev-005.lbidts.com/imagefeatures/0x0/1266916975656/022516-FC-FSR-bra.jpg" alt="Last Day! Free Shipping &amp; Returns with Any Bra Purchase. Exclusions apply. Code TRYBRAS. Click for details." itemprop="image">
+            <a itemprop="url" name="COLLECTION PAGE: FEATURE1" title="alt text" class="l0  " style="position: absolute; top: 0.0%; left: 0.0%; width: 22.321428%; height: 12.5%; z-index: 2;" href="/home" data-modal="medium">&nbsp;</a>
+        </div>
+    </div>
+</div>
+
+<!--sub standard link-->
+
+<div id="f1266916975656" itemscope="" itemtype="http://schema.org/Thing" class="amaze-image-holder">
+    <a name="COLLECTION PAGE: FEATURE1" class="ssf f400x224  amaze-image-border" data-modal="small" href="/popups/1267719046355" itemprop="url" title="Last Day! Free Shipping &amp; Returns with Any Bra Purchase. Exclusions apply. Code TRYBRAS. Click for details.">
+        <img src="//dm-dev-005.lbidts.com/imagefeatures/0x0/1266916975656/022516-FC-FSR-bra.jpg" alt="Last Day! Free Shipping &amp; Returns with Any Bra Purchase. Exclusions apply. Code TRYBRAS. Click for details." title="Last Day! Free Shipping &amp; Returns with Any Bra Purchase. Exclusions apply. Code TRYBRAS. Click for details." itemprop="image" class="ftr ">
+    </a>
+</div>
+
+<!--sub distortion link-->
+
+<div id="f1266916975656" itemscope="" itemtype="http://schema.org/Thing">
+        <a name="COLLECTION PAGE: FEATURE1" class="dsf f400x224 " data-modal="small" href="/popups/1267719046355" itemprop="url" title="Last Day! Free Shipping &amp; Returns with Any Bra Purchase. Exclusions apply. Code TRYBRAS. Click for details.">
+        <img src="//dm-dev-005.lbidts.com/imagefeatures/0x0/1266916975656/022516-FC-FSR-bra.jpg" alt="Last Day! Free Shipping &amp; Returns with Any Bra Purchase. Exclusions apply. Code TRYBRAS. Click for details." title="Last Day! Free Shipping &amp; Returns with Any Bra Purchase. Exclusions apply. Code TRYBRAS. Click for details." itemprop="image" class="ftr ">
+    </a>
+</div>
+
+<!--sub distortion map-->
+<div id="f1266916975656" itemscope="" itemtype="http://schema.org/Thing">
+    <div id="vwtrvag" itemscope="" itemtype="http://schema.org/Thing">
+        <div class="dsf f400x224 map">
+            <img class="ftr " src="//dm-dev-005.lbidts.com/imagefeatures/0x0/1266916975656/022516-FC-FSR-bra.jpg" alt="Last Day! Free Shipping &amp; Returns with Any Bra Purchase. Exclusions apply. Code TRYBRAS. Click for details." itemprop="image">
+            <a itemprop="url" name="COLLECTION PAGE: FEATURE1" title="alt text" class="l0  " style="position: absolute; top: 0.0%; left: 0.0%; width: 22.321428%; height: 12.5%; z-index: 2;" href="/home" data-modal="medium">&nbsp;</a>
+        </div>
+    </div>
+</div>
+
+<!--tall uses width, wide uses full width-->
+<!--sub bottom doesn't show up?-->
+

@@ -115,3 +115,25 @@ Products
 
 
 What are all the different variations of PDP?
+
+
+product-selection/styleguide.json for basis of product supermodel
+selection/features/*.json for variations
+
+animate-onscroll vs animated-image
+
+variation
+	has a supermodel
+	grabs props it needs as defaults
+	sets non-default data
+
+
+FeatureType:
+	Offer:
+	Simple overlay:
+	Text header: https://www.victoriassecret.com/sleepwear/most-loved-pjs
+	Text sub:
+
+node make-fabric.js components features/image responsive configurable
+
+***Move features to em sizing
