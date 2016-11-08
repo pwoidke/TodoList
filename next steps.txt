@@ -1,0 +1,201 @@
+Meeting Lauren/Sheel 
+--------------------
+- We have questions that the code cannot answer
+- We want to talk with Rachel
+- Plan for after holiday to confirm & add support
+
+Carousel
+  How are circle navs used?
+  Added looping (so the end goes to slide 1 again)
+  Removed autorotating?
+  Confirm w/ H&L that the old data is being used and is still relevant
+  Diva/Production/Creative 
+    Are there scenarios that we haven't covered?
+    Do current scenarios make sense?
+  Assumes we'll refactor width and heights based on Layouts during integration
+  Visual Tests
+Video
+  *Generate a list of supported scenario
+  Assumes we'll refactor width and heights based on Layouts during integration
+  Visual Tests
+Text
+  Diva/Production/Creative 
+    Are there scenarios that we haven't covered?
+    Do current scenarios make sense?
+    Are there context aware scenarios that change the display?
+  Visual Tests
+Animated Image
+  *Generate a list of supported scenarios
+    animated image banner 1180x100
+    animated image cards (product size)?
+    animate on scroll banner 1180x100
+    animate on scroll cards (product size)?
+  Assumes we'll refactor width and heights based on Layouts during integration
+  Visual Tests
+Image
+  Abstract Map styles
+  Abstract ViewModel Feature Adapter
+    - feature width
+    - feature height
+    - map coords
+    - etc. (things the JSP calculated for us)
+  Added circle support
+  Assumes we'll refactor width and heights based on Layouts during integration
+  Visual Tests
+Hybrid
+  Is the expectation that an image comes out on desktop and a text comes out on mobile
+    If not, are you sure that it shouldn't?
+  What is the text feature equivalent?
+  Visual Tests
+Dynamic Text
+  *Generate a list of supported scenarios
+    3/3
+    ---
+    3/3 PINK2 Promo Caption Feature Top
+    3/3 PINK2 Promo Caption Feature Bottom
+    3/3 PINK2 Promo Caption Feature Top/Bottom
+    3/3 PINK2 Promo Flex Feature Top Left
+    3/3 PINK2 Promo Flex Feature Top Center
+    3/3 PINK2 Promo Flex Feature Top Right
+    3/3 PINK2 Promo Flex Feature Center Left
+    3/3 PINK2 Promo Flex Feature Center Center
+    3/3 PINK2 Promo Flex Feature Center Right
+    3/3 PINK2 Promo Flex Feature Bottom Left
+    3/3 PINK2 Promo Flex Feature Bottom Center
+    3/3 PINK2 Promo Flex Feature Bottom Right
+
+    3/3 PINK1 Feature Caption Feature Top
+    3/3 PINK1 Feature Caption Feature Bottom
+    3/3 PINK1 Feature Caption Feature Top/Bottom
+    3/3 PINK1 Feature Flex Feature Top Left
+    3/3 PINK1 Feature Flex Feature Top Center
+    3/3 PINK1 Feature Flex Feature Top Right
+    3/3 PINK1 Feature Flex Feature Center Left
+    3/3 PINK1 Feature Flex Feature Center Center
+    3/3 PINK1 Feature Flex Feature Center Right
+    3/3 PINK1 Feature Flex Feature Bottom Left
+    3/3 PINK1 Feature Flex Feature Bottom Center
+    3/3 PINK1 Feature Flex Feature Bottom Right
+
+    3/3 Sport Caption Feature Top
+    3/3 Sport Caption Feature Bottom
+    3/3 Sport Caption Feature Top/Bottom
+    3/3 Sport Flex Feature Top Left
+    3/3 Sport Flex Feature Top Center
+    3/3 Sport Flex Feature Top Right
+    3/3 Sport Flex Feature Center Left
+    3/3 Sport Flex Feature Center Center
+    3/3 Sport Flex Feature Center Right
+    3/3 Sport Flex Feature Bottom Left
+    3/3 Sport Flex Feature Bottom Center
+    3/3 Sport Flex Feature Bottom Right
+
+    3/3 VS2 Promo Caption Feature Top
+    3/3 VS2 Promo Caption Feature Bottom
+    3/3 VS2 Promo Caption Feature Top/Bottom
+    3/3 VS2 Promo Flex Feature Top Left
+    3/3 VS2 Promo Flex Feature Top Center
+    3/3 VS2 Promo Flex Feature Top Right
+    3/3 VS2 Promo Flex Feature Center Left
+    3/3 VS2 Promo Flex Feature Center Center
+    3/3 VS2 Promo Flex Feature Center Right
+    3/3 VS2 Promo Flex Feature Bottom Left
+    3/3 VS2 Promo Flex Feature Bottom Center
+    3/3 VS2 Promo Flex Feature Bottom Right
+
+    3/3 VS1 Feature Caption Feature Top
+    3/3 VS1 Feature Caption Feature Bottom
+    3/3 VS1 Feature Caption Feature Top/Bottom
+    3/3 VS1 Feature Flex Feature Top Left
+    3/3 VS1 Feature Flex Feature Top Center
+    3/3 VS1 Feature Flex Feature Top Right
+    3/3 VS1 Feature Flex Feature Center Left
+    3/3 VS1 Feature Flex Feature Center Center
+    3/3 VS1 Feature Flex Feature Center Right
+    3/3 VS1 Feature Flex Feature Bottom Left
+    3/3 VS1 Feature Flex Feature Bottom Center
+    3/3 VS1 Feature Flex Feature Bottom Right
+
+    1/3
+    ---
+    1/3 PINK2 Promo Caption Feature Top
+    1/3 PINK2 Promo Caption Feature Bottom
+    1/3 PINK2 Promo Caption Feature Top/Bottom
+    1/3 PINK2 Promo Flex Feature Top Left
+    1/3 PINK2 Promo Flex Feature Top Center
+    1/3 PINK2 Promo Flex Feature Top Right
+    1/3 PINK2 Promo Flex Feature Center Left
+    1/3 PINK2 Promo Flex Feature Center Center
+    1/3 PINK2 Promo Flex Feature Center Right
+    1/3 PINK2 Promo Flex Feature Bottom Left
+    1/3 PINK2 Promo Flex Feature Bottom Center
+    1/3 PINK2 Promo Flex Feature Bottom Right
+
+    1/3 PINK1 Feature Caption Feature Top
+    1/3 PINK1 Feature Caption Feature Bottom
+    1/3 PINK1 Feature Caption Feature Top/Bottom
+    1/3 PINK1 Feature Flex Feature Top Left
+    1/3 PINK1 Feature Flex Feature Top Center
+    1/3 PINK1 Feature Flex Feature Top Right
+    1/3 PINK1 Feature Flex Feature Center Left
+    1/3 PINK1 Feature Flex Feature Center Center
+    1/3 PINK1 Feature Flex Feature Center Right
+    1/3 PINK1 Feature Flex Feature Bottom Left
+    1/3 PINK1 Feature Flex Feature Bottom Center
+    1/3 PINK1 Feature Flex Feature Bottom Right
+
+    1/3 Sport Caption Feature Top
+    1/3 Sport Caption Feature Bottom
+    1/3 Sport Caption Feature Top/Bottom
+    1/3 Sport Flex Feature Top Left
+    1/3 Sport Flex Feature Top Center
+    1/3 Sport Flex Feature Top Right
+    1/3 Sport Flex Feature Center Left
+    1/3 Sport Flex Feature Center Center
+    1/3 Sport Flex Feature Center Right
+    1/3 Sport Flex Feature Bottom Left
+    1/3 Sport Flex Feature Bottom Center
+    1/3 Sport Flex Feature Bottom Right
+
+    1/3 VS2 Promo Caption Feature Top
+    1/3 VS2 Promo Caption Feature Bottom
+    1/3 VS2 Promo Caption Feature Top/Bottom
+    1/3 VS2 Promo Flex Feature Top Left
+    1/3 VS2 Promo Flex Feature Top Center
+    1/3 VS2 Promo Flex Feature Top Right
+    1/3 VS2 Promo Flex Feature Center Left
+    1/3 VS2 Promo Flex Feature Center Center
+    1/3 VS2 Promo Flex Feature Center Right
+    1/3 VS2 Promo Flex Feature Bottom Left
+    1/3 VS2 Promo Flex Feature Bottom Center
+    1/3 VS2 Promo Flex Feature Bottom Right
+
+    1/3 VS1 Feature Caption Feature Top
+    1/3 VS1 Feature Caption Feature Bottom
+    1/3 VS1 Feature Caption Feature Top/Bottom
+    1/3 VS1 Feature Flex Feature Top Left
+    1/3 VS1 Feature Flex Feature Top Center
+    1/3 VS1 Feature Flex Feature Top Right
+    1/3 VS1 Feature Flex Feature Center Left
+    1/3 VS1 Feature Flex Feature Center Center
+    1/3 VS1 Feature Flex Feature Center Right
+    1/3 VS1 Feature Flex Feature Bottom Left
+    1/3 VS1 Feature Flex Feature Bottom Center
+    1/3 VS1 Feature Flex Feature Bottom Right
+
+  Assumes we'll refactor width and heights based on Layouts during integration
+  Visual Tests
+*Styleguide: Abstract ViewModel Feature Adapter
+  New function in a styleguide.js to act as middleware for the scenario JSON
+  [scenario JSON, viewModel Adapter, sent to Partial]
+  [requiest API, Application run Adapter, sent to Partial]
+  Visual Tests
+Features Landing Page
+Product Card
+>>>
+Making everything editable
+  - remove listeners...? (maybe stop underwire?)
+  - make <"content" contenteditable>
+  - somehow let image src become editable
+Making calculated styles visible
+  - ....
