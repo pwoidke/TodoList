@@ -1,14 +1,26 @@
 Todo Today (11/8):
 
---Open JIRA ticket for RITA for last items spanning full width on mobile
-
 Add twitter meta tags
 Update social share code based on BE response
-Update nav template to support different types of features
+	Check meta tag updates in sShare vs JSP
+Rechrome email
 
-Add tickets for tasks based on Nat's Confluence page
-Move other tickets to C1
+--Update nav template to support different types of features
 
+--Add tickets for tasks based on Nat's Confluence page
+--Move other tickets to C1
+
+
+
+
+
+Love List email rechrome:
+Headline recap text styles
+Remove categories
+Find A Store font update
+Get Connected image udpate
+Social icons & app
+Font update for legal
 
 
 Code quality is key
