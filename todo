@@ -1,8 +1,18 @@
-Todo Today (11/8):
+Todo Today (11/11):
 
-Add twitter meta tags
-Update social share code based on BE response
-	Check meta tag updates in sShare vs JSP
+--Finish email rechrome
+--	Get images working
+--	Rechrome product share image
+Jeremy: Finish tagging
+--Lolita: Signoff on feature change
+Rachel: Associate social share feature to not-empty and recipient view PDs
+Sandeep: BE PR merge (https://stash.lbidts.com/projects/ECOMM/repos/vsdweb/pull-requests/7015/overview)
+
+Check LL share single product link stuff
+
+--Add twitter meta tags
+--Update social share code based on BE response
+--	Check meta tag updates in sShare vs JSP
 Rechrome email
 
 --Update nav template to support different types of features
@@ -10,8 +20,8 @@ Rechrome email
 --Add tickets for tasks based on Nat's Confluence page
 --Move other tickets to C1
 
-
-
+Update recipient view to not show feature if list is empty
+Remove trigger button on empty view
 
 
 Love List email rechrome:
