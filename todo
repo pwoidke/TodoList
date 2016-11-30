@@ -1,10 +1,36 @@
-Todo Today (11/11):
+Todo Today (11/28):
 
---Finish email rechrome
---	Get images working
---	Rechrome product share image
+2017
+BQ
+Continue reading at least 1 book/month
+Tuesday Night Track
+Wednesday Night Weights
+Thursday Night Thr-hills
+Get total credit card debt under $10K
+Clean out basement and garage
+
+--Roll back email header and footer image path updates
+
+Regression VSDP-25798 KWS & Collection - Love List CTAs are not formatted correctly (Mobile)
+Bug VSDP-30409 KWS - Back to Top button is displayed on load on tablet
+Bug VSDP-30545 Last collection item spanning full-width
+Regression VSDP-30788 Items are unable to be 'loved' on IE11
+Technical Issue VSDP-30789 Items do not display on Love List on IE11
+Technical Issue VSDP-30790 Features do not display on Love List on IE11
+Proofing VSDP-30133 MOBILE-KWS-The X in the search box is overlapping the text when a long search term is entered
+
+
+var data = "{foo: 'bar'}";
+var url = 'data:text/json;charset=utf8,' + encodeURIComponent(data);
+window.open(url, '_blank');
+window.focus();
+
+
+Review component migration destinations
+	Fix component paths
+	Ensure deprecated stuff is actually deprecated
+
 Jeremy: Finish tagging
---Lolita: Signoff on feature change
 Rachel: Associate social share feature to not-empty and recipient view PDs
 Sandeep: BE PR merge (https://stash.lbidts.com/projects/ECOMM/repos/vsdweb/pull-requests/7015/overview)
 
@@ -22,15 +48,6 @@ Rechrome email
 
 Update recipient view to not show feature if list is empty
 Remove trigger button on empty view
-
-
-Love List email rechrome:
-Headline recap text styles
-Remove categories
-Find A Store font update
-Get Connected image udpate
-Social icons & app
-Font update for legal
 
 
 Code quality is key
@@ -72,3 +89,26 @@ images: [
 //DIVA-driven:
 API.get('feature/image/path')
 image.images[collection.primaryImg]
+
+
+
+Search:
+Adobe, sort/filter (good + URL params)
+
+Collection:
+Products, features, love list, sort/filter
+
+Love List:
+Products, love list, alerts, features (good)
+
+Features:
+DIVA API (good or improve?)
+Pagedata vs. initial data request?
+Work w/ CMS to understand data
+Referencing other features
+
+Product card:
+Requirements
+
+
+Nat's good at JS, but I don't give a Nat Sass.
