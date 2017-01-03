@@ -1,7 +1,13 @@
-Todo Today (11/28):
+Todo Today (11/30):
+
+Feb release:
+Fabric++ (Chris, Cory, Rachel)
+
 
 2017
 BQ
+Run & Bike 1500 miles
+Do exercises
 Continue reading at least 1 book/month
 Tuesday Night Track
 Wednesday Night Weights
@@ -9,56 +15,10 @@ Thursday Night Thr-hills
 Get total credit card debt under $10K
 Clean out basement and garage
 
---Roll back email header and footer image path updates
-
-Regression VSDP-25798 KWS & Collection - Love List CTAs are not formatted correctly (Mobile)
-Bug VSDP-30409 KWS - Back to Top button is displayed on load on tablet
-Bug VSDP-30545 Last collection item spanning full-width
-Regression VSDP-30788 Items are unable to be 'loved' on IE11
-Technical Issue VSDP-30789 Items do not display on Love List on IE11
-Technical Issue VSDP-30790 Features do not display on Love List on IE11
-Proofing VSDP-30133 MOBILE-KWS-The X in the search box is overlapping the text when a long search term is entered
-
-
-var data = "{foo: 'bar'}";
-var url = 'data:text/json;charset=utf8,' + encodeURIComponent(data);
-window.open(url, '_blank');
-window.focus();
-
-
-Review component migration destinations
-	Fix component paths
-	Ensure deprecated stuff is actually deprecated
-
-Jeremy: Finish tagging
-Rachel: Associate social share feature to not-empty and recipient view PDs
-Sandeep: BE PR merge (https://stash.lbidts.com/projects/ECOMM/repos/vsdweb/pull-requests/7015/overview)
-
-Check LL share single product link stuff
-
---Add twitter meta tags
---Update social share code based on BE response
---	Check meta tag updates in sShare vs JSP
-Rechrome email
-
---Update nav template to support different types of features
-
---Add tickets for tasks based on Nat's Confluence page
---Move other tickets to C1
-
-Update recipient view to not show feature if list is empty
-Remove trigger button on empty view
-
 
 Code quality is key
 Make deletable code
 
-Fabric++
-	Review features w/ Nat
-	Determine next steps (refactor, config, product component, etc.)
-
-Love List
-	Add feature to empty list
 
 At some point we will need to decouple the drawer and mobile facet menu so that it doesn't require a click in the styleguide
 
