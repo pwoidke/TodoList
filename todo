@@ -1,74 +1,24 @@
-Todo Today (11/30):
+Todo Today (1/3):
 
-Feb release:
-Fabric++ (Chris, Cory, Rachel)
+Subtask existing process for remaining features
 
+Document everything in Confluence on ticket
+Document property name changes in spreadsheet (from Sam)
 
-2017
-BQ
-Run & Bike 1500 miles
-Do exercises
-Continue reading at least 1 book/month
-Tuesday Night Track
-Wednesday Night Weights
-Thursday Night Thr-hills
-Get total credit card debt under $10K
-Clean out basement and garage
+Continue converting JSPs and document properties, logic, conditionals, etc.
 
+Consider json-schema.org
 
-Code quality is key
-Make deletable code
+Next steps:
+Tech design page under story summary
+Subtask
+Create documentation
+Continue process
 
-
-At some point we will need to decouple the drawer and mobile facet menu so that it doesn't require a click in the styleguide
-
-Update Love List to use UU.watch()
-
-
-In product data
-	Images
-		use order they are sent (BE)
-		specify main image
-On alt image change, update URL param
-//BE-driven:
-images: [
-	"url1",
-	"url2",
-	"url3",
-	"etc"
-]
-//FE-driven (gross):
-images: [
-	{
-		onModelFront: "url1",
-		onModelBack: "url2",
-		angel: "url3",
-		offModelFront: "etc"
-	}	
-]
-//DIVA-driven:
-API.get('feature/image/path')
-image.images[collection.primaryImg]
-
-
-
-Search:
-Adobe, sort/filter (good + URL params)
-
-Collection:
-Products, features, love list, sort/filter
-
-Love List:
-Products, love list, alerts, features (good)
-
-Features:
-DIVA API (good or improve?)
-Pagedata vs. initial data request?
-Work w/ CMS to understand data
-Referencing other features
-
-Product card:
-Requirements
-
-
-Nat's good at JS, but I don't give a Nat Sass.
+TB stuff:
+Preface commits w/ ticket number
+Review Fabric++ work
+Review any open regression work
+Any questions?
+Any blockers?
+Anything I can do to make your life easier?
