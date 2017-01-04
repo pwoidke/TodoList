@@ -22,3 +22,27 @@ Review any open regression work
 Any questions?
 Any blockers?
 Anything I can do to make your life easier?
+
+
+Chris:
+GEFOC integration
+Masthead unit test coverage
+	issues w/ coverage report on broadcasts
+	nav click
+	mobile pinned nav
+Happy working on tests (no deadlines), but interested in figuring out timeline
+
+Cory:
+Do we need to add 31074/31174 to the SME signup page?
+Em-based image features
+	nat gave scenarios
+	work taking a while due to requirements and processes
+2 regression tickets, waiting on pint
+helping chad w/ migration stuff
+
+Rachel:
+Working on carousel WCAG updates
+	Need ticket for this work
+	Confusing because Deque example differs from our implementation (different tab order and how content is handled)
+	DVIA status
+Next up: carousel unit testing
