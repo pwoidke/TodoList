@@ -1,4 +1,4 @@
-Todo Today (1/3):
+Todo Today (1/4):
 
 Subtask existing process for remaining features
 
@@ -15,14 +15,6 @@ Subtask
 Create documentation
 Continue process
 
-TB stuff:
-Preface commits w/ ticket number
-Review Fabric++ work
-Review any open regression work
-Any questions?
-Any blockers?
-Anything I can do to make your life easier?
-
 
 Chris:
 GEFOC integration
@@ -33,10 +25,10 @@ Masthead unit test coverage
 Happy working on tests (no deadlines), but interested in figuring out timeline
 
 Cory:
-Do we need to add 31074/31174 to the SME signup page?
+Do we need to add 31074/31174 to the SME signup page? - https://confluence.victoriassecret.com/pages/viewpage.action?pageId=62565426
 Em-based image features
 	nat gave scenarios
-	work taking a while due to requirements and processes
+	work taking a while due to setup requirements and processes (setup:work)
 2 regression tickets, waiting on pint
 helping chad w/ migration stuff
 
@@ -46,3 +38,12 @@ Working on carousel WCAG updates
 	Confusing because Deque example differs from our implementation (different tab order and how content is handled)
 	DVIA status
 Next up: carousel unit testing
+
+
+Chris: re scott on broadcast tests
+Team: See comments on SME Signup page for JIRA info
+Martin/Calvin: Check if ticket for Rachel's work
+	Is mobile nav compliant?
+We should be getting any WCAG tickets (check w/ Chris/Martin)
+3 issues with mega-menu
+Need Tiff & Sheel to keep setting up meetings to figure out story work
