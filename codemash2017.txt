@@ -1,0 +1,56 @@
+What are observables and why should i care?
+Randall Koutnik - Netflix
+
+https://opbeat.com/community/posts/what-are-observables-and-why-should-i-care-by-randall-koutnik/
+https://rkoutnik.com/talks/
+
+rx.js = observable library
+
+variables hold data, but sometimes the data isn't there yet (servers, etc.)
+promises tell us a var will have data eventually
+single value/sync = variable/async = promise
+multiple values/sync = array
+
+observables = multiple pieces of data over time
+ex: button clicks
+
+use .subscribe to unwrap
+	myObs.subscribe(someClickEvent => processClick(someClickEvent));
+
+**observables represent a collection of values delivered over time**
+
+Why are observables important? Let's build a stopwatch
+stopwatch has 3 data sources over time: start button clicks, stop button clicks, time increments
+use functional programming to update values (ex: converting integers to tenths)
+[1, 2, 3].map( x => x * 2); // [2,4,6]
+tenthSecond$
+	.map(item => item / 10)
+	.subscribe( num => resultsArea.innertext = num);
+
+button events:
+let startButton = document.querySelector('#start-button');
+let startClicks$ = Rx.Observable.fromEvent(startButton, 'click');
+startClick$.subscribe(() => {
+	// update results
+});
+
+output.jsbin.com/siwidi/1
+
+Same solution can be used for
+	dran n drop
+	loading bar
+	chat room
+	etc.
+
+Everything is a stream
+of events
+delivered over time
+
+still some hard things:
+Netflix search w/ typeahead
+requests can come back out of order
+solve: add random variables to track state, add state awareness to server, etc. :(
+	OR just use observables
+
+// functional programming is boring magic
+
