@@ -1,0 +1,98 @@
+Toward a Better Front-end Architecture: Elm
+Jeremy Fairbank - Sigient
+
+Elm: functional programming language, compiles to JS, strong static typing
+
+No more two-way data binding (mvc)
+Now, unidirectional
+
+problems with JS
+	null (undefined is not a function)
+	JS is impure and mutable
+	Unsafe APIs
+	Error handling
+		libraries, ajax, breaking the call stack
+
+Elm promises:
+No runtime errors in practice
+No null
+No undefined is not a function
+CONFIDENCE
+	Static typing
+	expressive
+	terse
+	pure
+	immutable
+	unidirectional architecture
+
+Functional: Built upon functions
+	modular, composable
+
+functions:
+	greet name = "hello, " ++ name
+		greet "Paul" -- "Paul"
+	add x y = x + y
+		add 2 3 -- 5
+
+pure functions
+	referentially transparent
+	guarantees functions always return correct value
+
+declarative: declare what the desired result is
+	Tell the computer what we want, not how to do it
+
+imperative
+	function to double array of numbers
+		myList = [1, 2, 3, 4, 5]
+		double n = n * 2
+		doubleNumbers list = List.map double list
+		doubleNumbers myList -- [2, 4, 6, 8, 10]
+
+currying: creating building blocks
+	instead of function to add 3 numbers,
+	function returns new function that takes in the next value to add
+	once all args are fulfilled, invoke to get result
+		double = ((*) 2) -- operators are functions
+		doubleNumbers = List.map double
+	further reduce:
+		doubleNumbers = List.map ((*) 2)
+
+piping
+	uses operator: |>
+	list
+		|> List.map ((*) 2)
+		|> List.filter ((<) 6)
+		|> List.map square
+
+strong static typing: Creating and adhering to contracts
+	identifier : type
+	ex: id : Int
+	ex: greet : String -> String
+		greet name = "Hello, " ++ name
+If you try to invoke a function with the wrong number of arguments or types, the application won't compile
+
+tuples
+	dog : ( String, Int)
+	dog = ( "Tucket", 11 )
+	name = Tuple.first dog
+	age = Tuple.second dog
+
+records, more complex tuples
+
+alias, creates custom type
+	defines schema
+
+Create state instead of mutate
+	create new object and merge with old object in function
+	olderDog = { dog | age = dog.age + 1 }
+
+union type: create new type and define what values it can have
+
+safety: how to deal with nulls
+	type Maybe a
+		= Just a
+		| Nothing
+Elm forces you to deal with the Nothing situation
+
+// Elm seems like a lof of work and weird syntax for very little gain
+

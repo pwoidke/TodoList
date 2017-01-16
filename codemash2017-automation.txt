@@ -1,0 +1,55 @@
+Unconventional Automation – Using test artifacts to reveal new testing capabilities
+Matt Perrin - Progressive Insurance
+
+Testing large-scale enterprise software
+This should be a secondary process, and it can break a lot of stuff
+
+Ex: Progressive Insurance get a quote page
+Has to support all browsers, uses .Net/SQL BE
+
+WebDriver Wrapper C# used to run tests
+
+//Ugh, this is a .NET talk
+
+You should strive to have unit > api > ui, but UI takes up a lot of time and effort
+
+What data can we collect from passed tests?
+How can we reuse data from pass runs?
+
+Two "bots" working together
+	discovery bot identifies testing opportunities
+	exploratory bot performs those tests
+Generate data, not test code itself
+
+WebDriver outputs page elements and URL changes
+
+Assumptions
+	development team has testability in mind
+	elements are identifiable
+	attributes ate identifiable
+	standard markup
+
+Bot discovers any input with multiple options (not text, yes radio and select)
+	Generates spreadsheet of data
+		ID, Page, Selector, Tab, Type, Default, isSubmit, isHidden
+
+Evaluation goals on every element interaction and page transition
+
+Examples of goals:
+	reaching a specific page
+	asserting value meets criteria
+	asserting value fails criteria
+	timeouts
+
+What can be discovered
+	JS performance metrics per state flow
+	data combinations affecting expected results
+	unexpected failures
+	orphaned elements
+
+Determine valuable tests to cut down on processing
+
+Automate collecting client and server errors
+	include stack traces from both sides
+	paths to relevant logs
+

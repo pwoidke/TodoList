@@ -53,4 +53,33 @@ solve: add random variables to track state, add state awareness to server, etc. 
 	OR just use observables
 
 // functional programming is boring magic
+flatten unpacks arrays into values
 
+switchMap: throws away any but the most-recent data received
+	this solves the issue of out-of-order responses
+
+output.jsbin.com/taqosob
+
+Angular 2 uses observables everywhere
+	Why? I don't remember. See the slides.
+
+Use unsubscribe to clean everything up when you're done
+
+wikipedia live edit stream gives events for every time someone edists wikipedia (good/fun for streamed data)
+
+publish.connect connects immediately
+refcount connects at first subscribe and closes after last unsubscribe
+
+more typeahead (limit requests):
+Rx.Observable.fromEvent(inputEl, 'keyup')
+	map (whatever)
+	.filter(val => val.length > 3)	// use useful query
+	.debounce(333)	// wait until user stops typing
+	.distinctUntilChanged()	// don't send same query (like for arrow key events)
+
+.subscribe(
+	val => do something,
+	err => alert(err.message),
+	() => console.log('done')
+
+output.jsbin.com/xelenuh

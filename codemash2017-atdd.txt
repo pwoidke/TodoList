@@ -1,0 +1,33 @@
+TDD vs. ATDD – What, Why, Which, When & Where?
+Daniel Davis
+
+Discussion over presentation
+principles over prescription
+
+Would you rather build the thing right or build the right thing?
+
+TDD: Test driven development
+	writing tests before writing any code
+	ensures code is thoroughly unit tested
+
+ATDD: Acceptance test driven development
+	tests are written by the testers or stakeholders before coding
+	ensures code reflects desired outcomes
+
+BDD: Behavior driven development
+	ATDD but tests are written by the developers
+
+All of these use the red, green, refactor practice
+
+Why do we want tests? Protection from...
+	scope creep
+	missed requirements
+	changing requirements
+	goldplating (building more than is needed)
+
+Why test
+	help build in small, incremental, iterative steps
+	supply us w/ fast feedback and more direct path to failure points
+	protection from changes in the future
+	living documentation that changes w/ the system
+

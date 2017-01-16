@@ -1,0 +1,72 @@
+ES6 Patterns in the Wild
+Joe Morgan - Some obscure company you've never heard of
+Former philosophy student and librarian (likes to read)
+
+Wild code = Code to run
+	vs Code we write
+	vs Code we import
+	vs Code to teach (tutorials, removed from context)
+
+SQL query of doom
+
+Starting out
+	Syntax > unreadable
+	Patterns > Complexity
+	What we expect > what we get
+
+Instead of learning from code to teach, we can learn from code to run
+Start complex, cut out pieces to simplify
+
+Read and then read critically
+Go deep into codebases and understand why things are how they are
+
+Redux
+	Unidirectional data store for SPAs (functional)
+	Very small codebase
+middleware.js
+	ES6 syntax: looks nice, cleans up indentation, fixes var that = this;
+
+*****
+Favor arrow functions
+Favor array methods
+Create simple interfaces
+Lurk around GitHub
+	Glance at your dependencies
+	Have a few authors you like
+
+Why read wild code?
+	Reading code is a skill: intuition
+	Your code will reflect your reading
+		data structures
+		architecture
+		community standards
+	Feature popularity
+		Not all features end up being popular
+*****
+
+Rest/Spread operators
+	ex: compose(...chain)
+	Rest: convery params to array
+		Users can pass as many params as they want
+		Always gives an array
+	Spread: makes list from array
+	Allows you to use array methods on params
+	Converts array to new array w/o mutations
+
+Kahn Academy
+	Consumer code, not a library
+	Complexity hidden behind interface
+
+github Kahn/algebra-tool
+	expression class
+		Uses fat arrow functions, rest/spread
+
+Generators
+	* at start of function
+	yield statements
+
+React: Performance
+	isNative(Map)
+Why use a map instead of an object?
+	Performance on the V8 engine
+As ES6 becomes native there are advantages beyond style

@@ -1,0 +1,48 @@
+Declarative testing for JavaScript applications
+Aaron Salvo
+
+Management: If it's not feature code, it's not worth writing
+
+Design goals:
+generic & api driven
+automated ci/cd
+modern stack
+
+Declarative Testing
+	Tests the structure of the view, in order to accelerate engineers.
+	Enables the creation of a single spec file that can be copied for every view.
+
+The "flow" of creating a view
+	Create an "expect" file declaring the structure of each view
+	Create a copy of the template jasmine spec file, edit for new component
+	TDD as desired to create HTML
+
+Testing framework needs to
+	digest and compile HTML for directive/component (Angular)
+	parse the html and load structure into JS data structures (very brittle)
+
+The code:
+Looks like JSON
+defines the markup (tabs, sections, fields, etc.)
+tabs: {
+	name: "foo",
+	sections: {
+		name: "bar",
+		fields: {
+			name: "field"
+		}
+	}
+}
+
+Test things like:
+	there should be 3 sections on the project summary tab
+	on the project summary tab, there should be a section named Business/Financial Information
+
+Automating w/ Yeoman
+	Provides scaffolding for web apps
+	large library of generators
+	custom generators
+
+Yeoman can be used to parse the HTML and create expect files, or parse the expect files to generate HTML
+
+Allows for faster iteration and most-trusted code

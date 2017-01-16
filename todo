@@ -1,61 +1,8 @@
-Todo Today (1/5):
-
-Updates:
-regression
-chris is on wcag
-out thursday/friday
-DAM meeting w/ product team
-
-
-Subtask existing process for remaining features
-
-Document everything in Confluence on ticket
-Document property name changes in spreadsheet (from Sam)
-
-Continue converting JSPs and document properties, logic, conditionals, etc.
-
-Consider json-schema.org
-
-Next steps:
-Tech design page under story summary
-Subtask
-Create documentation
-Continue process
-
-
-Chris:
-GEFOC integration
-Masthead unit test coverage
-	issues w/ coverage report on broadcasts
-	nav click
-	mobile pinned nav
-Happy working on tests (no deadlines), but interested in figuring out timeline
-
-Cory:
-Do we need to add 31074/31174 to the SME signup page? - https://confluence.victoriassecret.com/pages/viewpage.action?pageId=62565426
-Em-based image features
-	nat gave scenarios
-	work taking a while due to setup requirements and processes (setup:work)
-2 regression tickets, waiting on pint
-helping chad w/ migration stuff
-
-Rachel:
-Working on carousel WCAG updates
-	Need ticket for this work
-	Confusing because Deque example differs from our implementation (different tab order and how content is handled)
-	DVIA status
-Next up: carousel unit testing
-
+Todo Today (1/16):
 
 Supermodel API:
 Edit, Version, Use
-
-Tomorrow:
-Review spreadsheet
-Next week:
-Review w/ MGT, Scott
-
-Attach spreadsheet and tech design stuff to 31068 Confluence page (send to Tiffany)
-
-
-
+Next:
+Continue converting JSPs and document properties, logic, conditionals, etc.
+Build schema for image
+	Try swagger, json-schema.org

@@ -1,0 +1,55 @@
+Microservices: Lessons from the Trenches
+Gregory Beamer - Senior architect, UST Global
+
+Silver bullets kill werewolves
+
+Difference between monolith and microservice: Boundaries and deployment methodologies
+
+Desire outer complexity over inner: Easier to commoditize (pay somebody else to do the work)
+
+Microservies = architectural style
+
+Component: Definition (contract) & Implementation (variable)
+
+Microservice characteristics
+	Decentralization
+	Infrastructure automation
+	Smart endpoints, dumb pipes
+	evolutionary design
+
+It's not about lines of code, it's about business capabilities
+
+Why use microservices?
+	Easier to understand pieces of code
+	Easier to commodize
+	Easy to deploy
+	Resilience
+		orchestration vs choreography
+
+Organize code
+	CASA Development Model: Core AS Application
+		Domain driven design
+		contract first development
+		Adapter-based boundaries
+		Test-driven/test early approach
+	Hexagonal architecture
+
+Best practices & patterns
+	SOLID Design Principles
+	Domain Driven Design
+	Contract First Development
+	Circuit breakers: on failure, try again or handle it
+	Bulkheads: set flood zones in code, handle multiple service failures
+
+Organize around capabilities
+	capability:
+		any business function that can be coded as a standalone
+		any business function that can be easily handed off to another team
+		any business function that can be handed off to another company (commoditized)
+
+Monitor your solution
+
+Abstract
+	api management
+	message queuing
+

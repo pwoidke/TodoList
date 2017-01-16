@@ -1,0 +1,51 @@
+Block__Element–Magic: CSS Modularity for the masses!
+Chris DeMars - Senior UI Dev, United Shore
+
+Slides: bit.ly/2iSi7Hc
+
+// Sticker Mule for custom stickers
+
+Don't use !important // duh
+	Harry Roberts - csswizardry.com
+	"The Importance of Important"
+
+BEM - Block__Element--Modifier
+	Started at Yandex to help w/ code structuring and reuse
+	Syntax, architecture, semantic, methodology
+
+Naming conventions:
+	B__E--M
+	B_E-M
+	Consistency is what matters
+	Note that single requires camel-casing to distinguish hyphenated selectors
+
+Semantics: Developer vs HTML/CSS semantics
+
+Methodology: makes it easier to figure out how things work
+
+// Ah, shoot, I already know all of this
+
+Block: The shell; highest level of a component
+
+Element: Child of a block
+
+Modifier: Represents a different state of the element
+
+Design a system of components, not pages
+
+Be specific about what the class is supposed to be styling
+
+Separate Skin & Structure
+Separate Container & Content: Style based on descriptive classes
+
+Methodologies
+	Atomic Design
+	SMACSS (Scalable & Modular Architecture for CSS)
+	OOCSS
+	inuitCSS
+
+Take away's
+	Flexible
+	Modular
+	Semantic
+	Organized

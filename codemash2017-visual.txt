@@ -1,0 +1,61 @@
+Picture This: Automated Visual Regression Testing
+Jeff Koenig
+
+TheJefe.github.io/picture_this/
+
+why do we need VRT
+	Browsers are inconsistant
+	too many environments to test manually
+	testing is boring
+
+Why aren't we all doing it?
+	bad tools (meant for other things)
+
+VisualReview
+	server based, requires manual review of diffs
+Spectre
+	server based, pass/fail, still needs manual review
+Wraith
+	headless browser, compares screenshots, but only for headless browser
+Selenium Wraith
+	works in selenium, compares all browsers to same baseline image, some weird cropping/resizing (1 master image)
+Resemble.js
+	really good image-differ, but that's it
+PhantomCSS
+	headless, focuses on CSS regression testing
+
+Problems w/ tools
+	requires more infrastructure
+	requires completely separate test framework
+	only work well for static sites
+	must use real browsers to be effective
+	No clear test result (pass/fail)
+	difficult to use w/ CI
+
+Compatriot
+	focuses on taking and comparing screenshots, ruby-based
+	tests are similar to unit and integration tests
+BrowserStack
+	Paid, tons of browsers, API for automated tests
+
+Control Images
+	tests store control images and use them as basis for comparison
+
+Image diffing
+	Jeff Kreeftmeijer - pixel by pixel image comparison function
+	Pass/Fail = Assert diff < threshold (ex: 0.05%)
+
+Tests are slow, but can be parallelized
+
+Retries reduce noise from page rendering speeds (ex: retry once on fail)
+
+Variable data generation
+	ex: names, usernames, etc.
+	hardcode data for tests
+
+Things to fix
+	browser drivers are inconsistent
+		full-page screenshots
+		inconsistency with driver support
+		JS events (hover, etc.) work differently
+	use ResembleJS for better diffing
