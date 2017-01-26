@@ -1,0 +1,8 @@
+var trophy = document.createElement('li');
+trophy.className = 'centered';
+trophy.setAttribute('title', ' lululemon 40 | 80 Challenge');
+trophy.innerHTML = '<a href="/challenges/lululemon-40-80-challenge"><img alt=" lululemon 40 | 80 Challenge" src="https://dgalywyr863hv.cloudfront.net/challenges/lulu-your-goals-v2-100.png"></a><div class="challenge-description"><div class="h5"><a href="/challenges/lululemon-40-80-challenge"> lululemon 40 | 80 Challenge</a></div><time class="timestamp">Jan 2017</time><div class="effort">80.5 km</div></div>';
+var trophyCase = document.getElementsByClassName('list-trophies')[0];
+var firstTrophy = document.querySelectorAll('.list-trophies li')[0];
+trophyCase.insertBefore(trophy, firstTrophy);
+trophyCase.removeChild(firstTrophy);

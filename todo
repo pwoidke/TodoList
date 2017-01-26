@@ -1,4 +1,4 @@
-Todo Today (1/16):
+Todo Today (1/23):
 
 Supermodel API:
 Edit, Version, Use
@@ -6,3 +6,86 @@ Next:
 Continue converting JSPs and document properties, logic, conditionals, etc.
 Build schema for image
 	Try swagger, json-schema.org
+
+Rachel:
+	Check H&L Button stuff: Is it still in-progress
+	Status of unit testing and next-up's
+
+Thursday (1/26): FEWD team meeting: Discuss interesting CodeMash stuff
+
+Alex is sending proposals Re: conversion
+
+
+
+
+
+TODO:
+--Check VSDP-28189 - Can reproduce, looks like we're still not getting facet menu data. Sandeep is checking BE.
+	Update: Adobe is breaking when we send cookie values
+
+JIRA tickets for viewer
+add to settings pane:
+	variations: runway model: supermodel
+
+api/models/feature/
+	_model.json // supermodel
+	image.json // runway model
+		runway model contains $refs to properties in the supermodel
+
+in components/feature/image/fixtures/linked-image.json
+	add schema: "api/models/feature/image.json"
+	use this to validate
+
+how to show supermodel in styleguide so that it relates to the component/variation you're on?
+
+
+Dynamic Text meeting 1/24:
+Determine meaningful variants
+
+
+
+
+Todo:
+merge in work Cory did
+Identify properties he added
+figure out why those were added and what we should do with them
+Add reducer to styleguide (adapts api model to whatever component needs)
+hook up validation based on fixture schema property
+
+review w/ leads on Thursday
+
+New stories:
+	Add reducer (adapter) so we can convert fixtures into view models
+	As a FEWD I want the supported Fabric Image component variants to comply with the image schema
+	As a FEWD I want a fixture validation job that tells me when my fixture does not match its schema
+
+Add under styleguide: "/models/module.js" to handle logic (currently in styleguide/module.js)
+
+Todo:
+Display json
+Highlight runway model properties in supermodel (and display with little connector lines maybe?)
+Add display for description, etc. in json
+
+
+
+
+
+call w/ michelle, craig, molly 1/25
+
+2 week notice if possible
+send michelle email with last day and resignation letter
+michelle will send me exit info
+
+
+
+Dev TBs:
+Rachel:
+	WCAG offer ticket was handled by Jason, just needed to be sent to him to be closed
+	97% unit test coverage
+		was having some issues with testing widths; had to set width in feature and check that % width was correct
+	next up: pause button for carousel 31080 (4 subtasks)
+		may want to set up meeting w/ WCAG team to determine requirements and design specs
+Brian:
+unsure bc no time to meet w/ nat, changing reqs
+scenarios vs varients
+	arrays vs JSON objs to construct varients
