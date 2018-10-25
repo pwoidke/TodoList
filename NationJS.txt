@@ -1,0 +1,17 @@
+Talk 1 - The Intelligence of Instinct by Emily Freeman
+Soft skills
+Follow your instincts
+Don't commit stuff if it feels wrong
+Brain makes speed/accuracy tradeoffs
+Brain has 2 ways of thinking: Type 1 = Emotional, Type 2 = Logical
+System 1 is unconscious and processes information quicky
+Acknowledge your curiosity and let it turn into suspicion
+Trigger your system 2: Ask questions
+
+Talk 2 - How to Build a UI That Can Live Forever by Laurie Barth
+Problem: 1000s of devices that do motion control, all with different configurations. Need a single UI
+UI is like a superhero suit (iron man)
+CNC machines all have different configurations, so CNC code can't be shared
+Goal: create a UI that works for all of them
+Can't keep up with board updates, so API driven by board itself. Used to create UI elements.
+Board gives a structure that says what it is (JSON file)

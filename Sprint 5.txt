@@ -1,0 +1,112 @@
+Todo:
+	Assign
+	Subtask
+	Estimate
+
+Infinite scroll - Alex
+	specs - https://confluence.victoriassecret.com/display/VSDP/Mobile+Infinite+Scroll+Subcomponent+Specification
+	dev
+
+Dropdown util - Alex
+	Specs
+	Updates
+
+API - paul
+	Collection - Update confluence documentation
+
+Collection Component - Paul
+	Specs - team
+
+Collection Filter Menu Desktop/Mobile - Cory
+	specs
+	code
+
+Link element - cory
+	specs - add partial, review w/ Nat
+	development
+	check w/ WCAG team about standard attributes, etc.
+
+Accordion component - Nicole
+	specs
+	dev
+
+
+Next ups:
+Autocomplete  specs/code/API
+Search API (confirm Adobe can support, single endpoint - always get sort, filter, products)
+	Can BE handle sending/receiving data for Adobe so we can use the same APIs as collection?
+SAYT  specs/code/API
+
+
+APIs all due Oct 27th
+
+
+
+
+Can we unify the filter/facet verbiage?
+Find out about test env for buttons
+Check isSingleSelect facets
+
+
+
+
+{
+	menuBars: [
+		{
+			content: "",
+			menuItems: [
+				{
+					content: ""
+				}
+			]
+		}
+	]
+}
+
+<ul>
+	{{#each menuBars}}
+	<li>
+		{{content}}
+		<ul>
+		{{#each menuItems}}
+			<li>
+				{{content}}
+			</li>
+		{{/each}}
+		</ul>
+	</li>
+	{{/each}}
+</ul>
+
+
+
+<ul>
+	{{#each menuBar}}
+		{{> menuBar menuItems=menuItems
+			{{#content}}
+				content
+			{{/content}}
+		}}
+	{{/each}}
+</ul>
+
+<li>
+	{{content}}
+	<ul>
+		{{#each menuItems}}
+			{{> menuItem}}
+		{{/each}}
+	</ul>
+</li>
+
+
+
+
+
+
+change module to trigger custom events
+ensure data conforms
+in consumer, listen for event, trigger reducer action, calls utility, updates state
+see tabs fabric component for example
+	https://confluence.victoriassecret.com/display/VSDP/Tabs+Fabric+Component+Specification
+	https://stash.lbidts.com/projects/FEWD/repos/flagship/pull-requests/158/overview

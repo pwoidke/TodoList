@@ -1,0 +1,42 @@
+/code
+Collection API notes
+
+--Move collection ID to properties from definitions
+	Nope
+--Change collection.cmsComponentContainers and/or collection.product.stacks.cmsComponentContainers for simplicity
+--Add stacks to collection-facets/sort
+'altPrices' may be a string, depending on promotion engine
+
+How does filtering work w/ filterable trait vs additional endpoint
+	Use traits on additional endpoint
+--'isPriceReduced' needed?
+	YES: New savings flag (change property name to clarify)
+
+questions:
+--What does collection ID look like?
+	Remove from response. Not needed since it is in the URL
+Stacked collection headers: all features, text features only, or name & description data
+facets: 'isAvailable' needed at facet level, or just option level?
+	Keep: May be used in the future
+Product - do we need color?
+	Yes: Filtered w/o color image shows photo + swatch
+
+How do these traits actually work?
+Do I need RAML files for each schema, or each endpoint?
+
+
+append collection id, generic id, size code, color code
+Do breadcrumbs need to return to sorted/filtered collection? If so, do we need to include those params in the URL?
+
+
+
+
+How to handle browser/breadcrumb back for an updated collection
+Confirm new saving flag comes from CMS
+
+Color units (comes from CMS through filters)
+
+Add to Collection API:
+	Strikethrough price (Property: salePrice)
+
+Error handling?

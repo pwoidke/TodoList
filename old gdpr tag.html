@@ -1,0 +1,134 @@
+
+/*
+sample banner mark-up:
+
+	<div id="cookie-banner">
+		We use cookies, as we explain
+		<a href="/privacy-and-security#cookies" data-modal="small" >here</a>.
+		You consent to cookies if you continue on this website or click "I Accept Cookies".
+		<button type="button" class="tealiumMo2TriggerButton">I ACCEPT COOKIES</button>
+	</div>
+*/
+
+var cookies = document.cookie.split("; ");
+var cookie;
+var value = false;
+if (cookies) {
+	for (var i = 0; i < cookies.length; i++) {
+		cookie = cookies[i].split("=");
+		if (cookie.length > 1 && cookie[0] === "OPTOUTMULTI") {
+			value = cookie[1];
+		}
+	}
+	if (!value || value.indexOf(":1") > -1) {
+
+		(function () {
+			"use strict";
+
+			function isExist (selector) {
+				return !!document.querySelector(selector);
+			}
+
+			function createElement (tag, text, attrs) {
+				var element = document.createElement(tag);
+				element.textContent = text;
+
+				for (var key in attrs) {
+					if (attrs.hasOwnProperty(key)) {
+						element.setAttribute(key, attrs[key]);
+					}
+				}
+
+				return element;
+			}
+
+			function setBannerHeight () {
+				var banner = document.getElementById("cookie-banner");
+				var bannerHeight = banner ? document.getElementById("cookie-banner").clientHeight : "0";
+				var oslDrawer = document.getElementById("osl-drawer");
+
+				if (oslDrawer) {
+					oslDrawer.style.bottom = bannerHeight + "px";
+				}
+			}
+
+			// return if the banner exists.
+			if (isExist("#cookie-banner")) {
+				return;
+			}
+
+			// return if not GDPR country
+			if (!isExist(".tealiumMo2TriggerButton")) {
+				return;
+			}
+
+			// create elements
+			var container = createElement("div", "We use cookies, as explained in our ", { id: "cookie-banner" });
+			var link = createElement("a", "Cookie Notice", { href: "/privacy-and-security#eea-supplemental", "data-modal": "small" });
+			var content = document.createTextNode(". By visiting our site you consent to our use of cookies.");
+			var button = createElement("button", "OK", { type: "button" });
+
+			var language = document.documentElement.getAttribute("lang");
+			if (language === "fr-CA") {
+				container = createElement("div", "Nous utilisons des fichiers témoins, comme nous l'expliquons dans notre ", { id: "cookie-banner" });
+				link = createElement("a", "avis concernant les fichiers témoins", { href: "/privacy-and-security#eea-supplemental", "data-modal": "small" });
+				content = document.createTextNode(". En visitant notre site, vous acceptez notre utilisation des fichiers témoins.");
+				button = createElement("button", "OK", { type: "button" });
+			} else if (language === "fr") {
+				container = createElement("div", "Nous utilisons des cookies, comme l'indique notre ", { id: "cookie-banner" });
+				link = createElement("a", "avis sur les cookies", { href: "/privacy-and-security#eea-supplemental", "data-modal": "small" });
+				content = document.createTextNode(". Lorsque vous visitez notre site, vous consentez à notre utilisation de cookies.");
+				button = createElement("button", "OK", { type: "button" });
+			} else if (language === "de") {
+				container = createElement("div", "Wie bereits in unserem ", { id: "cookie-banner" });
+				link = createElement("a", "Cookie-Hinweis", { href: "/privacy-and-security#eea-supplemental", "data-modal": "small" });
+				content = document.createTextNode(" erklärt verwenden wir Cookies. Durch Besuchen unserer Website stimmen Sie der Verwendung von Cookies zu.");
+				button = createElement("button", "OK", { type: "button" });
+			} else if (language === "es-ES") {
+				container = createElement("div", "Usamos cookies, tal y como aparece explicado en ", { id: "cookie-banner" });
+				link = createElement("a", "el Aviso sobre cookies", { href: "/privacy-and-security#eea-supplemental", "data-modal": "small" });
+				content = document.createTextNode(". Al visitar nuestro sitio, aceptas el uso de cookies.");
+				button = createElement("button", "ACEPTAR", { type: "button" });
+			}
+			
+			button.className = "dismissTealiumMo2Banner";
+
+			// add click handler to accept button
+			button.onclick = function (event, target) {
+				var tealiumMo2TriggerButton = document.getElementsByClassName("tealiumMo2TriggerButton");
+				if (tealiumMo2TriggerButton.length) {
+					tealiumMo2TriggerButton[0].click();
+				}
+				if (typeof UU !== "undefined") {
+					UU.broadcast({ type: "cookie-banner-removed" });
+				}
+				event.target.parentNode.remove();
+				setBannerHeight();
+				document.querySelector("html").className = document.querySelector("html").className.replace(/(?:^|\s)cookie-banner(?!\S)/g , "");
+				document.querySelector("html").className += " gdpr-accepted";
+			};
+
+			// add event handler for screen resize
+			window.onresize = function() {
+				setBannerHeight();
+			};
+
+			// create and inject style
+			var style = document.createElement('style');
+			style.innerHTML = "#cookie-banner {display: block;width: 100%;position: fixed;bottom: 0;background-color: #000000;color: #ffffff;text-align: center;z-index: 9999;padding: 10px 0 10px 20px;}#cookie-banner a {color: #ffffff;text-decoration: underline;}#cookie-banner button {display: inline-block;height: 30px;width: 220px;margin: 10px 0 10px 20px;background-color: #ffffff;vertical-align: middle;line-height: 30px;font-weight: bold;}html.mobile #cookie-banner {height: auto;line-height: 20px;padding: 10px;width: calc(100% - 20px);min-width: 0;}html.cookie-banner #floating {bottom: 90px;}html.cookie-banner #osl-drawer {bottom: 50px;}html.cookie-banner #page-footer {padding-bottom: 50px;}html.cookie-banner footer.fab-checkout-footer {padding-bottom: 75px;}html.cookie-banner.mobile #page-footer {padding-bottom: 100px;}html.cookie-banner.mobile .markup-feature #page-footer {padding-bottom: initial;}html.cookie-banner.mobile #modal-inner-wrapper footer, html.cookie-banner.mobile #outer-wrapper #wrapper footer {margin-bottom: 110px;}html.cookie-banner.mobile footer.fab-checkout-footer {padding-bottom: 150px;}.tealiumMo2TriggerButton {display: none;}";
+			
+			// append elements to body
+			container.appendChild(link);
+			container.appendChild(content);
+			container.appendChild(button);
+
+			container.appendChild(style);
+			document.body.appendChild(container);
+			document.querySelector("html").className += " cookie-banner";
+
+			setBannerHeight();
+		})();
+	} else {
+		document.querySelector("html").className += " gdpr-accepted";
+	}
+}

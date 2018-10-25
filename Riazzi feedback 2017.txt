@@ -1,0 +1,23 @@
+DOMS S22 Champion runner up (nom. Harsha)
+Participation/organizing events (breakfast, other food, happy hours, etc.)
+He’s very good at identifying, and gaining consensus on, alternatives for technical implementations when the existing implementation doesn’t seem to be the most prudent (either from a customer perspective or a technical perspective).
+Script for visual issues
+
+Strengths
+Good coder, writes clean and fast
+Communicates well with other team members and other teams
+Has excellent knowledge of the PDP architecture
+Great at explanations and helping understand concepts related to Underwire.
+He’s a great asset during planning meetings and grooming stories for scrum.
+ 
+Opportunities
+Not much ambition; could probably be a lead in a few years, but doesn’t want to deal with administrivia, happy to just code
+Team lead
+
+Senior dev
+review enterprise competencies
+define goals
+ask what he think goes into it
+go over areas that he should work on
+create an idp
+focus on his feedback about what he needs to get there

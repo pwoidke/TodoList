@@ -1,0 +1,142 @@
+AOS review
+
+7 people took quiz (CE & AP gave feedback)
+no +/- to 2016 because first time FEWD-only
+
+Customer 100
+Focused 86: good, but want to know how to get better
+Fast 100: ci/cd allowing us to get faster
+Frugal 57: Flat to BU
+	re-doing specs because of changing requirements
+	not accurately logging time
+	difference b/w what we're doing and how long it takes
+	rework/pivoting/build something that ends up not being needed
+	taking too much time for planning/meetings/tools
+	efficient use of time?
+Curiosity 86: 
+Expectations 86
+
+Bigger team 71: -2 to BU
+	Working with MGT/CMS, no interaction besides passing issue, answering questions
+	Working in silos w/o clarity about what we're all working towards
+	progress via shared components, playbook
+inclusion 86
+Feedback 71: -7 to BU
+	Tech lead vs manager
+Development 86
+feel valued 100
+great place 100
+
+All very positive
+
+no visibility to overall goals
+too much time making things "perfect", left with no time to iterate
+no visibility to other teams
+align w/ partners on deadlines
+reporting structure does not converge (it does, but it doesn't really help)
+other paths for growth besides managerial/architectural
+	developer: delivers code
+	leads start taking on managerial/architectural responsibilities
+	beyond that, you don't develop, you help remove obstacles for others
+	Very linear career path, from jr dev to stopping point
+	Vlad/Alex exploring flat structure, how to continue incentivizing devs
+documentation subteam
+
+----
+
+AOS Champion
+focus on 1 action item for improvement
+AOSC owns the action item and works towards progress
+Meet next week to talk more about it and action plan
+select from top 3 opportunities for improvement
+identify actionable items
+	create living document for touchbases
+
+----
+
+Focus on Frugal
+Allocate 1 hr/week for team to review plays
+duplicative/throwaway work
+There will always be throwaway work
+	-Had to start over on winter CI/CD work for DOMS
+Can we use FEWD scrum more effectively?
+	Only report on site-wide changes
+Survey team re: pain points
+	this week or next week
+Email
+	focus area: frugal (time efficiency)
+	plan for brainstorming of action items (survey)
+	timeline
+
+----
+
+FEWD survey/Brainstorm solutions
+
+Small group to brainstorm issues
+survey which action item you want to do
+
+People don't have visibility to how things will be used
+	Devs focus too closely on something unimportant or miss critical requirements
+	Need use cases for development tasks
+Add reviewers when a spec is actually ready for review to cut down on tasks to do
+
+focus less on rework, more on frequent communication of changes
+
+Ensure notifications are handled so that everyone can see them and is aware of changes
+	FEWD blog
+
+
+----
+
+Blog guidelines
+	Short
+	Relevant
+	Keep up to date?
+		link to updated docs in confluence and/or code in stash
+	What should get a post?
+		Major updates
+		Maybe minor updates
+		No patches
+	First post should announce blog guidelines and reasoning/intent behind them
+		Link to play for how to set up outlook filter rules
+	Who should post?
+		FEWD leads/Squad captains to start
+		Expand if needed/wanted
+Aim fo 8/25 for first post
+	Missing piece is the "why?"s
+	Explain why we're doing what we're doing
+		Why just leads/captains?
+		Why post what we post
+
+
+----
+
+8/23 blog
+Make a play for inbox filter
+make play for how to make a blog post and include link to guidelines
+
+if including external resources, why is it relevant?
+
+HipChat ALL FEWD - PRO room: Minor updates/questions for which you want immediate feedback
+FEWD Blog - "Why"s of Major changes, platform changes, philosophical changes
+FEWD Facebook (unofficial channel) - Articles, future ideas
+Email - Includes non-FEWD
+Tech Tuesday - Significant content, Requires demo
+Confluence - Official technical documentation (hopefully kept up to date)
+FEWD Meeting - Major platform announcements
+Workshop - Major demo, requires presentation and participation
+
+----
+
+8/28
+To do:
+Create first post
+	Blog exists
+	Why
+	How it works
+	Link to plays
+Create focused email filter play
+	Pre-req: You have done the general filter play
+Roll out to FEWD during FEWD scrum (move to room?)
+	Sam will extend & move or make separate meeting
+Figure out how to set up blog email notifications

@@ -1,0 +1,31 @@
+interview 11/17
+
+team manager for all of FE
+followed VS model, but more agile
+2FE 2BE QA
+managing for 5 brands, hiring for bangalore office
+preferred being a dev to manager, looking for better work/life balance
+
+ascena tech stack
+	backbone
+	require
+	underscore templating
+	BE atg commerce (JSPs, etc)
+
+pitching microservices for react FE
+	only research so far
+
+redoing checkout as SPA
+
+manager and architecture work at Ascena
+
+tried to build platform for 5 brands
+	different templates, same code
+	reuse across brands
+	based on atomic design
+	living styleguide
+
+testing
+	no unit testing on FE, little on BE
+	QA manually testing
+

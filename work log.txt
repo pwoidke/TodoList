@@ -1,0 +1,21 @@
+what did I do well
+how was I effective
+how could I be more effective
+
+competencies:
+	Know your stuff
+	Apply the stuff you know
+	Work well with others
+	Demonstrate our values
+
+https://en.wikipedia.org/wiki/70/20/10_Model_(Learning_and_Development)
+
+Collection/Search update utility
+GDPR regression
+Fixed stacked collection CMS components
+Swapped Alex for Chad
+Improve unit test coverage
+
+UDO
+WCAG
+POV

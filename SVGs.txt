@@ -1,0 +1,58 @@
+Build squad SVG work:
+Move loader tasks back to flagship
+Integrate w/ asset build task
+Comment in ticket why we're doing it
+	loader not needed\\\\
+	centralize code
+	easier to run/test
+Added Build Flagship SVG to Bamboo UAT job (bamboo.lbidts.com)
+
+
+SVG build:
+what repo/branch: flagship/FEWD-198-asset-build
+how does it work now: task build svgs for fabric-catalog, index.html pulls in data-icons as path to svg sprites and brastrap makes ajax requests
+how will it work: recreate build-svg task for webpack
+	if webpack can call our function, output them directly into dist, good to go
+what are next steps: research plugin
+
+webpack.config.js
+repo: build-svg > index.js ("buildSVG")
+
+do we do anything with custom build?
+fabric-catalog > src/package.json: "build":"build-svg" (ln 10) (broken)
+icons is referencing elements, but files are under components (should be under elements like in flagship)
+	fabric-catalog > index.html paths are broken (ln 18)
+flagship > package.json: "build-svg"
+
+use "npm run build:svg" to run build job
+
+check plays and meet w/ brian to walk through stuff
+
+in webpack.config.js,
+webpack.js.org/configuration (rule.loader)
+Line 26:
+module: {
+	rules: [{
+		test: \/.svg?$/
+	}]
+}
+use "npm run build" to run
+
+
+Meeting w/ Brian:
+SVGs are only in sprites
+sprite gets compiled separate of middleware (build then serve)
+want to include in "npm start", but hasn't because no new SVGs
+inline styles allow for more granular styling
+inline branch in build-svg in index.js
+do we still need critical and common (and credit card) svgs separately?
+
+Publish and install loader:
+new repo
+publish
+branch asset build
+add package
+add to webpack config
+
+npm i --save new-plugin
+npm i --save-dev new-plugin

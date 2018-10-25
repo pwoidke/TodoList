@@ -1,0 +1,502 @@
+6/7 Brian
+Working on input validation w/ jeremy
+TDDing is working well
+HRAccess has been set up and has enrolled in benefits
+PPOs: wanted to lead a project (did icons)
+2 year ppo to work up to senior dev
+Sam: need org chart and responsibilities/qualifications for advancement
+
+6/7 Sam
+Continue API work (facet options)
+Need to create technical stories for next sprint
+Stick w/ functional requirements for acceptance criteria, should look like today
+
+7/6 Sam
+Check w/ BE re: price logic
+Review Brian PPOs Friday afternoon
+Work w/ Nicole on 17.3 anim img bug
+Cory needs something to own for PPOs (maybe filter menu?)
+
+maybe doing accordions next sprint
+
+7/19 Brian
+working on party nav, product team stuff, wayne on-boarding, size & fit specs, EGC API (own for PPOs)
+difficulty with specs (requirements changing, updates in 2 locations, writing to Anthony's standards)
+not enough work for everyone on the team?
+updated PPOs w/ dates
+	finalize icon stuff and answer questions when Nat gets back
+	then focus on TDD
+	add party nav and check it all off (SME)
+	Expand PDP API stuff
+	On-boarding map?
+No idea what's up for next sprint
+	product template
+	waiting on BE for some data?
+pair programming w/ Wayne is challenging
+
+8/2 Brian
+sprint work done, working on input stuff
+will change ppo dates for icons since they'll take a bit longer
+will add PPOs around input stuff
+inputs: how to get inputs/forms on page, validation, needed by CO/ACS/PDP
+first QC squad meeting is coming up (waiting on JIRA setup, tasks, etc.)
+focus on testing best practices, development standards
+
+8/2 Sam
+facet options: buttons vs checkboxes
+Buttons, but check with QC for WCAG
+Check tablet functionality
+//can we just use mobile filters on desktop on the left side, pls?
+review AOS plan w/ Martin
+set up 60 day debrief with Brian (see learning map)
+sign up for crucial conversations, etc.
+Pelotonia cookout tomorrow, Phillybuster Friday!
+
+8/10 Sam
+Finish PPOs by next touchbase (8/24)
+Be sure C&S components carry over role & item* attributes (product cards)
+Meet w/ Martin re: AOS stuff
+
+8/24 Sam
+Is accordion a utility now, or still a component?
+Next up: SAYT 
+Quantity selector:
+	started as sub component
+	alex started, talked to martin to make utlity
+	anthony had spec started but not finished
+	QC team is strategizing how to fix
+utility graph that shows how they should communicate w/ components?
+are carousels components, utilities, or cms components?
+Respond to CMS floating cue question: set up meeting to discuss options
+--Set up meeting w/ Sam to update image paths in search & promote (Mon 30m)
+--Set up meeting w/ Sam & Martin to review blog play (Tues 11-12)
+Add plays for different communication methods to capture "whys"
+Follow up w/ MGT re Adobe data to send same response for search as collection
+Update PPOs
+	Add manager orientation and check it off
+	Ensure CCC onboarding is on there too
+
+8/30 Sam
+Include all search query params in API contracts (do we use them, and if not, do we need them?)
+Pick up carousel work next sprint if needed
+Remove general items from PPOs
+Set up midyear review w/ Brian
+Dropdown nav
+	needs to not build/destroy menus
+	does it match utility pattern
+	review implementation to find out why it's difficult to implement
+Floating cues: Set up meeting to discuss
+NOTE TO SELF: I really need to track my time better
+
+8/31 Brian
+questions since anthony is gone
+	primary point of contact, good view into lead responsibilities
+workshop wednesday next week on utilities
+	"flipping the classroom": teacher sends stuff home and reviews and builds on it next day
+	answer questions
+	sync up input with utility and then validation utility
+	Working on blog post on How we got to input & validation utilities, how it works, next steps
+worked on product card this sprint with anthony
+	change alt images, open close long desc, change quantity
+	working w/ wayne to get spun up on product card
+helping devs with adding inputs using utility
+special projects party nav stuff
+updates to get fit calculator on how to measure
+update PPOs to capture new stuff
+going to CO sept 21-22
+squad work is taking up a lot of time
+	QC: handlebras standards documentation
+	research on testing thoroughness
+
+9/6 Sam
+If search and collection APIs are synced up, do we need 2 endpoints? Probably.
+SEO: track all filter params (Macys does this stupidly)
+SEO: No attrs needed in markup (check product card, filters, etc.)
+Set up search and promote meetings w/ Sam
+
+9/13 Sam
+Leads Friday: Try to timeline remaining work
+Set up Brian midyear before Oct 4 (any time after next Thursday)
+// does alex's products component quickview modal work?
+
+9/13 Brian
+Workshop was good
+Working on product card stuff
+Anthony is super busy so Brian is doing a lot of planning and dev management
+	Trying to get Jeremy and Wayne on some reducer work to distribute work
+Keeping PPOs up to date
+	Icons probably pushed to next year
+	TDD overshadowed by QC work
+L-Brands Way October 4-5
+Make sure there's a Webex for tomorrow
+
+9/28 Brian
+Running out of work at end of sprint (Anthony to address)
+Getting good feedback form Anthony
+Been doing tech specs all sprint, looking forward to dev
+Meeting w/ CMS for clarification on offer text links & disclaimer
+QC squad: Taking a long time to develop spec specs, could run into issues later
+Midyear review next Friday
+
+9/29 Sam
+Check if H&L is doing a new tech spec or updating the old one
+Move up Brian midyear
+
+10/6 Sam
+TO DISCUSS:
+	Seating chart
+		ensuring people are spaced out
+	Variants meeting after development
+		create tech story to update variants
+	who owns old foundation work?
+		whoever needs it can update it
+for touchbases: mentoring: what does Brian want and how to get there
+	challenge him to do stuff to show skills, etc.
+check if load more is utility or component
+	utility because it passes along event?
+It would be nice if UX had been in our acceptance criteria meeting
+Schedule more variant meetings w/ Tiff, Sheel, Jim, FATE (+ maybe Marc & Sam) (or have Tiff do it)
+	update tech specs w/ variants before meetings
+Schedule time monday to capture variants and any rework that will be needed
+
+10/11 Brian
+It's cold in this office
+working on size & fit chart
+aiming for end of week
+squad stuff is behind
+	chris was sick, brian is blocked until he's caught up
+nobody knows if we're on track
+more size & fit next sprint
+
+10/12 Sam
+Gerrod starting 10/23
+Maybe need to move Cory to CMS table?
+Variant work should go in next sprint
+Templates are testable in Fabric (Fabric only uses fixtures)
+Collection variants: standard/stacked/CMS header/Floating cue
+Check on drag/WCAG for carousel
+
+11/7 FE
+Gerrod:
+pulling in selected filters from last sprint
+table element specs and code ready for review
+rewriting button partial
+replacing buttons
+next up: quickview button (needs to view in template) (meeting this afternoon)
+would be nice if handlebras could handle breaks for element attributes
+Alex:
+alt image and carousel PRs need review
+working on autocomplete
+utility should be fine, integration with SAYT may be tricky
+need tech story to improve unit test coverage for accordion and dropdown filter components
+
+11/8 Brian
+product stuff: box selectors: lots of edge cases that are easy to miss
+Chris may be in a bit over his head
+separate products by generics causes a lot of extra work that may not have been documented
+	just getting UX feedback, waiting on other stuff, upset when decisions are made
+	getting blocked by UX decisions
+product maybe on-track? time estimates are hard to figure out
+need to break stories down more if they go into next sprint
+
+11/22 Sam
+DOMS scrum attendance
+
+12/1 Sam
+Add URL param'd states to variants table
+Set up meeting w/ Scott & Anthony
+
+12/8 Sam
+Should we use markup or JSON for search image banners?
+	check w/ beth
+check on status of functional tests w/ FATE in scrum
+check joopy filter
+
+12/12 Brian
+Needs to check PPOs (never did icon stuff, wasn't needed)
+Updated gift card schema (22h but was much faster)
+Needs new tasks from Chris D
+Starting on checkedLabelText on radio groups for select inputs
+Slightly worried about Anthony's arch updates breaking everything
+
+12/13 Sam
+set up time next week w/ scott to learn how build works
+	bamboo.lbidts.com (https://bamboo.lbidts.com/browse/VSDP-FLAGSHIP)
+integrate masthead with templates
+country code util work: https://jira.victoriassecret.com/browse/ROMS-21346
+
+12/28 Brian
+Onboarding Harsha
+struggling a bit, isn't asking questions
+suggested setting up 1-on-1 meeting to review questions
+using too many CSS !importants, so may need some work there
+Product team doesn't have clear goal this sprint
+PDP is done(?) with MVC work
+waiting on add to bag endpoint
+Chris assigned some tickets (non-mvc)
+	missing details (all team members had same problem)
+pulled in write review mobile epic
+
+1/3 Sam
+Check on MGT API page
+Architecture: Check url params
+
+1/9
+Year end review prep
+watch for email from Alex with year end paperwork
+schedule meeting w/ direct report
+sam & vlad will review expectations
+1 page review of accomplishments
+solicit feedback for direct reports (po/pa/mgt/team)
+due around mid-march
+for strengths/opportunities don't use blue boxes
+for brian: 
+	goals: 2-3 onboarding harsha
+	behaviors:
+		strengths: change agility, teamwork (covering for chris stepping into lead role), self-development/talent management/know how (on-boarding)
+		opportunities: innovate & reinvent or leverage others?
+
+
+1/24 Brian
+No endpoints for PDP yet, so waiting on integration
+Harsha is mostly on-boarded, doing well
+Brian did sprint planning because Chris was out sick
+	had extra capacity so got to pull in future work
+working on write a review stuff (stepped form validation)
+
+1/24 Sam
+Update PPOs
+Update collection for pages w/o data
+
+2/9 Brian
+built small elements for PDP (price, box selectors, image, etc.)
+duplicate key is calling multiple reducers
+PPO updates, helping other devs
+
+Next up w/ Sam:
+GDPR: check that banner avoiding drawers stuff is captured
+Can we take leads off old distros
+	
+FATE issues (visual, functional, etc.) cutting into scope
+	clear all
+	load more demo
+	product details data
+	update api paths
+	add stacked coll variants
+Conference approval timeline?
+
+
+2/21 Brian
+Working on edit overlay
+PDP is ahead of schedule, but it's not reflected in tickets (organizational problem)
+challenge to getting architecture to sign off on overwriting reducer key for product modals
+Jeremy & Wayne reliability / Brian getting overloaded
+
+
+3/7 Brian
+working on ATB this sprint
+	issues with overlay
+	not getting data?
+should finish early minus 5% of AC
+helping FATE set up data
+	FATE has trouble reading schemas
+	team has to spend time educating them
+BE still missing some data, but slowly
+Are India devs onboarding w/ PDP?
+frustrated w/ FEWD having to work after getting everything done
+	lack of recognition
+year end review status?
+
+3/7 Sam
+March 25th for year end self-assessments
+Sam will set up meeting to review instructions
+
+3/23 Brian
+sent self-assessment
+no 4/5 review (Alexa demo)
+
+4/4 Brian
+This sprint: cms data updates for box selectors
+Checkout bleeding out into other teams
+	functional tests hitting product overlays, etc.
+Waiting on analytics info
+
+4/6 Sam
+Check SEO requirements for Sprint 26
+Jeremy possibly moving to C&S (fix visual issues?)
+WCAG subtasks have to be in TODO (not just story)
+2 new India devs starting Monday
+Sam on vacation 5/5-12
+PPOs start 5/14
+Go-live decision 4/30
+Think about a way to test common data in unit tests (utility)
+
+4/10 Sam
+Jeremy to C&S next sprint
+	Could be analytics SME for platform
+
+4/18 Sam
+Have Brian sign his review and turn in to Alex
+
+4/24 Brian
+Cleaning up issues - hard because people are blocked and don't reprioritize
+Doran - Get clarification on Tealium stuff
+WCAG defects, not a priority (blocked due to accordion issues)
+This sprint: analytics, seo, animated image (nothing critical)
+next sprint: unit testing, bug fixes
+
+***Have Brian sign review!!
+
+5/3 Sam
+Let Anthony know we're unit testing shared stuff
+Hit filter save/restore tests hard
+Log tech debt for updating garter functions (and estimate)
+Check WCAG issues
+	Work w/ Tiff/Chris to get comments into tech issues
+	Pattern off of PDP (Jen)
+CMS UAT done/fixed by 6/29
+Send Brian's review to Alex
+
+5/3 Brian
+Created/Approved expense report for Fluent
+This sprint: visual fixes, unit testing
+unit test strength could be reviewed/improved
+working w/ Jim good for visual testing
+next ups: dynamic loading
+REM spacing system will require refactoring
+
+5/10 Brian
+Spacing system going well
+working with Jim = flexibility
+
+5/17 Sam
+Need to update laptop to Sierra for VSCode sharing
+Check with Raj for when Tanveer will start w/ C&S
+POs will Prioritize WCAG issues by Severity from description (use for prioritization of backlog)
+Check w/ Sheel about AC remediation for Elements, Utilities
+What about templates? Have Sheel check w/ Jim
+Have Bravard let me know when logging a bug
+Be prepared to present conference notes at next FEWD meeting
+Talk to Chris and Parker about getting Jeremy moved to C&S table
+Sheel/Tif/Chris: SEV-1/2's to Chad tomorrow
+Set up time to review Tealium changes w/ Sam/Vlad/Aaron
+
+5/22 Sam
+Sheel/Parker frustrated w/ Jeremy's visual issues progress
+	Confluence page vs ticket statuses are out of sync based on review status
+	Hard to determine current status of progress on visual issues
+Whoever owns elements should be fixing visual issues
+	Riazzi & Jim went through buttons & links
+	We should just fix element stuff if we find issues
+WCAG paused? What should we work on?
+	Ensure we're only fixing our own stuff
+Any progress on moving Jeremy to table?
+
+We will be getting another Bangalore dev at some point
+
+Sam 5/30
+Anthony created some tech debt for me
+Watch for Jeremy not fixing things correctly, logging things unnecessarily
+Check w/ Sheel about backordered scope
+Present NationJS at next FEWD team meeting
+
+Sam/Aaron 6/6
+Keep list of deque issues that need more info
+JIRA component selectors are broken
+Visual validation will take priority over WCAG (start 9/1)
+When will WCAG get re-tested?
+	When we close everything PA/brittany can flip story to Deque to re-review
+Chad got great feedback from Parker (feel free to pass it on)
+Backorders: work is on backlog, PO knows about it and sets priority
+	Connect w/ Sheel for tech design (dev due 8/3)
+Staffing
+	Akash & Suraj both like C&S
+	Tanveer might go to PINK nation for React-Redux project
+	Akash/Suraj may backfill
+Prasana is going to join our TB
+Think about PPOs for this year
+	Miles is finalizing his this week
+	Vlad next week
+	Aaron/Sam following week
+	Start draft late next week (mine and Brian's)
+	MGD brand vs core
+Is Philip interviewing? nope
+Crit Conv signup? Aaron looking into it
+
+6/7 Brian
+Working on filter availability, updating cross-sells
+getting product overlay back into fabric
+Fluent next week
+Will work on PPOs after Fluent
+Next sprint: wayne/raj doing UDO work, brian more code stuff
+WCAG later, visual done
+
+6/14 Sam
+Check w/ Nicole about PDP backorder work
+Ping Jeremy to get whether he's working or not
+Check w/ Chris re ROMS-51907
+NationJS presentation
+	Time, format, how it applies, new stuff we should do, actionable items
+FEWD tech debt tickets
+Compile positive & negative feedback
+
+6/20 Sam
+Tanveer to PINK Nation 7/1
+Backorders: Groom & Add estimates
+	https://jira.victoriassecret.com/browse/ROMS-31104
+	https://confluence.victoriassecret.com/display/BOSS/Product+Page+-+Back+Orders
+	API contracts need work
+	Add backorders variant for box selectors, primary product card, ATB overlay
+Brian may be making quickview component. Check Fabric for instances of quickview that will need to be updated
+PPOs start 7/9
+
+6/27 Sam/Prasana
+Check w/ Sheel re variants for functional testing
+
+7/13
+Delegate India dev touchbase?
+Push for daily backlog grooming, include Ila & Aaron
+
+7/19 Sam & Aaron
+GDPR banner text: possibly move to page.js file for motionpoint
+PPOs: Meeting next week; Clone page in Confluence to use as template
+FATE defects: FATE-32980 (need permission, add to remaining work filter)
+NationJS: Set up time to review presentation
+
+7/25 Aaron & Sam
+Pre-work for PPO meeting
+GDPR: waiting on new copy (next week)
+Bangalore devs may request 15 min check-ins
+Set up time to review conference presentation next week
+
+8/1 Aaron
+PPOs on Friday (review categories)
+PDP WCAG is coming up (due Sept 28)
+	Check w/ Brian about whether we should pick up some stuff
+
+8/8 Sam
+Jeremy working on carousel issues w/ architecture
+NationJS review tomorrow
+Work on PPOs, draft by EOW
+Schedule meetings w/ direct reports
+
+8/17
+Set up time w/ all of FEWD
+	fly through talks
+	more time on 3 that I liked
+		Lighthouse/PWAs
+		Languages/ECMAScript proposals
+		Promises
+	Schedule for 201
+
+9/13 Aaron
+Let devs know
+priorities
+open issues
+coverage for PRs
+overtime
+
+10/24 Sam
+Set up time w/ Scott to review JS docs
+Schedule conference presentation (any time)
+Check with Ila re: bypassing wargames for stuck tickets

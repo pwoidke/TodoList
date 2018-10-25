@@ -1,0 +1,59 @@
+content
+--footer
+header
+home
+neighborhood
+properties
+property
+user-dashboard
+
+
+
+Filters
+options: local storage, cookies, user session (BE), browser session, url params, api
+old prod: filters are stored in session for any collection (each colln saved separately)
+local storage size limit: limit to most-recent 5 or 10?
+can't use cookies, can't use session
+
+passing to pdp:
+BE build and FE just updates it
+Update schemas to get selections and build on the FE
+
+get more info from sheel to confirm if we can persist only most-recent collection (not all)
+
+account requirement to clear saved facet values
+	save a LS item with all saved keys that should be cleared on sign-out?
+
+Check how much data is saved if facets are saved in LS (5MB limit)
+Will there be any kind of user ID in config?
+
+save in LS:
+	collection ID or path + user ID(?)
+	selected facets
+		key:value1,value2
+
+Session LS:
+	saved keys: [ collection ID or path + user ID(?) ]
+
+load from LS:
+	get LS data from key
+	for each facet, if key matches key, set values to selected
+
+on sign-out:
+	loop through session LS keys
+		clear values
+
+
+
+CJ:
+single property
+	needs lightboxes
+Searchbar service & integration
+
+map view
+wordpress
+user activity/state
+API stuff
+	split mls and agent/user stuff onto diff servers
+	glen not writing endpoint java?
+		maybe write in expressJS/mongo on FE

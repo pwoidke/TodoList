@@ -1,0 +1,38 @@
+PPOs
+look at manager goals, grab items you directly support, break them down further (how do i support these)
+also things that manager can help support for me
+-coll/search lead
+	-DOMS/CICD/Prod
+-what other things do I want to work towards this year
+-utility work?
+-model validation (fixtures from flagship-api)
+-Behavior testing team?
+-APIs (depending on what Nat's plans are) (probably need a group to review APIs/JSON schema SME)
+Think about what Brian can work on/what I want Brian to work on/interested in/what he wants to work on/etc.
+Anything I support will be in PPOs too
+
+Growth path:
+diff b/w lead and lead architect is how 15% capacity is allocated (w/ Nat vs w/ processes/people)
+which am i most interested in
+I can switch whenever
+Manager: not introducing new stuff, but building off of it
+focus on what i like and what i'm good at and how i can use that to contribute to the team
+
+maybe create API subteam?
+create braintrust for API meetings we've been having
+
+let sam know if there's anything that should go on Cory's PPOs
+
+
+
+
+
+
+PPO meeting
+think about what I want to work towards and how Sam can support
+model validation
+api work
+utilities
+behavior testing
+need actionable/time-based items
+

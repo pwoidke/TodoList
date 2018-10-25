@@ -1,91 +1,64 @@
-Todo Today (1/23):
+Sign up for crucial conversations
 
-Supermodel API:
-Edit, Version, Use
-Next:
-Continue converting JSPs and document properties, logic, conditionals, etc.
-Build schema for image
-	Try swagger, json-schema.org
+Later:
+Update fixtures to show/hide new savings flag
+ROMS-23658 Add error state and handlers for collection and search APIs
+	Error codes added to APIs, waiting on Parker for error states UX
+	UX: confirm how should we handle if SAYT service goes down? (currently continue displaying last product list, or hide container if none)
+Consider changing load more on stacks to load more last stack products instead of first stack
+ROMS-23822 Save/restore search term
+ROMS-10450 Filters integration (route-based updates) (Evaluate URL-based updates (SPA w/ routes))
+Move tech specs into readme's in codebase
 
-Rachel:
-	Check H&L Button stuff: Is it still in-progress
-	Status of unit testing and next-up's
+Tech debt
+Update C&S code to use new garter/UU functions
+Support for multi-width floating cues
+Quickviews in fabric
+PDP: unavailable vs out of stock size
+Combine desktop/mobile collection/search modules
+	Move common functionality to shared module
+	Import into each module and update refs to functions
+autocomplete hover
+	save search term
+	make API request
+	get response
+	check if search term matches saved term
+	update results
 
-Thursday (1/26): FEWD team meeting: Discuss interesting CodeMash stuff
+Someday:
+	Love List
+		Add boolean "loved" state to product schema
+		Send
+			item ID
+			action
+		get
+			item ID
+			status
+	Swatches update image in collection
+		Get swatches with product data
+			Update contract
+				Change swatch URL from string to array of strings
+			Add to product details partial
+		Add endpoint
+			/collection/{version}/image/{product id}
+			returns a url
+		On swatch hover
+			Make call to /collection/{version}/image/{product id}
+			New product image URL is returned
+			Update product image with new URL
+			OR
+			Update product image data to array of URLs w/ endpoints(?)
+	Personalized collection updated daily/weekly
 
-Alex is sending proposals Re: conversion
+Binocular Binoculars Monocular kayak camera bike bicycle topeak thule yakima headphones triathlon brooks mizuno patagonia marmot kuhl kühl running tent camp camping emeco eames apple iphone ipad subaru scion roomba ryobi dyson dslr nest wacom nintendo playstation xbox
 
-
-
-
-
-TODO:
---Check VSDP-28189 - Can reproduce, looks like we're still not getting facet menu data. Sandeep is checking BE.
-	Update: Adobe is breaking when we send cookie values
-
-JIRA tickets for viewer
-add to settings pane:
-	variations: runway model: supermodel
-
-api/models/feature/
-	_model.json // supermodel
-	image.json // runway model
-		runway model contains $refs to properties in the supermodel
-
-in components/feature/image/fixtures/linked-image.json
-	add schema: "api/models/feature/image.json"
-	use this to validate
-
-how to show supermodel in styleguide so that it relates to the component/variation you're on?
-
-
-Dynamic Text meeting 1/24:
-Determine meaningful variants
-
-
-
-
-Todo:
-merge in work Cory did
-Identify properties he added
-figure out why those were added and what we should do with them
-Add reducer to styleguide (adapts api model to whatever component needs)
-hook up validation based on fixture schema property
-
-review w/ leads on Thursday
-
-New stories:
-	Add reducer (adapter) so we can convert fixtures into view models
-	As a FEWD I want the supported Fabric Image component variants to comply with the image schema
-	As a FEWD I want a fixture validation job that tells me when my fixture does not match its schema
-
-Add under styleguide: "/models/module.js" to handle logic (currently in styleguide/module.js)
-
-Todo:
-Display json
-Highlight runway model properties in supermodel (and display with little connector lines maybe?)
-Add display for description, etc. in json
-
-
-
-
-
-call w/ michelle, craig, molly 1/25
-
-2 week notice if possible
-send michelle email with last day and resignation letter
-michelle will send me exit info
-
-
-
-Dev TBs:
-Rachel:
-	WCAG offer ticket was handled by Jason, just needed to be sent to him to be closed
-	97% unit test coverage
-		was having some issues with testing widths; had to set width in feature and check that % width was correct
-	next up: pause button for carousel 31080 (4 subtasks)
-		may want to set up meeting w/ WCAG team to determine requirements and design specs
-Brian:
-unsure bc no time to meet w/ nat, changing reqs
-scenarios vs varients
-	arrays vs JSON objs to construct varients
+Lead things
+	Don't horde information
+	Plan so that everyone knows everything (generally) that needs to be done
+	Visibility and reporting of status
+	Rely on your devs and encourage them to call out issues (prevent spin)
+	Lean on your PA/PO for information, call out blockers
+	Assume that people know what they're doing (until they give you a reason not to)
+	Schedule meetings if you're having trouble getting information from people
+	Create documentation
+	Review (execute) PRs to ensure confidence in your team's code

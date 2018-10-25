@@ -1,0 +1,43 @@
+{
+    "products": [
+        {
+
+		// (updated) product stuff
+            "id": "1234567890", //8-10 digit number as a string
+            "url": "/bras/shop-all-bras/add-1-12-cups-push-up-bra-so-obsessed-by-victorias-secret?ProductID=264061&CatalogueType=OLS", // URL to product page
+            "family": "So Obsessed by Victoria's Secret", //Formerly brandName
+            "isNew": true, // prepend description with "NEW"
+            "name": "Add-1 1/2-Cups Push-Up Bra", //Formerly shortDescription
+            "rating": 4.75, // rating out of 5
+            
+        // collection-specific stuff
+            "colorCode": "092", //Encoded into URIEncodedColorCode
+            "imageName": "V444913", // alt text for swatch image (helpful, I'm sure)
+            "offerCallout": "Offer callout", // set up in diva. it's usually something like free panty with bra purchase or something like that
+            "swatchCount": "5", // number of available colors for a product
+            "isZeroAttribute": false, // 1 size/1 color = id
+            "isPriceReduced": true, // show new savings flag
+            "isGiftCard": false, // hide price if gift card in search results
+            "itemLevelCallout": "Sizes up to DDD",
+            "ensembleDescription": "Hiphugger Panty",
+            "ensemblePrice": "$11.50 or <em>any 4/$29.50</em>", // combine w/ price?
+            
+		// change to object?
+            "price": "$15 or <em>any 2/$25</em> <em> or 3/$30</em>"
+
+		// not used
+            "categoryId": "SHOP ALL BRAS AA-DDD(BRAS/SHOP-ALL-BRAS)", // Love It button
+            "swatchName": "V450828_OM_F", // Not used anywhere for products (facets only)? Maybe formerly used for search
+            "ratingPercentage": 95, //compute (rating/5)
+        	
+        }
+    ]
+}
+
+
+
+{{price}}{{#if offer}}{{#each offer}} or <em>any {{offer}}</em>{{/each}}{{/if}}
+
+
+
+&x1=color&q1=red,pink&x1=size&q2=32D

@@ -1,0 +1,55 @@
+ROMS-5671 As a user I want to see search results in a template (API integration, Save/Restore search term)
+	ROMS-23822 Save/restore search term
+
+ROMS-1734 As a Marketer, I want to be able to place floating cues on the Collection page
+	ROMS-2543 Enable CMS features in collection grid
+	ROMS-30028 FEWD development complete
+	ROMS-30029 FEWD Fabric development complete
+
+ROMS-1732 As a Merchant, I want to be able to put a customized header feature on Collection pages
+	ROMS-2228 Create fixture
+	ROMS-2229 Add CMS component partial to collection page
+	ROMS-2542 Add header feature to collection page
+	ROMS-30031 FEWD development complete
+	ROMS-30032 FEWD Fabric development complete
+
+ROMS-10450 [FEWD] Filters integration (route-based updates)
+	ROMS-16533 Evaluate filter/sort/load more via links (using URL params) instead of API calls
+
+ROMS-16377 [FEWD] Autocomplete Utility - hide autocomplete list when swiping on last option on mobile voiceover
+
+ROMS-23658 Add error states and handlers for Collection and Search APIs
+	ROMS-29119 Update Collection template to handle API errors
+	ROMS-29120 Update Search Results template to handle API errors
+
+ROMS-2029 As a user, I want to be able to tab through the grid variations in an order that is WCAG compliant.
+	ROMS-2217 Test product grid using assistive technologies
+
+Metrics/Analytics:
+	ROMS-8941 FEWD // CollLink (filter & Sort) [Collection & Search] [1]
+	ROMS-8944 FEWD // KWSLink (KWS results page interactions) [Collection & Search] [1]
+	ROMS-8502 Page View Tag // Quick View [Collection] [1]
+	ROMS-8684 Conversion Tag // Clicks on grid view on a collection page [Collection & Search] [3]
+	ROMS-8685 Conversion Tag // Clicks on list view on a collection page [Collection & Search] [3]
+	ROMS-8526 Conversion Tag // Clicks on live chat from the KWS PAGE [Collection & Search] [1]
+	ROMS-8532 Conversion Tag // Clicks on live chat from MOBILE KWS [Collection & Search] [1]
+	ROMS-8669 Conversion Tag // Clicks DONE on the filter by flyout on mobile collection page [Collection & Search] [2]
+
+SEO:
+	ROMS-2332 [Collection & Search] As an SEO Analyst I want to capture on-site search queries so that I can inform content strategy & site architecture
+	ROMS-9908 As an SEO Analyst, I want to leverage the H1 to populate default description tag, with the ability to override meta data.
+	ROMS-9907 [C&S] As an SEO Analyst, I want to leverage H1 to populate default title tag, with the ability to override the title tag.
+	ROMS-9920 [C&S] As an SEO Analyst, I expect the H1 of the page to be editable, so that the H1 can be optimized for search engine rankings.
+	ROMS-2303 [Collection & Search] As a SEO Analyst I want a visible editable sub-copy located under H1 (Collection Pages) so that search engines can find additional HTML content to rank the page higher.
+
+CMS Components:
+	ROMS-4152 As a merchant, I want to be able to add a carousel feature via CMS features to the Collection Page template, so that the customer can browse more efficiently
+	ROMS-4149 As a customer, I want to see a dynamic text feature on collection pages, so that I can be more informed about products
+	ROMS-4157 As a customer, I want to see an image feature on collection pages, so that I can be more informed about a product or style
+	ROMS-4107 As a customer, I want to see animated images of products and styles on collection pages, so that I can evaluate how a product will look/fit
+	ROMS-4155 As a customer, I want to see a text feature on collection pages, so that I can be more informed about a product or style
+	ROMS-4159 As a customer, I want to see a video feature on collection pages, so that I can be more informed about a product or style
+
+Other:
+	ROMS-5668 As a customer, I want to view personalized collection pages when Certona is enabled
+	ROMS-5823 As a VSDP, I want to have the ability to contact and schedule meetings if necessary with Adobe, so that I can work through any issues/improvements we need

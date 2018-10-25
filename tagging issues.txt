@@ -1,0 +1,23 @@
+Floodlight
+IDs are wrong
+Doubleclick is (possibly) capturing sales, but putting them in the wrong place
+
+Lowercase "s" gets removed
+Uppercase "S" get changed to lowercase
+remove vs rename
+
+AdWords
+Croud says Google Adwords not firing correctly
+Looking for item SKU on product page load, but it's not available until selection/ATB
+
+Meet w/ Croud next week (Thurs/Fri)
+Check domestic adwords pixel in tealium vs what is set up for Croud
+
+Next steps
+Triage everything w/ estimates
+
+
+Questions
+Is there a different Tealium for international?
+
+Schedule meeting w/ Aaron to review

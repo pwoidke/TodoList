@@ -1,0 +1,52 @@
+Allowed:
+
+AOS-03e176e6caccea8f-0e93b5d31...
+OPTOUTMULTI
+UID
+VSSESSION
+X-Mapping-omgbnpna
+dcc
+dcc2
+lang
+vsSigninPrompt
+vsrt
+
+Initial home page load:
+
+?-AODSESSION-7f887908df105ca2-ad8fc...
+OPTOUTMULTI
+UID
+VSSESSION
+X-Mapping-omgbnpna
+--acs.t
+dcc
+dcc2
+lang
+**utag_main - Found where it's set, don't know where it comes from
+vsSigninPrompt
+vsrt
+
+On ATB:
+
+eluminate:
+--60000021_login
+--60000021_reset
+--99999999_login
+--99999999_reset
+--CoreID6
+-TestSess3
+--cmTPSet
+
+On PDP:
+
+**load rule not working
+RES_SESSIONID
+RES_TRACKINGID
+ResonanceSegment
+
+Other:
+
+--FOPCDocReferrer
+--FOPCLocationHash
+--sessionTimeout
+x_axis_main

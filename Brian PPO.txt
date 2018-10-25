@@ -1,0 +1,32 @@
+brian PPOs
+
+probably not dissimilar to mine/sams
+
+ask about what he's working towards
+
+what is a PPO
+
+what is the outcome of this meeting
+
+brainstorm ideas for his PPOs
+
+schedule next session
+
+Product page: what he will own (may need to talk to Anthony)
+something fewd related: lots more subteams coming up, what he's interested in and wants to make fewd better at
+career path: things he can work towards (onboarding, l-brands way, addl roles & responsibilities)
+FE item to evolve, mentorship role for other team members as SMEs, tech tuesdays
+Flat structure would still have ways to grow, but maybe w/o title
+
+some companies go senior dev to SME (ex: a11y dev)
+
+
+------
+
+Become senior dev in next 2 years
+SME on Icons/SVG
+adapting to brastrap
+educate team
+	Tech Tuesday/plays on how icons work, changes that have been made
+Focus on testing
+	writing good specs

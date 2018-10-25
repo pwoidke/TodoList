@@ -1,0 +1,35 @@
+interview notes
+
+sam went over team structure
+anthony went over fiddle, process, tech stack a bit
+
+
+questions for us:
+	husband works for logistics at LB
+	framework based on React? vs angular?
+most familiar w/ angular 2, some familiarity w/ react
+
+discussed how services get and process data
+	good understanding of concepts, but comm is difficult (not terrible though)
+explain diff b/w frameworks
+	angular: 2-way binding, routing vs pages, observables
+	lots of talky talky, not all relevant
+	factory pattern
+debugging FE
+	compatability
+	debugger
+	
+
+unit tests
+	jasmine
+	prev team had dedicated testers
+
+a11y
+	hasn't worked w/ it
+	get's html stuff
+	HTML5
+	HTML5 elements for validation
+
+questions for us
+	more info on DOMS project
+	biggest challenge to new devs

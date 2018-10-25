@@ -1,0 +1,68 @@
+API Ownership meeting (9/22 w/ Nat & Sam)
+
+Current initiatives
+	Paths
+		Move navigations to it’s own RAML
+		Other APIs will match existing contracts
+	Subdomains
+		1. auth for http://flagship-api.lbidts.com/api.html#auth
+		2. api for everything else
+	Updated Process
+		1. Delete release branches
+		2. https://confluence.victoriassecret.com/display/VSDP/Flagship+API+Contract+Delivery
+
+Future initiatives & steady state
+	1. Using the blog to communicate changes
+	2. PRs to help enforce DOs and DONTs
+	3. Working with BE to keep everyone happy
+
+devs will do whatever they want, lots of time to take over
+people will overthink APIs and try to make them work for crazy other stuff (app, etc.)
+make what's needed for the website and go from there
+Version 1 can be terrible, later versions should be better
+
+Point people for MGT:
+	Spread out across teams (like our RAML files)
+	Whoever coded it + Kamal
+	Versioning and big decisions: Kamal + FEWD Architecture + me
+
+flagship-api.lbidts.com
+Data comes from third parties via MGT
+	Account/orders(/Auth?) are outliers (just a webapplication)
+
+New problem is seeing if all of our assumptions were correct once APIs are delivered
+
+opportunity: mock interface that goes to get real data within fabric
+	recommend figuring out proxy in fabric (besides charles)
+	within fabric, let them browse template by toggling API endpoint
+	endpoints should resolve, in another tab, specify mock data or proxy to use
+
+Confluence Flagship API
+	Reevaluate whether we need Confluence documentation of APIs
+	Consider RAML-Confluence plugin (go through QC or Build Squad)
+
+Make it work
+Don't let people's fears come true
+
+Next steps:
+	communicate email stuff w/ why's
+		because it doesn't make sense
+		nav was in website, navs are requested by build job and webapp
+		so it makes more sense to have it as its own endpoint
+	we have 2 paths (security rules and site)
+Recurring meetings:
+	none, but start them if needed
+	Sam is in charge of timeline
+New things:
+	partnership b/w Me, build squad, Architecture (scott/anthony), maybe QC
+	need to write contract for build job
+		tells MGT what they can send us so we can make an HTML artifact
+			ex: CMS changes, build these pages
+		where and how should we build that contract?
+	It's in Sam's list, build squad will probably own it since they can call that job
+	FEWD-768
+	ask build squad how to make that call
+	figure out if we need another repo for build API, or something else
+
+should have set APIs up so that every endpoint is its own repo
+	So do that if possible

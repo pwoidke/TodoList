@@ -1,0 +1,93 @@
+ 
+REVIEW PRIORITIES
+Discuss what the associate is working on – what are their current workstreams?
+Ask associates to share current priorities
+
+size & fit chart
+product team is priority
+trying to more involved in squad, but product stuff takes up a lot of time
+Jeremy out a lot, so team is behind and brian is picking up extra work (s&f was originally 2 parts)
+
+squad working on tech specs
+planning tech tues or blog post for changes to tech spec template
+
+
+DISCUSS PROGRESS
+Review the current progress and/or results of the associate’s work
+
+Ask associate:
+· What are you most proud of so far this year?
+input utility
+works well
+some things ot improve and teach devs how to use
+good standard for how utilities should look and work
+plug and play
+
+· How have you been effective?
+taking on extra work
+tough w/ anthony (perfection)
+good resource for other devs
+
+· How could you have been even more effective?
+being here now (per lbrands way)
+more attentive in meetings
+relies too much on jira tickets instead of focusing on original planning meetings
+
+· What behaviors are your strengths & opportunities? How do they show up?
+positive attitude (others worried, stressed)
+unique position: got to work w/ anthony closely, so ahead of other devs understanding architecture
+make cool stuff quicly
+good understanding of ecosystem
+
+
+PROVIDE FEEDBACK
+Share feedback with the associate about:
+· How they are doing against their objectives
+PPOs look good except for icon plays, missing solution for critical vs common
+pushed to later date
+
+· What they are doing well and should continue
+Brian is an excellent communicator, and is able to effectively speak to any work that he’s done or responsible for and ask questions when he is unclear about work or expectations.
+Brian is an excellent team player, he supports the other devs on his team and steps up when Anthony is out or unavailable.
+He is an advocate for team comradery.
+Not afraid to step up if lead is busy
+Great presentations and blog posts
+Brings in food
+
+· What they should start or stop doing to improve
+Brian takes less initiative to lead when there is a manager or lead present. I believe that he has great potential to be a bigger presence here on the VSDP
+
+Share new or shifting priorities and explain the reason for the change
+None
+
+Set new (or re-align) expectations
+None
+
+
+OFFER SUPPORT
+Ask associate:
+· What questions do you have?
+will we make deadline? are we close?
+having chris dierkens has helped
+distributing lead duties makes it easier to get work approved and unblocked
+
+· How can I better support you?
+it would be nice if each team had a "senior dev" for pull request reviews, etc. in case lead is busy
+s&f: small PRs that dierkens reviews makes it goes faster
+
+· How can I help you accomplish goals?
+needs to re-look at PPOs
+add party nav
+add size & fit
+remove old stuff (anything that won't be finished this year)
+
+· What feedback do you have for me?
+touchbases have worked well
+easy to relay questions and concerns
+feedback has been heard and forwarded to the correct people
+short touchbases are great
+2 weeks between tbs works well with short sprints
+
+Make connections and remove roadblocks or hurdles
+
+Appreciate the work that your associate has accomplished

@@ -1,0 +1,523 @@
+PDP Backorders
+each epic comes with a deployment (test) dimensions (1/requirement)
+all new code gets wrapped in that dimension
+Epic has a Deprecation task to remove conditions
+DP project?
+
+To show new features on flagship
+new variant
+Mock feature flags endpoint
+UU.getState("config").flagList || .flags
+test.vs.com/experience-editor to set active flags
+
+Fix filters clearing when opening mobile accordion filter
+Fix search reinit 10x API call
+Add variant for backorder stuff (update fixtures so that 1 color is backordered)
+
+Sprint 33
+	ROMS-51843 Update element/component variants for UX visual validation
+	Review backlog, tickets assigned to me
+	Refactor selected facet restoration for Collection & Search pages
+		Fix search pre-selected color variant
+		ROMS-52555 Item count not being retained on filter/refresh of page
+		ROMS-51841 Add fixture/API for updating filters on selection
+		Review test load more and figure out what is not working
+			https://test.victoriassecret.com/vs/lingerie/shop-all-lingerie
+			https://jira.victoriassecret.com/browse/ROMS-1736
+
+Review Croud tagging issues documentation
+Italy Thank you page tags not firing
+	Review spreadsheet from Croud
+	4.1.1 - thank you page tags are not getting product IDs (see E12 for example)
+	Connect w/ Karen re: tagging issues
+SAYT autocomplete not working
+--App team BGP SEV1
+--Visual variant tickets
+18.1 tagging issues
+
+Talk to Patrick to get details of size filter bug and ensure ticket is logged
+
+Sprint 32
+--	Draft PPOs
+		https://confluence.victoriassecret.com/display/~PWoidke/2018+PPOs
+--	NationJS presentation
+
+Sprint 31
+--	FEWD-364 Add $schema validation to flagship fixtures (PART 1)
+--	ROMS-52301 Move global vars out of components/product-stacks/reducer
+
+Sprint 30
+--	Ratings & Reviews work
+--	Refactor stuff for testing
+--		https://jira.victoriassecret.com/browse/FEWD-2079
+--	ROMS-51839 Persist Grid/List view after selection on Collection/Search pages (mobile only)
+--	ROMS-51842 Fix search form SAYT demo (desktop/tablet)
+--	Add filter values to PDP URL
+--		ROMS-48749 UDO Property: facets_used PDP
+--	Chad: Work with architecture team to implement instancing for search form components
+--		ROMS-50042 WCAG Autocomplete Display Testing - Mobile – Field does not have a label
+--	Backorders tech design (currently slated for S33)
+--		https://jira.victoriassecret.com/browse/ROMS-31015
+--		6h	Update API contract
+--				Add "backordered" inventory status
+--				Add "backorderDate" property
+--		4h	Add backordered message to inventory utility
+--		4h	Update box selectors utility to update backordered messaging
+--		2h	Add backordered message to tooltips
+--		8h	Update unit tests
+
+S29
+	Fix grid demo
+	Fix dropdown nav demo
+	Fix quantity selector utility demo?
+
+
+Sprint 28
+--	Fix product swatch count labels
+--	Send Akash working sessions
+--	Connect w/ Tanveer
+--	Update search to use new endpoint URL
+--	Fix filter bar mobile demo
+--	Fix SEO collection title text in index.hbs
+--	Fix Single attr product selectors style on small breakpoint
+--	FEWD-2011: update pages API & templates using category/collection ID to use Page ID
+--	Add improve unit test quality to tech debt (https://jira.victoriassecret.com/browse/ROMS-49168)
+--	VSDP-33971 KWS - SAYT is not displayed in PINT - utag issue
+--	Block Instagram w/ GDPR - https://confluence.victoriassecret.com/display/PINK/PINK+Nation+GDPR#PINKNationGDPR-GDPRCookieBanner / https://jira.victoriassecret.com/browse/VSDP-33982
+--	UDO/Conversion tagging
+
+
+
+Updates
+	GDPR instagram
+	WCAG
+	Visual
+	schema PR
+	innovation lab
+
+
+Sprint 27
+	https://confluence.victoriassecret.com/display/VSDP/DOMS+Tech+Debt
+--	update collection & search APIs to v2
+--	Analytics will update tickets by EOD Wednesday
+--	Brittany will assign UDO stuff this week
+--	ROMS-46167 Variant: multiple stacked collections with headers
+--	Add URL param for search location (header, page)
+
+
+Innovation lab tour
+video: retail of the future
+iBeacons
+fragrance blender
+smart wallflower
+RFID store
+VR store build-out
+VR product set
+AR store build-out
+
+
+Sprint 26
+	Alex - Finishing CMS component video work
+	Jeremy: Analytics/metrics
+--	ROMS-9908 SEO requirements
+--		Update h2 to h1 for collection header
+--	ROMS-45738 Add search term to PDP query params
+--	Update filter/sort/load to use search params UU.setSearchParams/UU.getSearchParams
+--		https://confluence.victoriassecret.com/display/VSDP/Underwire+API
+--		Switch hash params to search params
+--		On init, check search params vs data
+--		Remove second call entirely
+--	Fix search width breakpoints
+	Fix Single attr product selectors style on small breakpoint
+	Update product fixtures to have different product IDs
+		Not possible due to JSON refs
+		Consider adding fixture for single and multiple products?
+		Update fixtures to show/hide new savings flag
+--	remove stack IDs in collection schemas
+--	ROMS-46061 Add live chat to collection & search
+--	ROMS-2164 As a merchant, I want to be able to separate collections with headers to create a stacked collection view
+--		Check that stack header CMS components work as expected
+		ROMS-46167 Variant: multiple stacked collections with headers
+--	ROMS-46590 Update header search input to direct to /{{brand}}/search
+	Add ticket to FEWD backlog: update pages API & templates using category/collection ID to use Page ID
+--	Send Sam custom CMS component story
+--	ROMS-5673 Fix sort/filter/load data getting sent to PDP
+--	Fix selecting facets from params
+--	SEO - FEWD-2021 to add titles to all pages
+--Add label for swatchCount to contract and template
+--Add isPlural to reducer and template
+
+Sprint 25:
+--	ROMS-40207 [FEWD] Move sort/filter/load functionality to utility to enable unit testing
+--		Move search functionality to utility`
+--	ROMS-16730 Certona API contract
+--		add brand to personalization (copy search brand)
+--	ROMS-44071 Add origin=pos param to collection/search
+--		Update search endpoints to /keywordsearch/v1/search & /keywordsearch/v1/sayt
+--	ROMS-44073 API: Add flag for display generic description (default is false/hide)
+		collection/page: parent_category_id Contains the parent cateory of the page. Ie., Home Page.
+--	CMS component integration
+--	ROMS-44072 Unify fixture data template>components>elements (use json refs if possible)
+
+Privacy Manager applies to all tags
+	3 outputs:
+		preloader checks for OOM cookie and sets to default
+		code before load rules for categories/tags turned off
+		looks at values and overrides
+	creates utag.optout.js on accept button click
+
+
+[Behavior] testing module.js's?
+	Move logic to utility/service and unit test those
+	Modules should only catch/dispatch events
+
+
+Sprint 23:
+AP GDPR on old site
+--P	ROMS-23718 Search template variant: Include pre-selected color results
+--A	ROMS-23812 A11y Recommended products (Update to announce slide change)
+--A	ROMS-23804 Add fixed filter button
+--A	ROMS-23665 Save scroll position
+--A	Fix quickview button on small product cards (line break/width/margins)
+
+Quickview/PDP integration:
+--	Update product IDs to new pattern
+--	Add collection and product ID attributes to quickview button
+--	Add collection and product IDs to quickview button attributes
+
+GDPR todo:
+--Check GDPR banner functionality desktop/mobile
+--Fix GDPR banner on narrow desktop
+--Check that new cookies download after acceptance
+--Connect info link to privacy policy>cookies
+--Change load rule to check for international/domestic
+--Fix anchor link to privacy policy (match prod)
+
+Next up:
+--Product Stacks component:
+--	Remove stack entirely if no products (filtered)
+--	Handle color count and brand show flag
+--	Fix list view on mobile (width should be 100%)
+--	Remove $.00 decimals for prices
+--	check floating cue insert logic
+--Add $schema refs too templates/search-results/fixtures
+--Unit tests: load more w/ floating cues (new slice stuff) (test that >180 = 180)
+--Check that alex GDPR banner works how it should (modals, menus, etc.)
+--Update filter/actions.js init to get swatch urls via productImageUtility.getImageSrc(swatchImage, "swatch");
+--Update product-stack/collection fixtures to diversify flags
+--Fix multi-column filter options in accordion filter
+
+APIs:
+--Allow adding $schema ref to search fixtures
+--PDP updates
+--	Ensure size filter option values correspond to sizeCode
+--	Add choiceCode to products in filter response
+--Add hideFamily (brand) and hideColorCount flags to collection API
+--Update collection page schema to exclude column (only needed at stack level)
+--Re-add pagination to collection API
+--ROMS-23654 Add brand to search api
+--Remove page level columns (only need stack columns)
+--add collection.product.showOnMobile flag (or hideOnMobile)
+
+Documentation:
+Log ticket to add @extends for fonts
+
+Later:
+Back to top utility?
+
+
+
+
+Consider change x.indexOf('y') === -1 to ~x.indexOf('y')
+
+tealium drops utag.js onto page, that pulls in addl tags, those tags drop cookies
+Tealium provides a button that drops stuff on click (easy!)
+Tealium privacy manager extension
+
+
+Check out http://apirepo.lbidts.com/ for APIs
+
+
+npm config set registry https://registry.npmjs.org/
+npm install --registry=https://artifactory.lbidts.com/artifactory/api/npm/fewd-npm-v
+
+
+
+change conf to enum of numbers/codes & messages
+
+
+checkout alerts:
+	add reducer
+	listen for alert-received or something similar
+	has default state with default message & type
+	merge alert with mapped conf object?
+	pass to form actions?
+	utility gets alert, returns data, sets alert state
+	let's talk to Scott about a general alerts utility
+
+
+
+
+
+Links
+	buttons & links should have identical variants
+	link variants w/ icons: icons are too big (link-with-icon-type-icon-only, link-with-icon)
+Inputs
+	ensure fabric elements are same as prod today
+	default: label too low, need transition slide up, fix label/type positions to match prod
+	select: vertical align center placeholder text
+	all inputs height: empty/non-focused 45px when close/empty (inc border), filled/focused: 55px
+		applied at row level (apt + po box)
+	text input (text-with-long-value.json): adjust height for second line
+		line should wrap before clear/close icon (match value)
+	mobile: clear x is too small, desktop: remove clear x
+	check that checkbox matches prod (box may be too small)
+	content box radio group: too much space around titles (match prod checkout addresses)
+	search input: search form component and search input element don't match
+		fix results input
+
+
+
+Build stuff:
+Bamboo (https://bamboo.lbidts.com/allPlans.action)
+repos built to serve from URL (docker container)
+	flagship
+	flagship-api
+Supporting packages (build to "npm" repos that can be pulled in)
+	fabric-catalog
+	mgdp-garter
+	vsdp-brastrap
+	underwire
+	build-html
+Most common issue: needs version rev in package.json
+	Build will pass, but can't merge because only package.json's are diff'd
+	run 'npm version' or manually update it (and then run 'npm i' to update package.lock)
+	npm --no-git-tag-version version [major|minor|patch]
+Build plan: Bamboo > Job > Actions > Configure Plan > Fetch & Analyze
+Fetch & Analyze > Artifacts (tab): Built files that come out of the build job (white = toss, gray = keep)
+Deployment for Flagship (job)
+	triggers for when deployment runs
+	tasks for list of steps in deployment
+If there's a real issue, talk to INFRA (make a ticket)
+	https://jira.victoriassecret.com/servicedesk/customer/portals
+	New ticket (system problem/outage > VS Digital Platform Enhancements)
+	SEV-1 for blockers
+Make sure NPM is up to date: npm install -g npm@latest
+Static build issues
+	(Add build html configuration)
+	Add breakpoint in file (ex: build-fabric.js)
+	Run configuration to debug
+
+
+
+
+--Add header/footer to search results template
+--Fix applied options z-index
+--Fix drawer init in templates
+--Recheck endpoint mocks w/ URL params
+--hide quickview button on mobile
+--Update product card details with generic info
+--Check Text banners in S&P
+--Add schema properties to fixtures
+--Update search banner API schema to remove markup
+--Fix sort component mobile updates in filter bar
+--Fix mobile filter drawer init
+--Look at account profile template for how modals should work
+--Update product api schemas/examples to get generic id/name/etc. (see checkout API contracts)
+
+
+Sprint 16:
+--Finish autocomplete/SAYT
+--Update load more variants
+--Search results/no results template
+--Collection template updates
+--	fade in load more
+
+
+
+--remove opt-ins from flagship/src/fixtures/countries.json
+api gives us value & opt-ins
+utility should combine FE list & CMS data (http://flagship-api.lbidts.com/api.html#countries)
+drop anything that's not in FE list
+1 util function
+test anywhere w/ an address & create account
+	checkout step 1
+	billing & shippind address modals
+	create acct page
+Remap country codes: https://confluence.victoriassecret.com/display/~MDavis/Countries+Data+Mapping
+	remap in fixture and rest of site
+	Mostly in Address component
+
+
+
+https://jira.victoriassecret.com/browse/ROMS-21346
+/Users/pwoidke/flagship/src/components/account-profile/subcomponents/modals/address-book/content/reducer.js
+/Users/pwoidke/flagship/src/components/checkout/billing-address/reducer.js
+/Users/pwoidke/flagship/src/components/size-and-fit-chart/reducer.js
+/Users/pwoidke/flagship/src/components/size-and-fit-chart/utility.js
+
+
+
+FEWD-1370
+look for demo/index.js files
+	If you're not doing anything special, just delete it
+	recreate anything else in demo/application.js
+check application/variants/endpoints.js are good
+Make sure mocks/endpoints are all correct
+
+
+
+{{#if banner}}
+	{{#if banner.link}}
+    	<a href="{{banner.link}}" target="_blank">
+    {{/if}}
+    		<img src="{{banner.src}}" alt-text="{{banner.altText}}">
+    {{#if banner.link}}
+    	</a>
+	{{/if}}
+{{/if}}
+
+
+
+
+
+Sprint 15:
+Paul	Finish collection template
+		Collection template integration
+			sort, filter, load more, view toggle
+		Search template specs
+			Desktop
+				accordion filters
+				search input
+				infinite scroll
+			Mobile
+				
+		Update CS API contracts
+			Remove alt text from collection/search APIs
+Alex	Autocomplete utility
+		SAYT Desktop
+		Autocomplete Mobile (update to use utility)
+		Dropdown utility update
+
+
+
+Love list
+	Page with love list results
+		account info (name)
+		header feature
+		product list
+Collection
+	Add love button to product cards
+	Add alerts on love button click
+
+
+
+short/long desc FE work
+	add flags to API (can be done this sprint w/ other API updates)
+		showChoiceName<bool>
+		choiceNameProductFirst<bool>
+	Update product-collection component partial
+		if showChoiceName, show choice name
+			if choiceNameProductFirst, show product then choice name
+	Update product-collection component unit tests
+		test each flag and resulting state
+	Update confluence documentation for product-collection component
+
+
+Create tech story for autocomplete utility
+Mark as blocking:
+[2:02 PM] Davis, Martin: https://jira.victoriassecret.com/browse/ROMS-5215
+[2:02 PM] Davis, Martin: https://jira.victoriassecret.com/browse/ROMS-5272
+[2:04 PM] Davis, Martin: https://jira.victoriassecret.com/browse/ROMS-6266
+[2:04 PM] Davis, Martin: https://jira.victoriassecret.com/browse/ROMS-6267
+
+
+
+Sprint 14
+Alex:
+	Finish carousel utility (split out subcomponents)
+	hook up carousel util w/ alt images
+	autocomplete utility (requirement w/ martin, tech specs, dev)
+	desktop/mobile autocomplete/SAYT
+Gerrod:
+	Tables
+	update existing component links, buttons, toggle buttons, etc. to use partials
+	fix quickview button in grid
+Paul: Finish collection template
+Next-up's: Gift card collection item (waiting on data reqs)
+
+Carousel notes:
+Fix arrow positions in demo
+WCAG announcements for autoplay?
+Should autoplay resume when you tab off the carousel?
+How does slide content work?
+CMS Component List component to handle multiple things on a page?
+Support for overlay over carousel?
+How to handle different arrows using different SVGs?
+Are we allowed to have multiple modules for one utility (autoplay/non-autoplay)?
+Move autoplay module into "Autoplay utility" for videos, anim img, etc.?
+Is it possible to use a #content block in an #each in HBRs?
+Is there error handling for a single slide? Or does the API prevent this?
+
+
+
+--Sam: Re: Table Variants
+--Fix filter bar drawers
+--Move load more init (displayed products) to product collection?
+
+
+
+Why did styles work before, but not imports?
+	css doesn't need to be compiled
+Unit tests for template functions?
+	functions moved to module, unit test that
+
+
+
+Concerns:
+FATE timeline, needs, meeting time
+Is MGT doing what they say, and what is their timeline
+Architecture is super stretched, starting to block me
+Are our unit tests good enough?
+What is the account autocomplete need?
+FEWD foundational work
+what is ux doing?
+
+
+--Difference b/w init and ready?
+	init on initialization, ready after all modules are initialized
+--How to pull in SVGs in templates?
+	Add data-icons property to body
+--Data from API/mocks not being passed to viewModel. Failing in build/index.js (can see data in modules, but not in partial. getstate shows default)
+	getting there
+--How do I scope the data for a component? Reducer key or everything?
+	fixtures have full data, get what you need using garter
+--In partials, do I use {{> partial data}} or <div class="fabric-component">
+	divs
+--how to access config in hbs
+	{{@root.config.isVictoriasSecret}}
+
+
+Build filter bar component (collection filter/sort/view, ratings&reviews)
+	https://www.victoriassecret.com/bras/shop-all-bras/push-up-plunge-bra-sexy-illusions-by-victorias-secret?ProductID=346073&CatalogueType=OLS
+Build toggle button component (play/pause, grid/list)
+
+
+Check navigations API vs masthead fixtures (are desktop/mobile working/the same data?)
+
+Page API - Leads will handle their own section to capture anything unique that is needed
+	specify what your pages need that are non-standard data
+mostly for SEO?
+SEO updates for Collection API redirects:
+	301 redirect set up in CMS
+	If no stock for anything in collection: out of stock collection message (new UX)
+	Search stays the same (because no SEO)
+Look at collection SEO requirements and determine what meta data we need to render page
+
+in module:
+function ready(){
+	var data = UU.getState(this.reducer.key);
+}
+return: {
+	ready: ready;
+}
