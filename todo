@@ -1,64 +1,8 @@
-Sign up for crucial conversations
-
-Later:
-Update fixtures to show/hide new savings flag
-ROMS-23658 Add error state and handlers for collection and search APIs
-	Error codes added to APIs, waiting on Parker for error states UX
-	UX: confirm how should we handle if SAYT service goes down? (currently continue displaying last product list, or hide container if none)
-Consider changing load more on stacks to load more last stack products instead of first stack
-ROMS-23822 Save/restore search term
-ROMS-10450 Filters integration (route-based updates) (Evaluate URL-based updates (SPA w/ routes))
-Move tech specs into readme's in codebase
-
-Tech debt
-Update C&S code to use new garter/UU functions
-Support for multi-width floating cues
-Quickviews in fabric
-PDP: unavailable vs out of stock size
-Combine desktop/mobile collection/search modules
-	Move common functionality to shared module
-	Import into each module and update refs to functions
-autocomplete hover
-	save search term
-	make API request
-	get response
-	check if search term matches saved term
-	update results
-
-Someday:
-	Love List
-		Add boolean "loved" state to product schema
-		Send
-			item ID
-			action
-		get
-			item ID
-			status
-	Swatches update image in collection
-		Get swatches with product data
-			Update contract
-				Change swatch URL from string to array of strings
-			Add to product details partial
-		Add endpoint
-			/collection/{version}/image/{product id}
-			returns a url
-		On swatch hover
-			Make call to /collection/{version}/image/{product id}
-			New product image URL is returned
-			Update product image with new URL
-			OR
-			Update product image data to array of URLs w/ endpoints(?)
-	Personalized collection updated daily/weekly
-
-Binocular Binoculars Monocular kayak camera bike bicycle topeak thule yakima headphones triathlon brooks mizuno patagonia marmot kuhl kühl running tent camp camping emeco eames apple iphone ipad subaru scion roomba ryobi dyson dslr nest wacom nintendo playstation xbox
-
-Lead things
-	Don't horde information
-	Plan so that everyone knows everything (generally) that needs to be done
-	Visibility and reporting of status
-	Rely on your devs and encourage them to call out issues (prevent spin)
-	Lean on your PA/PO for information, call out blockers
-	Assume that people know what they're doing (until they give you a reason not to)
-	Schedule meetings if you're having trouble getting information from people
-	Create documentation
-	Review (execute) PRs to ensure confidence in your team's code
+Binocular Binoculars Monocular kayak bike bicycle topeak thule yakima
+camera headphones apple iphone ipad dslr nest
+triathlon brooks mizuno patagonia marmot kuhl kühl running
+tent camp camping
+emeco eames
+subaru toyota
+roomba ryobi dyson
+wacom nintendo playstation xbox
